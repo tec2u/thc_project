@@ -1,123 +1,6 @@
 @extends('layouts.header')
 @section('content')
 <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
-
-
-<script>
-    $(function() {
-        'use strict'
-        var salesChartCanvas = $('#salesChart').get(0).getContext('2d')
-        var salesChartData = {
-            labels: {
-                !!$label!!
-            },
-            datasets: [{
-                    label: 'Balance Entries',
-                    backgroundColor: 'rgba(255,160,25,0.9)',
-                    borderColor: 'rgba(255,160,25,0.8)',
-                    pointRadius: false,
-                    pointColor: '#ffa019',
-                    pointStrokeColor: 'rgba(255,160,25,1)',
-                    pointHighlightFill: '#ffa019',
-                    pointHighlightStroke: 'rgba(255,160,25,1)',
-                    data: {
-                        !!$data!!
-                    }
-                },
-                {
-                    label: 'Balance Out',
-                    backgroundColor: 'rgba(210, 214, 222, 1)',
-                    borderColor: 'rgba(210, 214, 222, 1)',
-                    pointRadius: false,
-                    pointColor: 'rgba(210, 214, 222, 1)',
-                    pointStrokeColor: '#c1c7d1',
-                    pointHighlightFill: '#fff',
-                    pointHighlightStroke: 'rgba(220,220,220,1)',
-                    data: {
-                        !!$datasaida!!
-                    }
-                }
-            ]
-        }
-        var salesChartOptions = {
-            maintainAspectRatio: false,
-            responsive: true,
-            legend: {
-                display: false
-            },
-            scales: {
-                xAxes: [{
-                    gridLines: {
-                        display: false
-                    }
-                }],
-                yAxes: [{
-                    gridLines: {
-                        display: false
-                    }
-                }]
-            }
-        }
-        var salesChart = new Chart(
-            salesChartCanvas, {
-                type: 'line',
-                data: salesChartData,
-                options: salesChartOptions
-            }
-        )
-        var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
-        var pieData = {
-            labels: ['Chrome', 'IE', 'FireFox', 'Safari', 'Opera', 'Navigator'],
-            datasets: [{
-                data: [700, 500, 400, 600, 300, 100],
-                backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de']
-            }]
-        }
-        var pieOptions = {
-            legend: {
-                display: false
-            }
-        }
-        var pieChart = new Chart(pieChartCanvas, {
-            type: 'doughnut',
-            data: pieData,
-            options: pieOptions
-        })
-
-        $('#world-map-markers').mapael({
-            map: {
-                name: 'usa_states',
-                zoom: {
-                    enabled: true,
-                    maxLevel: 10
-                }
-            }
-        })
-    })
-
-    $(function() {
-
-        $('#carouselEcommerc img:eq(0)').addClass("ativo").show();
-        setInterval(slide, 5000);
-
-        function slide() {
-
-            //Se a proxima imagem existir
-            if ($('.ativo').next().length) {
-
-                $('.ativo').removeClass("ativo").next().addClass("ativo");
-
-            } else { //Se for a ultima img do carrosel
-
-                $('.ativo').removeClass("ativo");
-                $('#carouselEcommerc img:eq(0)').addClass("ativo");
-
-            }
-
-        }
-    });
-</script>
-
 <script>
     function FunctionCopy1() {
 
@@ -286,24 +169,40 @@
         margin-right: auto;
         margin-left: auto;
     }
+
+    .bg-banner {
+        width: 100%;
+        height: 50vh;
+        background: center / cover no-repeat;
+        background-size: 30%;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
 </style>
 
 <main id="main" class="main mt-0">
     @include('flash::message')
     <section id="home" class="content">
         <div class="fade">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
             <div class="container-fluid">
-                <section class="container-fluid  bg-white p-0 radius-15" style="backdrop-filter: blur(0px);filter: brightness(120%) grayscale(0%) saturate(120%);" id="herosection">
-                    <div data-bss-scroll-zoom="true" data-bss-scroll-zoom-speed="0.5" style="width: 100%;height: 50vh;background: linear-gradient(rgba(0,0,0,0.83), rgba(0,0,0,0.78)), url({{ asset('/images/nolimitslogo.png')}}) center / cover no-repeat;">
-                        <div class="container h-100">
-                            <div class="row justify-content-center align-items-center h-100">
-                                <div class="col-md-12 col-lg-12 col-xl-12 d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
-                                    <div class="text-center" style="margin: 0 auto;">
-                                        <p data-aos="fade" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true" class="phero">@lang('home.home1.li3')</p>
-                                        <h6 class="text-uppercase fw-bold mb-3 hhero hherosm" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="800" data-aos-once="true">
-                                            THE <br>HEALING COMPANY</h6>
-                                    </div>
-                                </div>
+                <section class="container-fluid  bg-white p-0 radius-15" id="herosection">
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                                <img src="{{ asset('images/nolimitslogo.png') }}" alt="Item 1">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                                <img src="{{ asset('images/img-2.jpg') }}" alt="Item 2">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                                <img src="{{ asset('images/img-3.jpg') }}" alt="Item 3">
                             </div>
                         </div>
                     </div>
@@ -325,13 +224,13 @@
                                     <li>Benefits of Using THC</li>
                                     <li>Tetrahydrocannabinol (THC) is one of the primary compounds found in cannabis, known for its psychoactive properties. Beyond its recreational use, THC has several potential health benefits that are increasingly recognized in the medical community. Here are some of the key benefits:</li>
                                     <li>
-Pain Relief: THC is effective in alleviating chronic pain, including neuropathic pain. It activates pathways in the central nervous system that block pain signals from being sent to the brain1.
-Nausea and Vomiting Reduction: THC has been used to reduce nausea and vomiting, particularly in patients undergoing chemotherapy. FDA-approved medications like Marinol contain synthetic THC for this purpose2.
+                                        Pain Relief: THC is effective in alleviating chronic pain, including neuropathic pain. It activates pathways in the central nervous system that block pain signals from being sent to the brain1.
+                                        Nausea and Vomiting Reduction: THC has been used to reduce nausea and vomiting, particularly in patients undergoing chemotherapy. FDA-approved medications like Marinol contain synthetic THC for this purpose2.
                                     </li>
                                 </ul>
                                 <ul class="info-list section-info" style="">
                                     <li>Appetite Stimulation: THC can help stimulate appetite, which is beneficial for patients suffering from conditions like HIV/AIDS or cancer, where appetite loss is a common issue3.
-                                    Muscle Spasms and Spasticity: THC has shown effectiveness in reducing muscle spasms and spasticity, particularly in conditions like multiple sclerosis4.</li>
+                                        Muscle Spasms and Spasticity: THC has shown effectiveness in reducing muscle spasms and spasticity, particularly in conditions like multiple sclerosis4.</li>
                                     <li>Sleep Aid: THC can improve sleep quality and help with insomnia by reducing the time it takes to fall asleep and increasing the duration of sleep.</li>
                                     <li>Mental Health Benefits: Some studies suggest that THC can help alleviate symptoms of PTSD, anxiety, and depression when used appropriately.</li>
                                     <li>While THC offers these benefits, it is important to use it responsibly and under medical supervision to avoid potential side effects and dependency issues.</li>
@@ -455,54 +354,37 @@ Nausea and Vomiting Reduction: THC has been used to reduce nausea and vomiting, 
     </footer>
 </main>
 
-
-<!-- <script>
-        if (screen.width > 810) {
-            var widthImage = 810;
-            var heightImage = widthImage / 1.787;
-        } else {
-            var widthImage = screen.width;
-            var heightImage = screen.width / 1.787;
-        }
-        setTimeout(() => {
-            Swal.fire({
-                "title": "",
-                "text": "",
-                "width": widthImage,
-                "heightAuto": true,
-                "padding": "1.25rem",
-                "showConfirmButton": true,
-                "showCloseButton": false,
-                "timerProgressBar": false,
-                "customClass": {
-                    "container": null,
-                    "popup": null,
-                    "header": null,
-                    "title": null,
-                    "closeButton": null,
-                    "icon": null,
-                    "image": null,
-                    "content": null,
-                    "input": null,
-                    "actions": null,
-                    "confirmButton": null,
-                    "cancelButton": null,
-                    "footer": null
-                },
-                "imageUrl": "{{ $url_image_popup }}",
-                "imageWidth": widthImage,
-                "imageHeight": heightImage,
-                "imageAlt": "",
-                "animation": false
-            });
-        }, 7000);
-    </script> -->
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="../../assetsWelcome/slick-1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+<style>
+    .carousel-item {
+        text-align: center;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 5px;
+        height: 100%;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        border-radius: 5px;
+        max-width: 500px;
+    }
+</style>
 <script>
+    $(document).ready(function() {
+        $('.carousel').slick({
+            autoplay: false, // Ativa a rotação automática
+            autoplaySpeed: 3000, // Tempo de exibição de cada slide (3 segundos)
+            dots: true, // Adiciona indicadores de navegação
+            arrows: false, // Desativa os botões de navegação
+            infinite: true, // Habilita a rotação contínua
+            speed: 500, // Velocidade da transição
+        });
+    });
+
     var button = document.getElementById("ler-mais");
     var sectionInfo = document.querySelector(".section-info");
     var isOpen = false;
@@ -573,26 +455,6 @@ Nausea and Vomiting Reduction: THC has been used to reduce nausea and vomiting, 
                 }
             }
         ]
-    });
-</script>
-<script>
-    new Chart(document.getElementById("line-chart"), {
-        type: 'line',
-        data: {
-            labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5', 'Year 6', 'Year 7', 'Year 8', 'Year 9',
-                'Year 10'
-            ],
-            datasets: [{
-                data: {
-                    {
-                        json_encode($data_graphic)
-                    }
-                },
-                label: "Money",
-                borderColor: "#3e95cd",
-                fill: false
-            }, ]
-        },
     });
 </script>
 
