@@ -316,7 +316,7 @@
                             <div class="embed-responsive embed-responsive-16by9" style="display: flex;
                     justify-content: center;
                     align-items: center;">
-                                <video class="video1 embed-responsive-item" controls src="../../assetsWelcome/images/land.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></video>
+                                <video class="video1 embed-responsive-item" controls src="{{ asset('videos/video-thc.mp4') }}" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></video>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -355,77 +355,6 @@
             </div>
         </div>
 
-        <div class="container-fluid imagehome mt-5">
-            <div class="text-center">
-                <h2 class="text-dark mb-4 mt-4 about-txt">@lang('leadpage.client.li1')</h2>
-            </div>
-            <div class="container-img">
-                <div class="image">
-                    <img src="../../assetsWelcome/images/gibson.jpg">
-                </div>
-                <div class="image">
-                    <img src="../../assetsWelcome/images/brinkley.jpg">
-                </div>
-                <div class="image">
-                    <img src="../../assetsWelcome/images/douglas.jpg">
-                </div>
-                <div class="image">
-                    <img src="../../assetsWelcome/images/sheik.jpg">
-                </div>
-                <div class="image">
-                    <img src="../../assetsWelcome/images/wozniak.jpg">
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center">
-            <h2 class="text-dark mb-4 mt-5 about-txt">@lang('leadpage.client.li2')</h2>
-        </div>
-        <!-- <div class="galeria">
-                        <img src="../../assetsWelcome/images/accenture.png">
-                        <img src="../../assetsWelcome/images/bbc.png">
-                        <img src="../../assetsWelcome/images/cw.png">
-                        <img src="../../assetsWelcome/images/forbes.png">
-                        <img src="../../assetsWelcome/images/gilette.png">
-                        <img src="../../assetsWelcome/images/heinecken.png">
-                        <img src="../../assetsWelcome/images/loreal.png">
-                        <img src="../../assetsWelcome/images/nbc.png">
-                        <img src="../../assetsWelcome/images/pg.png">
-                        <img src="../../assetsWelcome/images/philips.png">
-                        <img src="../../assetsWelcome/images/reckitt.png">
-                        <img src="../../assetsWelcome/images/redner.png">
-                        <img src="../../assetsWelcome/images/sp_excellence.png">
-                        <img src="../../assetsWelcome/images/top100.png">
-                    </div> -->
-        </div>
-        <div class="container-img imagehome">
-            <div class="image imgpad">
-                <img src="../../assetsWelcome/images/accenture.png" alt="Imagem 1">
-            </div>
-            <div class="image imgpad">
-                <img src="../../assetsWelcome/images/bbc.png" alt="Imagem 2">
-            </div>
-            <div class="image imgpad">
-                <img src="../../assetsWelcome/images/cw.png" alt="Imagem 3">
-            </div>
-            <div class="image imgpad">
-                <img src="../../assetsWelcome/images/forbes.png" alt="Imagem 4">
-            </div>
-        </div>
-        <div class="container-img imagehome">
-            <div class="image imgpad">
-                <img src="../../assetsWelcome/images/nbc.png" alt="Imagem 5">
-            </div>
-            <div class="image imgpad">
-                <img src="../../assetsWelcome/images/redner.png" alt="Imagem 3">
-            </div>
-            <div class="image imgpad">
-                <img src="../../assetsWelcome/images/sp_excellence.png" alt="Imagem 4">
-            </div>
-            <div class="image imgpad">
-                <img src="../../assetsWelcome/images/top100.png" alt="Imagem 5">
-            </div>
-        </div>
         <section class="espacoy1 testwel mt-5">
             <div class="container-fluid">
                 <div class="row g-2">
@@ -494,9 +423,7 @@
                     <div class="col-6 d-flex flex-column align-items-center">
                         <img src="{{ asset('images/nolimitslogo.png') }}" width="100%" style="max-width: 300px;">
                         <p class="text-center text-white"></p>
-                        <div class="d-flex align-items-lg-center text-white mb-2"><a class="d-block footerlink" href="#" data-bs-target="#" data-bs-toggle="modal">@lang('leadpage.footer1.li1')</a></div>
-                        <div class="my-div d-inline-block align-items-lg-center mb-3"><a class="d-block footerlink" style="font-size: 13px;" href="https://phpstack-938220-3402762.cloudwaysapps.com/disclaimer-2/">@lang('leadpage.footer1.li2')</a>
-                        </div>
+
                     </div>
                     <div class="col-md-3 mx-auto">
                         <p class="text-center text-white"></p>
@@ -515,12 +442,12 @@
                     </div>
                     <div class="right">
                         <ul class="d-flex flex-wrap">
-                            <li><a href="https://www.facebook.com/profile.php?id=100090615963588&mibextid=ZbWKwL"><i class="fab fa-facebook-f fb-icon"></i></a></li>
-                            <li><a href="https://twitter.com/nigdubai?t=160-ONDdkxFBeQks_QYUOQ&s=09"><i class="fab fa-twitter twitter-icon"></i></a></li>
-                            <li><a href="https://www.instagram.com/nig.dubai4u/?igshid=ZDdkNTZiNTM%3D"><i class="fab fa-instagram ig-icon"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/nig-dubai.com/"><i class="fab fa-linkedin-in linkedin-icon"></i></a></li>
-                            <li><a href="https://api.whatsapp.com/send/?phone=971585221677&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp wa-icon"></i></a></li>
-                            <li><a href="https://www.tiktok.com/@nigdubai"><i class="fab fa-tiktok tiktok-icon"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook-f fb-icon"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter twitter-icon"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram ig-icon"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin-in linkedin-icon"></i></a></li>
+                            <li><a href=""><i class="fab fa-whatsapp wa-icon"></i></a></li>
+                            <li><a href=""><i class="fab fa-tiktok tiktok-icon"></i></a></li>
                         </ul>
                     </div>
                 </div>

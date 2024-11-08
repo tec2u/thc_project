@@ -1,5 +1,10 @@
 @extends('layouts.app')
 @section('content')
+
+<video autoplay muted loop class="bg_video">
+    <source src="/videos/video-thc.mp4" type="video/mp4">
+</video>
+
 @include('flash::message')
 
 <div id="loginform" class="limiter">

@@ -123,7 +123,7 @@ class MatrizForcadaController extends Controller
 
     public function carregarUsersHistoricScore(){
         $lista_id_usuarios = [
-           
+
         ];
         foreach($lista_id_usuarios as $id){
             $this->alimentaHistoricScore($id);
@@ -172,7 +172,7 @@ class MatrizForcadaController extends Controller
 
     public function matriz_forcada($id)
     {
-        $this->link_DB = mysqli_connect('127.0.0.1', 'tecnol15_THC', 'tecnol15_THC') or die(mysqli_error($this->link_DB));
+        $this->link_DB = mysqli_connect('127.0.0.1', 'root', '') or die(mysqli_error($this->link_DB));
 
         $GLOBALS['link_DB'] = $this->link_DB;
 
@@ -182,7 +182,7 @@ class MatrizForcadaController extends Controller
             echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
             exit;
         }
-        mysqli_select_db($this->link_DB, 'tecnol15_THC');
+        mysqli_select_db($this->link_DB, 'thc');
 
         mysqli_query($this->link_DB, "SET NAMES 'utf8'");
 
