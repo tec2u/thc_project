@@ -158,7 +158,7 @@ class RegisterController extends Controller
                      'status' => '1',
                      'description' => '6',
                      'level_from' => $count,
-                     'orders_package_id' => '4421',
+                     'orders_package_id' => 0,
                      'user_id_from' => $primeiro_id
                   ]);
                   if($soma_qty1->qty == NULL){
