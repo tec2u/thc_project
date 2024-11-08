@@ -322,23 +322,19 @@
                         <div class="col-md-6">
                             <div class="section-info2">
                                 <ul class="info-list" style="">
-                                    <li>@lang('leadpage.new.li1')</li>
-                                    <li>@lang('leadpage.new.li2')</li>
-                                    <li>@lang('leadpage.new.li3')</li>
-                                    <li>@lang('leadpage.new.li4')</li>
+                                    <li>Benefits of Using THC</li>
+                                    <li>Tetrahydrocannabinol (THC) is one of the primary compounds found in cannabis, known for its psychoactive properties. Beyond its recreational use, THC has several potential health benefits that are increasingly recognized in the medical community. Here are some of the key benefits:</li>
+                                    <li>
+Pain Relief: THC is effective in alleviating chronic pain, including neuropathic pain. It activates pathways in the central nervous system that block pain signals from being sent to the brain1.
+Nausea and Vomiting Reduction: THC has been used to reduce nausea and vomiting, particularly in patients undergoing chemotherapy. FDA-approved medications like Marinol contain synthetic THC for this purpose2.
+                                    </li>
                                 </ul>
                                 <ul class="info-list section-info" style="">
-                                    <li>@lang('leadpage.new.li5')</li>
-                                    <li>@lang('leadpage.new.li6')</li>
-                                    <li>@lang('leadpage.new.li7')</li>
-                                    <li>@lang('leadpage.new.li8')</li>
-                                    <li>@lang('leadpage.new.li9')</li>
-                                    <li>@lang('leadpage.new.li10')
-                                    </li>
-                                    <li>@lang('leadpage.new.li11')</li>
-                                    <li>@lang('leadpage.new.li12')</li>
-                                    <li>@lang('leadpage.new.li13')</li>
-                                    <li>@lang('leadpage.new.li14')</li>
+                                    <li>Appetite Stimulation: THC can help stimulate appetite, which is beneficial for patients suffering from conditions like HIV/AIDS or cancer, where appetite loss is a common issue3.
+                                    Muscle Spasms and Spasticity: THC has shown effectiveness in reducing muscle spasms and spasticity, particularly in conditions like multiple sclerosis4.</li>
+                                    <li>Sleep Aid: THC can improve sleep quality and help with insomnia by reducing the time it takes to fall asleep and increasing the duration of sleep.</li>
+                                    <li>Mental Health Benefits: Some studies suggest that THC can help alleviate symptoms of PTSD, anxiety, and depression when used appropriately.</li>
+                                    <li>While THC offers these benefits, it is important to use it responsibly and under medical supervision to avoid potential side effects and dependency issues.</li>
                                 </ul>
                             </div>
                             <button class="login-btn2 col-md-12 text-center" style="border-color: #fff;" id="ler-mais">@lang('leadpage.new.btnli')</button>
