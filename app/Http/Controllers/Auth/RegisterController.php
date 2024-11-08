@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\MatrizForcadaController;
 use App\Mail\UserRegisteredEmail;
 use App\Models\HistoricScore;
 use App\Models\Rede;
@@ -92,19 +93,11 @@ class RegisterController extends Controller
          'login' => ['required', 'alpha_num', 'lowercase', 'max:255', 'unique:users'],
          'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
          'password' => ['required', 'regex:/^\S*$/u', 'string', 'min:8', 'confirmed'],
-         // 'telephone' => ['regex:/[0-9\+]/'],
          'cell' => ['required', 'regex:/[0-9\+]/'],
-         // 'gender' => ['required', 'string', 'max:255'],
          'country' => ['required', 'string', 'max:255'],
          'city' => ['required', 'string', 'max:255'],
          'last_name' => ['required', 'string', 'max:255'],
-         // 'address1' => ['required', 'string', 'max:255'],
-         // 'postcode' => ['required', 'string', 'max:255'],
-         // 'state' => ['required', 'string', 'max:255'],
-         // 'birthday' => ['required', 'date'],
-         // 'id_card' => ['required', 'int'],
          'recommendation_user_id' => ['required', 'int'],
-         // 'verify' => ['required', 'string'],
       ]);
    }
 
@@ -121,16 +114,9 @@ class RegisterController extends Controller
       $password = $data['password'];
 
       $verify = $this->verifyBlacklist($ip, $login, $password);
-
-      // if ($verify != 'IP_BLOCK') {
-
-      // $data['birthday'] = str_replace("/", "-", $data['birthday']);
-
       $user_rec = DB::table('users')->where('id', $data['recommendation_user_id'])->orWhere('login', $data['recommendation_user_id'])->first();
 
       $recommendation = $user_rec != null ? $user_rec->id : '3';
-
-      // $data['telephone'] = ($data['telephone']=='') ? 0 :  $data['telephone'];
 
       $user =  User::create([
          'name' => $data['name'],
@@ -146,14 +132,6 @@ class RegisterController extends Controller
          'country'  => $data['country'],
          'city'  => $data['city'],
          'last_name' => $data['last_name'],
-         // 'telephone' => $data['telephone'],
-         // 'gender'   => $data['gender'],
-         // 'address1' => $data['address1'],
-         // 'address2' => $data['address2'],
-         // 'postcode' => $data['postcode'],
-         // 'state'    => $data['state'],
-         // 'birthday' => date('Y-m-d', strtotime($data['birthday'])),
-         // 'id_card' => $data['id_card']
       ]);
 
 
@@ -179,7 +157,8 @@ class RegisterController extends Controller
       // ini_set('max_execution_time', '300');
       while ($sair == 1) {
          $nivel_self = User::where('id', $fato_gerador)->first();
-         if($nivel_self->recommendation_user_id == NULL) break;
+         if($nivel_self->recommendation_user_id == NULL)
+            break;
          $soma_qty1 = User::where('id', $nivel_self->recommendation_user_id)->first();
          if ($soma_qty1 != NULL && $soma_qty1->recommendation_user_id >= 0) {
             if ($nivel_self->name != "") {
@@ -209,10 +188,10 @@ class RegisterController extends Controller
             $fato_gerador = $nivel12->id;
          }
       }
-    //   ini_set('max_execution_time', '600');
 
-    //   Mail::to($user->email)->send(new UserRegisteredEmail($user));
-      return $user;
+        $matrizController = new MatrizForcadaController();
+        $matrizController->matriz_forcada($user->id);
+        return $user;
       // }
    }
 
