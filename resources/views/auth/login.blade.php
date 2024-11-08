@@ -1,10 +1,5 @@
 @extends('layouts.app')
 @section('content')
-
-<video autoplay muted loop class="bg_video">
-    <source src="/videos/nigwelcome.mp4" type="video/mp4">
-</video>
-
 @include('flash::message')
 
 <div id="loginform" class="limiter">
@@ -13,9 +8,9 @@
             <form class="login100-form validate-form" method="POST" action="{{ route('login') }}">
                 @csrf
                 <span class="login100-form-title p-b-48">
-                    <img class="imagetest" src="{{asset('images/nigcoin.png')}}" alt="">
+                    <img class="imagetest" src="{{asset('images/nolimitslogo.png')}}" alt="">
                 </span>
-                <h4 class="title-login">{{ __('Login') }}</h4>
+                <h4 class="title-login my-3">{{ __('Login') }}</h4>
                 <div class="wrap-input100 validate-input">
 
                     <input id="email" type="email" class="input100 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>

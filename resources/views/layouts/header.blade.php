@@ -202,27 +202,9 @@
                 </a>
                 <ul id="minting-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>
-                        <a href="{{ route('purchase.infinityClub') }}">
-                            <i class="bi bi-circle"></i><span>
-                                {{-- @lang('header.products') --}}
-                                @lang('header.li3')
-                            </span>
-                        </a>
-                    </li>
-                    <li>
                         <a href=" {{ route('purchase.eWallet') }} ">
                             <i class="bi bi-circle"></i><span>
-                                {{-- @lang('header.orders') --}}
                                 @lang('header.li4')
-                            </span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="{{ route('purchase.fiatViaRevolut') }}">
-                            <i class="bi bi-circle"></i><span>
-                                {{-- @lang('header.orders') --}}
-                                @lang('header.li5')
                             </span>
                         </a>
                     </li>
@@ -461,7 +443,7 @@
         </li>
         @endif --}}
 
-<!-- 
+<!--
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#campaign-nav" data-bs-toggle="collapse" href="#">
                 <i class="bi bi-clipboard2-minus"></i><span>@lang('header.li19')</span><i class="bi bi-chevron-down ms-auto"></i>

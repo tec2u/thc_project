@@ -41,9 +41,6 @@
         background-image: none !important;
     }
 </style>
-<video autoplay muted loop class="bg_video">
-    <source src="/videos/nigwelcome.mp4" type="video/mp4">
-</video>
 @include('flash::message')
 <div class="limiter py-5">
     <div class="container-login100">
@@ -51,7 +48,7 @@
             <form class="login100-form validate-form" method="POST" action="{{ route('register') }}">
                 @csrf
                 <span class="login100-form-title p-b-48">
-                    <img class="imagetest2" src="{{ asset('images/nigcoin.png') }}" alt="">
+                    <img class="imagetest2" src="{{ asset('images/nolimitslogo.png') }}" alt="">
                 </span>
                 @if (isset($id))
                 <h4 class="title-login mb-5">{{ __('Register with ') . $user->login }}</h4>

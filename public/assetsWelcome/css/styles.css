@@ -364,7 +364,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 11px 20px;
 }
 
 .info-list {
@@ -583,7 +583,7 @@ hr {
 }
 
 .login-btn2 {
-    background-image: linear-gradient(#f3e385, #b77e38);
+    background-color: #109c6a;
     color: white;
     padding: 20px 100px;
     border-radius: 5px;

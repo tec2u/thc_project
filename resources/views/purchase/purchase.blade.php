@@ -87,31 +87,11 @@
                         </div>
                         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
                             <div class="col-md-3">
-                                <a href="{{ route('purchase.infinityClub') }}">
-                                    <div class="card equal-heights">
-                                        <label for="card2">
-                                            <img src="../../assetsWelcome/images/cartao_infiniti.png" alt="Imagem do card" class="img-fluid equal-height">
-                                            <p class="mt-5 text-center txt-pur">@lang('home.purchase.li3') INFINITY CLUB CARDS</p>
-                                        </label>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
                                 <a href="{{ route('purchase.eWallet') }}">
                                     <div class="card equal-heights">
                                         <label for="card2">
                                             <img src="../../assetsWelcome/images/ewallet.jpeg" alt="Imagem do card" class="img-fluid equal-height">
                                             <p class="mt-5 text-center txt-pur">@lang('home.purchase.li3') E-WALLET</p>
-                                        </label>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="{{ route('purchase.fiatViaRevolut') }}">
-                                    <div class="card">
-                                        <label for="card2">
-                                            <img src="../../assetsWelcome/images/revolt.png" alt="Imagem do card" class="img-fluid equal-height">
-                                            <p class="mt-5 text-center txt-pur">@lang('home.purchase.li3') FIAT VIA REVOLUT</p>
                                         </label>
                                     </div>
                                 </a>
