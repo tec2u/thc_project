@@ -177,6 +177,27 @@
         background-size: 30%;
     }
 
+    .w-30 {
+        width: 30%;
+    }
+    .card-total-values {
+        position: relative; /* Necessário para que o ::before fique sobre o elemento */
+        z-index: 0;
+    }
+    .card-total-values::before {
+        background-image: url(/images/nolimitslogo.png);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: 72%;
+        background-position: 175%;
+        opacity: 0.3;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
     body {
         font-family: Arial, sans-serif;
     }
@@ -207,6 +228,62 @@
                         </div>
                     </div>
                 </section>
+            </div>
+            <div class="container-fluid mt-4 d-flex flex-wrap">
+                <div class="card-total-values mb-3 w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h2>TOTAL</h2>
+                        <div>invested</div>
+                    </div>
+                    <div>
+                        <h2>89</h2>
+                    </div>
+                </div>
+                <div class="card-total-values mb-3 w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h2>TOTAL</h2>
+                        <div>invested</div>
+                    </div>
+                    <div>
+                        <h2>89</h2>
+                    </div>
+                </div>
+                <div class="card-total-values mb-3 w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h2>TOTAL</h2>
+                        <div>invested</div>
+                    </div>
+                    <div>
+                        <h2>89</h2>
+                    </div>
+                </div>
+                <div class="card-total-values w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h2>TOTAL</h2>
+                        <div>invested</div>
+                    </div>
+                    <div>
+                        <h2>89</h2>
+                    </div>
+                </div>
+                <div class="card-total-values w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h2>TOTAL</h2>
+                        <div>invested</div>
+                    </div>
+                    <div>
+                        <h2>89</h2>
+                    </div>
+                </div>
+                <div class="card-total-values w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h2>TOTAL</h2>
+                        <div>invested</div>
+                    </div>
+                    <div>
+                        <h2>89</h2>
+                    </div>
+                </div>
             </div>
             <div class="container-fluid mt-4">
                 <div class="container-fluid  bg-white p-4 radius-15">
@@ -264,7 +341,7 @@
                         </div>
                         <h5 class="mb-0 text-center mb-4">@lang('leadpage.test.li2'), Martin Becker</h5>
                         <div class="card p-3 px-4">
-                            <div class="user-content">
+                            <div class="user-content bg-white">
                                 <p>@lang('leadpage.test.li3')
                                     <br>@lang('leadpage.test.li4').<br><br><br>
                                 </p>
@@ -281,7 +358,7 @@
                         </div>
                         <h5 class="mb-0 text-center mb-4">@lang('leadpage.test.li2'), Christian Stückl</h5>
                         <div class="card p-3 px-4">
-                            <div class="user-content">
+                            <div class="user-content bg-white">
                                 <p>@lang('leadpage.test.li5')<br><br><br></p>
                             </div>
                         </div>
@@ -296,7 +373,7 @@
                         </div>
                         <h5 class="mb-0 text-center mb-4">@lang('leadpage.test.li2'), Sandra Schneider</h5>
                         <div class="card p-3 px-4">
-                            <div class="user-content">
+                            <div class="user-content bg-white">
                                 <p>@lang('leadpage.test.li6')</p>
                             </div>
                         </div>
@@ -329,25 +406,6 @@
                         <!-- <div class="d-flex align-items-lg-center"><img class="me-2" src="../../assetsWelcome/images/flagfr.png?h=af5123cb6532b4278a2cdb445e0a130f" width="20px" height="20px"><a class="d-block footerlink" href="/setlocale/fr">@lang('leadpage.btn.french')</a></div> -->
                     </div>
                 </div>
-                <hr>
-                <div class="social-media mt-5 d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="left text-white">
-                        <p style="font-size: 10px;">@lang('leadpage.footer.copyright')
-                            by NEXTGEN Investment Group. All rights reserved</p>
-                    </div>
-                    <div class="right">
-                        <ul class="d-flex flex-wrap">
-                            <li><a href=""><i class="fab fa-facebook-f fb-icon"></i></a></li>
-                            <li><a href=""><i class="fab fa-twitter twitter-icon"></i></a></li>
-                            <li><a href=""><i class="fab fa-instagram ig-icon"></i></a></li>
-                            <li><a href=""><i class="fab fa-linkedin-in linkedin-icon"></i></a></li>
-                            <li><a href=""><i class="fab fa-whatsapp wa-icon"></i></a></li>
-                            <li><a href=""><i class="fab fa-tiktok tiktok-icon"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-
             </div>
             <!-- End: 1 Row 1 Column -->
         </div>

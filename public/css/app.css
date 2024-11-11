@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    color: #111111;
+    color: #ffff;
     text-decoration: none !important;
 }
 
@@ -54,7 +54,7 @@ h6 {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     border: 0;
-    box-shadow: 0 5px 30px 0 #000000;
+    box-shadow: 0 5px 30px 0 #109c6a;
 }
 
 .dropdown-menu .dropdown-header,
@@ -128,7 +128,7 @@ h6 {
     font-size: 32px;
     padding-left: 10px;
     cursor: pointer;
-    color: #111111;
+    color: #109c6a;
 }
 
 /*--------------------------------------------------------------
@@ -151,7 +151,7 @@ h6 {
 }
 
 .header-nav .nav-profile {
-    color: #111111;
+    color: #ffff;
 }
 
 .header-nav .nav-profile img {
@@ -206,9 +206,9 @@ h6 {
 }
 
 .btn-lang {
-    background-image: linear-gradient(to right, #000000, #000000);
+    background-image: linear-gradient(to right, #109c6a, #109c6a);
     color: #fff !important;
-    border: solid 1px #000000 !important;
+    border: solid 1px #109c6a !important;
 }
 
 /*--------------------------------------------------------------
@@ -226,9 +226,7 @@ h6 {
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #aab7cf transparent;
-    /* box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1); */
-    background-color: var(--primary);
-    /* background-color: #cd3139; */
+    background-color: #f4f4f4;
 }
 
 @media (max-width: 1199px) {
@@ -300,9 +298,8 @@ h6 {
     align-items: center;
     font-size: 15px;
     font-weight: 600;
-    color: #ffffff;
     transition: 0.3;
-    /* background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(28, 28, 28)); */
+    color: #109c6a;
     background-color: transparent;
     padding: 10px 15px;
     border-radius: 4px;
@@ -311,24 +308,24 @@ h6 {
 .sidebar-nav .nav-link i {
     font-size: 16px;
     margin-right: 10px;
-    color: #ffffff;
+    color: #109c6a;
 }
 
 .sidebar-nav .nav-link.collapsed {
-    color: #ffffff;
+    color: #109c6a;
     /* background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(28, 28, 28)); */
 }
 
 .sidebar-nav .nav-link.collapsed i {
-    color: #ffffff;
+    color: #109c6a;
 }
 
 .sidebar-nav .nav-link:hover {
-    color: #ffffff;
+    color: #109c6a;
 }
 
 .sidebar-nav .nav-link:hover i {
-    color: #ffffff;
+    color: #109c6a;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -351,7 +348,6 @@ h6 {
     align-items: center;
     font-size: 14px;
     font-weight: 600;
-    color: rgb(255, 255, 255);
     transition: 0.3;
     padding: 10px 0 10px 40px;
     transition: 0.3s;
@@ -362,15 +358,6 @@ h6 {
     margin-right: 8px;
     line-height: 0;
     border-radius: 50%;
-}
-
-.sidebar-nav .nav-content a:hover,
-.sidebar-nav .nav-content a.active {
-    color: #ffffff;
-}
-
-.sidebar-nav .nav-content a.active i {
-    background-color: #ffffff;
 }
 
 /* .nav-link:hover,
@@ -398,7 +385,7 @@ h6 {
     display: block;
     max-height: 2.8em;
     font-size: 2.2em;
-    color: #111111;
+    color: #109c6a;
     font-weight: bold;
     overflow: hidden;
     line-height: 1.4;
@@ -437,7 +424,7 @@ h6 {
     display: block;
     max-height: 2.8em;
     font-size: 2.2em;
-    color: #111111;
+    color: #109c6a;
     font-weight: bold;
     overflow: hidden;
     line-height: 1.4;
@@ -451,8 +438,8 @@ h6 {
 }
 
 .btn-primary1 {
-    background-color: #111111 !important;
-    border-color: #111111 !important;
+    background-color: #109c6a !important;
+    border-color: #109c6a !important;
     padding: 6px 24px !important;
     color: white;
 }
@@ -484,7 +471,7 @@ h6 {
 }
 
 .bi {
-    color: #111111;
+    color: #109c6a;
 }
 
 .info-box-text {
@@ -510,7 +497,7 @@ h6 {
 /* STYLE #WITHDRAWREQUEST */
 
 .bbcolorp {
-    border-bottom: 2px solid #111111;
+    border-bottom: 2px solid #109c6a;
 }
 
 #withdrawrequest .card-title {
@@ -824,4 +811,8 @@ h6 {
     margin-left: 1rem;
     border-radius: 15px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.bg-white {
+    color: #109c6a !important;
 }
