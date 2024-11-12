@@ -8,13 +8,13 @@
   <meta name="description" content="B Inifnity Bank - Crypto Pay">
   <meta name="author" content="BInfinity">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="400x400" href="assetsWelcome/images/icon.png">
+  <link rel="icon" type="image/png" sizes="400x400" href="assetsWelcomeNew/images/icon.png">
   <title>THC</title>
-  <link rel="stylesheet" type="text/css" href="{{ asset('assetsWelcome/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assetsWelcomeNew/css/bootstrap.min.css') }}">
 
-  <link rel="stylesheet" type="text/css" href="{{ asset('assetsWelcome/css/font-awesome.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assetsWelcomeNew/css/font-awesome.css') }}">
 
-  <link rel="stylesheet" href="{{ asset('assetsWelcome/css/templatemo-softy-pinko.css') }}">
+  <link rel="stylesheet" href="{{ asset('assetsWelcomeNew/css/templatemo-softy-pinko.css') }}">
 
 </head>
 
@@ -66,11 +66,11 @@
 
   <!-- ***** Welcome Area Start ***** -->
   <div class="welcome-area" id="welcome">
-    <div class="elementor-background-video-container">
+    <div class="elementor-background-video-container" style="width:100%;">
       <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted=""
         playsinline="" loop=""
-        src="https://binfinitybank.com.br/wp-content/uploads/2022/07/alone-astronaut-looks-at-the-planet-earth-in-orbit-2022-02-08-22-43-13-utc_1.mp4"
-        style="width: 1951.41px; height: 1097.67px;"></video>
+        src="/videos/video-thc.mp4"
+        style="width:100%; height: 100%;"></video>
     </div>
     <!-- ***** Header Text Start ***** -->
     <div class="header-text">
@@ -100,7 +100,7 @@
               data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
               <div class="features-small-item">
                 <div class="icon">
-                  <i><img src="assetsWelcome/images/featured-item-01.png" alt=""></i>
+                  <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
                 </div>
                 <h5 class="features-title">The Power in Your Hands</h5>
                 <p>Having an account on BInfinity costs nothing. The account is digital and has no maintenance fee.
@@ -114,7 +114,7 @@
               data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
               <div class="features-small-item">
                 <div class="icon">
-                  <i><img src="assetsWelcome/images/featured-item-01.png" alt=""></i>
+                  <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
                 </div>
                 <h5 class="features-title">The Best Support</h5>
                 <p>Contact us immediately if you have a question in mind</p>
@@ -127,7 +127,7 @@
               data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
               <div class="features-small-item">
                 <div class="icon">
-                  <i><img src="assetsWelcome/images/featured-item-01.png" alt=""></i>
+                  <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
                 </div>
                 <h5 class="features-title">Security</h5>
                 <p>We have simple and secure solutions for your account. We understand how important cybersecurity is to
@@ -148,7 +148,7 @@
       <div class="row">
         <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
           data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-          <img src="assetsWelcome/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+          <img src="assetsWelcomeNew/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
@@ -189,7 +189,7 @@
         <div class="col-lg-1"></div>
         <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
           data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-          <img src="assetsWelcome/images/right-image.png" class="rounded img-fluid d-block mx-auto"
+          <img src="assetsWelcomeNew/images/right-image.png" class="rounded img-fluid d-block mx-auto"
             alt="App">
         </div>
       </div>
@@ -214,42 +214,42 @@
         <div class="row">
           <div class="col-lg-2 col-md-3 col-sm-6 col-6">
             <a href="#" class="mini-box">
-              <i><img src="assetsWelcome/images/work-process-item-01.png" alt=""></i>
+              <i><img src="assetsWelcomeNew/images/work-process-item-01.png" alt=""></i>
               <strong>1</strong>
               <span>Create an account</span>
             </a>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-6 col-6">
             <a href="#" class="mini-box">
-              <i><img src="assetsWelcome/images/work-process-item-01.png" alt=""></i>
+              <i><img src="assetsWelcomeNew/images/work-process-item-01.png" alt=""></i>
               <strong>2</strong>
               <span>Create a gateway crypto wallet</span>
             </a>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-6 col-6">
             <a href="#" class="mini-box">
-              <i><img src="assetsWelcome/images/work-process-item-01.png" alt=""></i>
+              <i><img src="assetsWelcomeNew/images/work-process-item-01.png" alt=""></i>
               <strong>3</strong>
               <span>Update your outgoing crypto wallet</span>
             </a>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-6 col-6">
             <a href="#" class="mini-box">
-              <i><img src="assetsWelcome/images/work-process-item-01.png" alt=""></i>
+              <i><img src="assetsWelcomeNew/images/work-process-item-01.png" alt=""></i>
               <strong>4</strong>
               <span>Implement the API</span>
             </a>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-6 col-6">
             <a href="#" class="mini-box">
-              <i><img src="assetsWelcome/images/work-process-item-01.png" alt=""></i>
+              <i><img src="assetsWelcomeNew/images/work-process-item-01.png" alt=""></i>
               <strong>5</strong>
               <span>Create an Invoice</span>
             </a>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-6 col-6">
             <a href="#" class="mini-box">
-              <i><img src="assetsWelcome/images/work-process-item-01.png" alt=""></i>
+              <i><img src="assetsWelcomeNew/images/work-process-item-01.png" alt=""></i>
               <strong>6</strong>
               <span>Receive crypto instantly on payment</span>
             </a>
@@ -284,7 +284,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="team-item">
             <div class="team-content">
-              <i><img src="assetsWelcome/images/testimonial-icon.png" alt=""></i>
+              <i><img src="assetsWelcomeNew/images/testimonial-icon.png" alt=""></i>
               <p>What I like most is their support, I wouldn't change for any other because of their support. Crypto is
                 confusing, sometimes our clients makes mistakes, and their support helps us understand how we can train
                 them to make the purchase correctly.</p>
@@ -304,7 +304,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="team-item">
             <div class="team-content">
-              <i><img src="assetsWelcome/images/testimonial-icon.png" alt=""></i>
+              <i><img src="assetsWelcomeNew/images/testimonial-icon.png" alt=""></i>
               <p>I used on to a few invoices I made to a few clients. But, referral program is what I like the most. I
                 planned and executed a few funel ideas with this and got a lot of people to join, and little by little
                 I'm building a network of people who are using crypto as a form of payment. </p>
@@ -324,7 +324,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="team-item">
             <div class="team-content">
-              <i><img src="assetsWelcome/images/testimonial-icon.png" alt=""></i>
+              <i><img src="assetsWelcomeNew/images/testimonial-icon.png" alt=""></i>
               <p>I'm using in my taxi company, can not complain. Some of our partners didn't know how to use, but all
                 who did, are happy that they could provide this to our fleet.</p>
               <div class="user-image">
@@ -610,7 +610,7 @@
         });
     });
   </script>
-  <script src="assetsWelcome/js/jquery-2.1.0.min.js"></script>
+  <script src="assetsWelcomeNew/js/jquery-2.1.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -619,17 +619,17 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Bootstrap -->
-  <script src="assetsWelcome/js/popper.js"></script>
-  <script src="assetsWelcome/js/bootstrap.min.js"></script>
+  <script src="assetsWelcomeNew/js/popper.js"></script>
+  <script src="assetsWelcomeNew/js/bootstrap.min.js"></script>
 
   <!-- Plugins -->
-  <script src="assetsWelcome/js/scrollreveal.min.js"></script>
-  <script src="assetsWelcome/js/waypoints.min.js"></script>
-  <script src="assetsWelcome/js/jquery.counterup.min.js"></script>
-  <script src="assetsWelcome/js/imgfix.min.js"></script>
+  <script src="assetsWelcomeNew/js/scrollreveal.min.js"></script>
+  <script src="assetsWelcomeNew/js/waypoints.min.js"></script>
+  <script src="assetsWelcomeNew/js/jquery.counterup.min.js"></script>
+  <script src="assetsWelcomeNew/js/imgfix.min.js"></script>
 
   <!-- Global Init -->
-  <script src="assetsWelcome/js/custom.js"></script>
+  <script src="assetsWelcomeNew/js/custom.js"></script>
 
 </body>
 
