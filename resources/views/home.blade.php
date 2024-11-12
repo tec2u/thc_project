@@ -223,7 +223,7 @@
         height: 500px !important;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: auto;
+        background-size: cover;
     }
 </style>
 
@@ -233,7 +233,7 @@
         <div class="fade">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
             <div class="container-fluid">
-                <section class="container-fluid  bg-white p-0 radius-15" id="herosection">
+                <section class="container-fluid bg-white p-0 radius-15" id="herosection">
                     <div class="carousel">
                         <div class="carousel-item">
                             <div class="bg-carousel-img" style="background-image: url({{ asset('images/sheik-seed.png') }});">
@@ -246,63 +246,65 @@
                     </div>
                 </section>
             </div>
-            <div class="container-fluid mt-4 d-flex flex-wrap">
-                <div class="card-total-values mb-3 w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
-                    <div>
-                        <h2>TOTAL</h2>
-                        <div>invested</div>
+            <div class="container-fluid">
+                <div class="mt-4 d-flex flex-wrap">
+                    <div class="card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2>TOTAL</h2>
+                            <div>invested</div>
+                        </div>
+                        <div>
+                            <h2>89</h2>
+                        </div>
                     </div>
-                    <div>
-                        <h2>89</h2>
+                    <div class="card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2>TOTAL</h2>
+                            <div>profit</div>
+                        </div>
+                        <div>
+                            <h2>89</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="card-total-values mb-3 w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
-                    <div>
-                        <h2>TOTAL</h2>
-                        <div>profit</div>
+                    <div class="card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2>TOTAL</h2>
+                            <div>withdrawal</div>
+                        </div>
+                        <div>
+                            <h2>89</h2>
+                        </div>
                     </div>
-                    <div>
-                        <h2>89</h2>
+                    <div class="card-total-values w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2>TOTAL</h2>
+                            <div>commission</div>
+                        </div>
+                        <div>
+                            <h2>89</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="card-total-values mb-3 w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
-                    <div>
-                        <h2>TOTAL</h2>
-                        <div>withdrawal</div>
+                    <div class="card-total-values w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2>CAREER</h2>
+                        </div>
+                        <div>
+                            <h2>ABC</h2>
+                        </div>
                     </div>
-                    <div>
-                        <h2>89</h2>
-                    </div>
-                </div>
-                <div class="card-total-values w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
-                    <div>
-                        <h2>TOTAL</h2>
-                        <div>commission</div>
-                    </div>
-                    <div>
-                        <h2>89</h2>
-                    </div>
-                </div>
-                <div class="card-total-values w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
-                    <div>
-                        <h2>CAREER</h2>
-                    </div>
-                    <div>
-                        <h2>ABC</h2>
-                    </div>
-                </div>
-                <div class="card-total-values w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
-                    <div>
-                        <h2>CAREER</h2>
-                        <div>PIN</div>
-                    </div>
-                    <div>
-                        <h2>1</h2>
+                    <div class="card-total-values w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2>CAREER</h2>
+                            <div>PIN</div>
+                        </div>
+                        <div>
+                            <h2>1</h2>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="container-fluid mt-4">
-                <div class="row d-flex container-fluid justify-content-between">
+                <div class="d-flex justify-content-between">
                     <div class="bg-white p-4 radius-15" style="width: 49%;">
                         <div class="mb-2">
                             <h2 class="m-0">Benefits</h2>
@@ -417,7 +419,7 @@
 <style>
     .carousel-item {
         text-align: center;
-        padding: 20px;
+        padding: 0;
         border-radius: 5px;
         margin: 5px;
         height: 100%;
