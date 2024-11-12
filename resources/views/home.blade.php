@@ -180,10 +180,13 @@
     .w-30 {
         width: 30%;
     }
+
     .card-total-values {
-        position: relative; /* Necessário para que o ::before fique sobre o elemento */
+        position: relative;
+        /* Necessário para que o ::before fique sobre o elemento */
         z-index: 0;
     }
+
     .card-total-values::before {
         background-image: url(/images/nolimitslogo.png);
         content: "";
@@ -198,6 +201,7 @@
         z-index: -1;
         background-repeat: no-repeat;
     }
+
     body {
         font-family: Arial, sans-serif;
     }
@@ -216,16 +220,6 @@
                                 <img src="{{ asset('images/nolimitslogo.png') }}" alt="Item 1">
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                                <img src="{{ asset('images/img-2.jpg') }}" alt="Item 2">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                                <img src="{{ asset('images/img-3.jpg') }}" alt="Item 3">
-                            </div>
-                        </div>
                     </div>
                 </section>
             </div>
@@ -242,7 +236,7 @@
                 <div class="card-total-values mb-3 w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                     <div>
                         <h2>TOTAL</h2>
-                        <div>invested</div>
+                        <div>profit</div>
                     </div>
                     <div>
                         <h2>89</h2>
@@ -251,7 +245,7 @@
                 <div class="card-total-values mb-3 w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                     <div>
                         <h2>TOTAL</h2>
-                        <div>invested</div>
+                        <div>withdrawal</div>
                     </div>
                     <div>
                         <h2>89</h2>
@@ -260,7 +254,7 @@
                 <div class="card-total-values w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                     <div>
                         <h2>TOTAL</h2>
-                        <div>invested</div>
+                        <div>commission</div>
                     </div>
                     <div>
                         <h2>89</h2>
@@ -268,122 +262,62 @@
                 </div>
                 <div class="card-total-values w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                     <div>
-                        <h2>TOTAL</h2>
-                        <div>invested</div>
+                        <h2>CAREER</h2>
                     </div>
                     <div>
-                        <h2>89</h2>
+                        <h2>ABC</h2>
                     </div>
                 </div>
                 <div class="card-total-values w-30 mr-auto container-fluid  bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                     <div>
-                        <h2>TOTAL</h2>
-                        <div>invested</div>
+                        <h2>CAREER</h2>
+                        <div>PIN</div>
                     </div>
                     <div>
-                        <h2>89</h2>
+                        <h2>1</h2>
                     </div>
                 </div>
             </div>
             <div class="container-fluid mt-4">
-                <div class="container-fluid  bg-white p-4 radius-15">
-                    <div class="row">
-                        <div class="col-md-6  mt-5 mb-5">
-                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;
-                    justify-content: center;
-                    align-items: center;">
-                                <video class="video1 embed-responsive-item" controls src="{{ asset('videos/video-thc.mp4') }}" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></video>
-                            </div>
+                <div class="row d-flex container-fluid justify-content-between">
+                    <div class="bg-white p-4 radius-15" style="width: 49%;">
+                        <div class="mb-2">
+                            <h2 class="m-0">Benefits</h2>
+                            <span>of Using THC</span>
                         </div>
-                        <div class="col-md-6">
-                            <div class="section-info2">
-                                <ul class="info-list" style="">
-                                    <li>Benefits of Using THC</li>
-                                    <li>Tetrahydrocannabinol (THC) is one of the primary compounds found in cannabis, known for its psychoactive properties. Beyond its recreational use, THC has several potential health benefits that are increasingly recognized in the medical community. Here are some of the key benefits:</li>
-                                    <li>
-                                        Pain Relief: THC is effective in alleviating chronic pain, including neuropathic pain. It activates pathways in the central nervous system that block pain signals from being sent to the brain1.
-                                        Nausea and Vomiting Reduction: THC has been used to reduce nausea and vomiting, particularly in patients undergoing chemotherapy. FDA-approved medications like Marinol contain synthetic THC for this purpose2.
-                                    </li>
-                                </ul>
-                                <ul class="info-list section-info" style="">
-                                    <li>Appetite Stimulation: THC can help stimulate appetite, which is beneficial for patients suffering from conditions like HIV/AIDS or cancer, where appetite loss is a common issue3.
-                                        Muscle Spasms and Spasticity: THC has shown effectiveness in reducing muscle spasms and spasticity, particularly in conditions like multiple sclerosis4.</li>
-                                    <li>Sleep Aid: THC can improve sleep quality and help with insomnia by reducing the time it takes to fall asleep and increasing the duration of sleep.</li>
-                                    <li>Mental Health Benefits: Some studies suggest that THC can help alleviate symptoms of PTSD, anxiety, and depression when used appropriately.</li>
-                                    <li>While THC offers these benefits, it is important to use it responsibly and under medical supervision to avoid potential side effects and dependency issues.</li>
-                                </ul>
-                            </div>
-                            <button class="login-btn2 col-md-12 text-center" style="border-color: #fff;" id="ler-mais">@lang('leadpage.new.btnli')</button>
-
+                        <div class="embed-responsive embed-responsive-16by9" style="display: flex;
+                        justify-content: center;
+                        align-items: center;">
+                            <video class="video1 embed-responsive-item" controls src="{{ asset('videos/video-thc.mp4') }}" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></video>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="container-fluid mt-4">
-                <div class="container-fluid  bg-white p-4 radius-15">
-                    <div class="row">
+                    <div class="bg-white p-4 radius-15" style="width: 49%;">
+                        <div class="section-info2">
+                            <ul class="info-list" style="">
+                                <li>Tetrahydrocannabinol (THC) is one of the primary compounds found in cannabis, known for its psychoactive properties. Beyond its recreational use, THC has several potential health benefits that are increasingly recognized in the medical community. Here are some of the key benefits:</li>
+                                <li>
+                                    Pain Relief: THC is effective in alleviating chronic pain, including neuropathic pain. It activates pathways in the central nervous system that block pain signals from being sent to the brain1.
+                                    Nausea and Vomiting Reduction: THC has been used to reduce nausea and vomiting, particularly in patients undergoing chemotherapy. FDA-approved medications like Marinol contain synthetic THC for this purpose2.
+                                </li>
+                            </ul>
+                            <ul class="info-list section-info" style="">
+                                <li>Appetite Stimulation: THC can help stimulate appetite, which is beneficial for patients suffering from conditions like HIV/AIDS or cancer, where appetite loss is a common issue3.
+                                    Muscle Spasms and Spasticity: THC has shown effectiveness in reducing muscle spasms and spasticity, particularly in conditions like multiple sclerosis4.</li>
+                                <li>Sleep Aid: THC can improve sleep quality and help with insomnia by reducing the time it takes to fall asleep and increasing the duration of sleep.</li>
+                                <li>Mental Health Benefits: Some studies suggest that THC can help alleviate symptoms of PTSD, anxiety, and depression when used appropriately.</li>
+                                <li>While THC offers these benefits, it is important to use it responsibly and under medical supervision to avoid potential side effects and dependency issues.</li>
+                            </ul>
+                        </div>
+                        <button class="login-btn2 col-md-12 text-center" style="border-color: #fff;" id="ler-mais">@lang('leadpage.new.btnli')</button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <section class="espacoy1 testwel mt-5">
-            <div class="container-fluid">
-                <div class="row g-2">
-                    <h2 class="text-dark mb-5 about-txt">@lang('leadpage.test.li1')</h2>
-                    <div class="col-md-4">
-                        <div class="ratings text-center ">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h5 class="mb-0 text-center mb-4">@lang('leadpage.test.li2'), Martin Becker</h5>
-                        <div class="card p-3 px-4">
-                            <div class="user-content bg-white">
-                                <p>@lang('leadpage.test.li3')
-                                    <br>@lang('leadpage.test.li4').<br><br><br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="ratings text-center ">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h5 class="mb-0 text-center mb-4">@lang('leadpage.test.li2'), Christian Stückl</h5>
-                        <div class="card p-3 px-4">
-                            <div class="user-content bg-white">
-                                <p>@lang('leadpage.test.li5')<br><br><br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="ratings text-center">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h5 class="mb-0 text-center mb-4">@lang('leadpage.test.li2'), Sandra Schneider</h5>
-                        <div class="card p-3 px-4">
-                            <div class="user-content bg-white">
-                                <p>@lang('leadpage.test.li6')</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="login-btn-wrapper my-3">
-                    <a href="{{ route('register') }}" class="login-btn2">@lang('leadpage.why.li5')</a>
-                </div>
-            </div>
-        </section>
+        <div class="container-fluid">
+            <section class="container-fluid  bg-white p-0 radius-15">
+                
+            </section>
+        </div>
         </div>
         </div>
     </section>
