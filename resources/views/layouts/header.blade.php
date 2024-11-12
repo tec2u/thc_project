@@ -241,7 +241,7 @@
                 </a>
                 <ul id="products-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>
-                        <a href="{{ route('withdraws.withdrawRequests') }}">
+                        <a href="{{ route('withdraws.withdrawBonus') }}">
                             <i class="bi bi-circle"></i><span>@lang('header.withdraw_request')</span>
                         </a>
                     </li>
