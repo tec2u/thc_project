@@ -50,8 +50,8 @@
               <li><a href="#testimonials">Testimonials</a></li>
               <li><a href="#pricing-plans">Pricing Tables</a></li>
               <li><a href="#contact-us">Contact Us</a></li>
-              <li><a href="/login">Log In</a></li>
-              <li><a href="/register">Register</a></li>
+              <li><a href="{{ route('login') }}">Log In</a></li>
+              <li><a href="{{ route('register') }}">Register</a></li>
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
@@ -386,7 +386,7 @@
               </ul>
             </div>
             <div class="pricing-footer">
-              <a href="https://cryptopay.binfinitybank.com/register" class="main-button">Purchase Now</a>
+              <a href="" class="main-button">Purchase Now</a>
             </div>
           </div>
         </div>
@@ -414,7 +414,7 @@
               </ul>
             </div>
             <div class="pricing-footer">
-              <a href="https://cryptopay.binfinitybank.com/register" class="main-button">Purchase Now</a>
+              <a href="" class="main-button">Purchase Now</a>
             </div>
           </div>
         </div>
@@ -442,7 +442,7 @@
               </ul>
             </div>
             <div class="pricing-footer">
-              <a href="https://cryptopay.binfinitybank.com/register" class="main-button">Purchase Now</a>
+              <a href="" class="main-button">Purchase Now</a>
             </div>
           </div>
         </div>
