@@ -87,11 +87,11 @@
                         </div>
                         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
                             <div class="col-md-3">
-                                <a href="{{ route('purchase.eWallet') }}">
+                                <a href="{{ route('packages.index') }}">
                                     <div class="card equal-heights">
                                         <label for="card2">
                                             <img src="../../assetsWelcome/images/ewallet.jpeg" alt="Imagem do card" class="img-fluid equal-height">
-                                            <p class="mt-5 text-center txt-pur">@lang('home.purchase.li3') E-WALLET</p>
+                                            <p class="mt-5 text-center txt-pur">@lang('home.purchase.li3') CRYPTO</p>
                                         </label>
                                     </div>
                                 </a>

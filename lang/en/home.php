@@ -166,7 +166,7 @@ return [
     'purchase' => [
         'li1' => 'Payment Options',
         'li2' => 'Please select payment option.',
-        'li3' => 'PAY WITH',
+        'li3' => 'INVEST WITH',
         'li4' => 'ORDER OVERVIEW',
     ],
 

@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>THC THE HEALING COMPANY</title>
+    <title>THC - The Healing Company</title>
     <link rel="icon" type="image/png" href="../../../assetsWelcome/images/favinig.png" />
 
     <!-- Fonts -->

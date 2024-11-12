@@ -41,7 +41,7 @@ return [
     'li1' => strtoupper('MY PERFORMANCE'),
     'li2' => strtoupper('PAYMENT OPTIONS'),
     'li3' => strtoupper('PAY WITH INFINITY CLUB CARDS'),
-    'li4' => strtoupper('PAY WITH E-WALLET'),
+    'li4' => strtoupper('INVEST WITH CRYPTO'),
     'li5' => strtoupper('PAY WITH FIAT VIA REVOLUT'),
     'li6' => strtoupper('ORDER OVERVIEW'),
     'li7' => strtoupper('AFFILIATE NETWORK'),

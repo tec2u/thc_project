@@ -15,7 +15,7 @@ return [
     |
     */
 
-   'name' => env('APP_NAME', 'Infinity ClubCards Club Cards'),
+   'name' => env('APP_NAME', 'THC - The Healing Company'),
 
    /*
     |--------------------------------------------------------------------------

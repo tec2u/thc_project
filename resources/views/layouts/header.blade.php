@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>NextGen Investment</title>
+    <title>THC - The Healing Company</title>
     <link rel="icon" type="image/png" href="../../../assetsWelcome/images/favinig.png" />
 
     <!-- Fonts -->
@@ -184,17 +184,17 @@
             <img class="imagetest2" src="{{ asset('images/nigcoin.png') }}" alt="">
         </a>
         <ul class="sidebar-nav" id="sidebar-nav">
-            @if (auth()->user()->payFirstOrder())
+           {{-- 
             <li class="nav-item">
                 <a class="nav-link " href="{{ route('home.home') }}">
                     <i class="bi bi-grid"></i>
                     <span>
-                        {{-- @lang('header.dashboard') --}}
+                       <!-- My Performance -->
                         @lang('header.li1')
                     </span>
                 </a>
             </li><!-- End Dashboard Nav -->
-            @endif
+            --}}
             <a href="{{ route('home.home') }}">
                 <img class="imagetest2 rounded" src="{{ asset('images/modelo-man.jpg') }}" alt="">
             </a>
@@ -215,11 +215,11 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-toggle="collapse" data-bs-target="#minting-nav" href="#" onclick="event.preventDefault(); window.location.href='{{ route('purchase.purchase') }}';">
-                    <i class="bi bi-clipboard2-minus"></i><span>@lang('header.li2')</span><i class="bi bi-chevron-down ms-auto"></i>
+                    <i class="bi bi-clipboard2-minus"></i><span>INVEST <!-- @lang('header.li2') --></span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="minting-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>
-                        <a href=" {{ route('purchase.eWallet') }} ">
+                        <a href=" {{ route('packages.index') }} ">
                             <i class="bi bi-circle"></i><span>
                                 @lang('header.li4')
                             </span>
@@ -235,7 +235,180 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#products-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-wallet2"></i><span>@lang('header.withdraw')</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="products-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="{{ route('withdraws.withdrawRequests') }}">
+                            <i class="bi bi-circle"></i><span>@lang('header.withdraw_request')</span>
+                        </a>
+                    </li>
+                    <li>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('withdraws.withdrawLog') }}">
+                            <i class="bi bi-circle"></i><span>@lang('header.withdraw_log')</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#networks-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-people"></i><span>
+                        {{-- @lang('header.networks') --}}
+                        @lang('header.li7')
+                    </span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="networks-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
 
+            </li>
+            {{--
+            <li>
+                <a href="{{ route('affiliate.links.redir') }}">
+            <i class="bi bi-circle"></i><span>
+            @lang('header.li8')
+            </span>
+            </a>
+            </li> --}}
+
+            <li>
+                <a href=" {{ route('affiliate.program') }} ">
+                    <i class="bi bi-circle"></i><span>
+                        {{-- @lang('header.associates') --}}
+                        @lang('header.li9')
+                    </span>
+                </a>
+            </li>
+
+
+            <li>
+                <a href="{{ route('networks.mytree', ['parameter' => auth()->user()->id]) }}">
+                    <i class="bi bi-circle"></i><span>
+                        {{-- @lang('header.referral_comission') --}}
+                        @lang('header.li10')
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="  {{ route('networks.associatesReport') }}">
+                    <i class="bi bi-circle"></i><span>
+                        {{-- @lang('header.referral_comission') --}}
+                        @lang('header.li11')
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ route('networks.myreferrals') }}">
+                    <i class="bi bi-circle"></i><span>
+                        {{-- @lang('header.associates')  route('reports.signupcommission') --}}
+                        @lang('header.li12')
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ route('reports.signupcommission') }}">
+                    <i class="bi bi-circle"></i><span>
+                        {{-- @lang('header.associates') --}}
+                        @lang('header.li13')
+                    </span>
+                </a>
+            </li>
+            </ul>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#report-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-bar-chart"></i><span>
+                    @lang('header.report')S
+                </span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="report-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+
+                <li>
+                    <a href=" {{ route('performance.index') }} ">
+                        <i class="bi bi-circle"></i><span>
+                            {{-- @lang('header.referral_comission') --}}
+                            @lang('header.li17')
+                        </span>
+                    </a>
+                </li>
+
+
+
+                <li>
+                        <a href="{{ route('reports.signupcommission') }}">
+                <i class="bi bi-circle"></i><span>@lang('header.signup_commission')</span>
+                </a>
+        </li>
+        <li>
+            <a href="{{ route('reports.levelIncome') }}">
+                <i class="bi bi-circle"></i><span>@lang('header.level_income')</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ route('reports.poolcommission') }}">
+                <i class="bi bi-circle"></i><span>@lang('header.pool_commission')</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('reports.stakingRewards') }}">
+                <i class="bi bi-circle"></i><span>@lang('header.stacking_rewards')</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('reports.monthlyCoins') }}">
+                <i class="bi bi-circle"></i><span>@lang('header.monthly_coins')</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('reports.rankReward') }}">
+                <i class="bi bi-circle"></i><span>@lang('header.rank_reward')</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('reports.transactions') }}">
+                <i class="bi bi-circle"></i><span>@lang('header.transaction')</span>
+            </a>
+        </li> 
+        </ul>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#settings-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-gear"></i><span>@lang('header.settings')</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="settings-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{ route('users.index') }}">
+                        <i class="bi bi-circle"></i><span>@lang('header.my_info')</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('document.index') }}">
+                        <i class="bi bi-circle"></i><span>@lang('header.li18')</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('users.password') }}">
+                        <i class="bi bi-circle"></i><span>@lang('header.password')</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="{{ route('supports.supporttickets') }}">
+                <i class="bi bi-headset"></i>
+                <span> @lang('header.support')</span>
+            </a>
+        </li>
             <li class="nav-item">
 
                 <a class="nav-link collapsed" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
