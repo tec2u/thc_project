@@ -13,18 +13,18 @@
                                     <div class="card-tools">
                                         <div class="input-group input-group-sm pt-3" style="width: 690px;">
                                             <div class="input-group-append">
-                                                <a href="#" target="_blank"
+                                              {{--  <a href="#" target="_blank"
                                                     class="btn btn-danger btn-sm rounded-pill mr-2" style="width: 220px;">
-                                                    {{-- <i class="bi bi-plus-lg"></i> --}}
+                                                     <i class="bi bi-plus-lg"></i> 
                                                     <i class="bi bi bi-mailbox" aria-hidden="true"></i>
                                                     Send Whatsapp
                                                 </a>
                                                 <a href="https://api.whatsapp.com/send?phone=971585221677" target="_blank"
                                                     class="btn btn-success btn-sm rounded-pill mr-2" style="width: 220px;">
-                                                    {{-- <i class="bi bi-plus-lg"></i> --}}
+                                                    <i class="bi bi-plus-lg"></i> 
                                                     <i class="bi bi-whatsapp" aria-hidden="true"></i>
                                                     Send Whatsapp
-                                                </a>
+                                                </a>--}}
 
                                                 <button type="button" class="btn btn-primary btn-sm rounded-pill"
                                                     style="width: 220px;" data-bs-toggle="modal"

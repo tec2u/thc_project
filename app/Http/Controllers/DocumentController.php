@@ -26,10 +26,12 @@ class DocumentController extends Controller
     {
         try {
             $id_user  = Auth::id();
-            $data = $request->only('document_description');
+            $descript = $request->get('dropdown_options');
+           
             if ($request->hasFile('document_file')) {
                 $document = $request->file('document_file')->store('user', 'public');
                 $data['document_name'] = $document;
+                $data['document_description'] = $descript;
             }
             $data['user_id'] = $id_user;
             Document::create($data);
