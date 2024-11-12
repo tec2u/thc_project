@@ -37,7 +37,7 @@
 
 
 </head>
-<style>
+<!-- <style>
     .half-screen {
         width: 100%;
         height: 28%;
@@ -101,7 +101,7 @@
             left: 0;
         }
     }
-</style>
+</style> -->
 
 <body>
     <div class="half-screen"></div>
