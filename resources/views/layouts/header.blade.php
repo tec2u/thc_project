@@ -117,7 +117,7 @@
 
                 <li class=" pe-4"><a href="#" class="telenav"><i class="lab la-telegram iconhead"></i> </a> </li>
                 <li class=" pe-4"><a href="#" class="telenav">
-                        <h6 class="text-dark-50 joinhead">Join our </br>Telegram Channel</h6>
+                        <h6 class="text-dark-50 joinhead text-white">Join our </br>Telegram Channel</h6>
                     </a> </li>
 
                 <!-- <li class="nav-item dropdown pe-3">
@@ -184,7 +184,7 @@
             <img class="imagetest2" src="{{ asset('images/nigcoin.png') }}" alt="">
         </a>
         <ul class="sidebar-nav" id="sidebar-nav">
-           {{-- 
+           {{--
             <li class="nav-item">
                 <a class="nav-link " href="{{ route('home.home') }}">
                     <i class="bi bi-grid"></i>
@@ -375,10 +375,10 @@
             <a href="{{ route('reports.transactions') }}">
                 <i class="bi bi-circle"></i><span>@lang('header.transaction')</span>
             </a>
-        </li> 
+        </li>
         </ul>
         </li>
-        
+
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#settings-nav" data-bs-toggle="collapse" href="#">
                 <i class="bi bi-gear"></i><span>@lang('header.settings')</span><i class="bi bi-chevron-down ms-auto"></i>

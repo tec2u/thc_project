@@ -816,3 +816,10 @@ h6 {
 .bg-white {
     color: #109c6a !important;
 }
+
+.bg-cyan-01 {
+    background-color: #0d83a1;
+}
+.img-destac {
+    filter: brightness(0.5);
+}

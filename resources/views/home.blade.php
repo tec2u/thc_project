@@ -206,6 +206,24 @@
     body {
         font-family: Arial, sans-serif;
     }
+
+    .text-section-styled-1 {
+        color: #ffffffd6;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .icon-section-styled-1 {
+        margin-bottom: 15px;
+        color: #ffff;
+        font-size: 80px;
+    }
+    .bg-carousel-img {
+        height: 500px !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
 </style>
 
 <main id="main" class="main mt-0">
@@ -217,8 +235,11 @@
                 <section class="container-fluid  bg-white p-0 radius-15" id="herosection">
                     <div class="carousel">
                         <div class="carousel-item">
-                            <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                                <img src="{{ asset('images/nolimitslogo.png') }}" alt="Item 1">
+                            <div class="bg-carousel-img" style="background-image: url({{ asset('images/sheik-seed.png') }});">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="bg-carousel-img" style="background-image: url({{ asset('images/nolimitslogo.png') }});">
                             </div>
                         </div>
                     </div>
@@ -314,21 +335,62 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <section class="container-fluid  bg-white p-0 radius-15">
-                
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <div class="container-fluid mt-4">
+            <section class="container-fluid  bg-cyan-01 p-4 radius-15 text-white">
+                <div class="w-100 text-center">
+                    <h2>Taking cultivation to the next level</h2>
+                </div>
+                <div class="d-flex mt-5">
+                    <div class="w-100 d-flex flex-column align-items-center px-3">
+                        <i class="fa-solid fa-image icon-section-styled-1"></i>
+                        <h5>State of the Art</h5>
+                        <div class="text-center text-section-styled-1">Cutting-edge technology and state-of-the-art equipment powering our indoor greenhouse operation.</div>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-center px-3">
+                        <i class="fa-solid fa-chart-simple icon-section-styled-1"></i>
+                        <h5>Seed to Sale</h5>
+                        <div class="text-center text-section-styled-1">Digital inventory control systems track cultivation, processing, and sales.</div>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-center px-3">
+                        <i class="fa-solid fa-seedling icon-section-styled-1"></i>
+                        <h5>Unspoiled Nature</h5>
+                        <div class="text-center text-section-styled-1">Pristine wilderness location, clean water and pure air, perfect for cultivation</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-fluid mt-4">
+            <section class="container-fluid bg-white p-4 radius-15 text-white">
+                <div class="d-flex">
+                    <div class="w-100">
+                        <img src="{{ asset('images/plants-1.webp') }}" alt="" class="w-100">
+                    </div>
+                    <div class="w-100 p-3 text-center position-relative">
+                        <div>
+                            <h2>HOW</h2>
+                            <div>does it work?</div>
+                        </div>
+                        <div>
+                            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+                        </div>
+                        <div class="position-absolute w-100 bottom-0">
+                            <a class="btn btn-primary w-100 p-2">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
         </div>
         </div>
     </section>
-    <footer class="bg-dark">
-        <div class="espacoy6">
+    <footer class="container-fluid mt-4">
+        <div class="container-fluid bg-default p-4 radius-15 text-white">
             <!-- Start: 1 Row 1 Column -->
             <div class="container foothome">
                 <div class="row">
                     <div class="col-6 d-flex flex-column align-items-center">
-                        <img src="{{ asset('images/nolimitslogo.png') }}" width="100%" style="max-width: 300px;">
+                        <img src="{{ asset('images/nolimitslogo.png') }}" width="100%" style="max-width: 300px;" class="img-destac">
                         <p class="text-center text-white"></p>
 
                     </div>
