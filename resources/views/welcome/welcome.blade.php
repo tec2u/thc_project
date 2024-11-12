@@ -5,11 +5,11 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="B Inifnity Bank - Crypto Pay">
-  <meta name="author" content="BInfinity">
+  <meta name="description" content="The Healing Company -THC">
+  <meta name="author" content="THC - The Healing Company">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="400x400" href="assetsWelcomeNew/images/icon.png">
-  <title>THC</title>
+  <link rel="icon" type="image/png" sizes="400x400" href="/assetsWelcome/images/nigcoin.png">
+  <title>THC - The Healing Company</title>
   <link rel="stylesheet" type="text/css" href="{{ asset('assetsWelcomeNew/css/bootstrap.min.css') }}">
 
   <link rel="stylesheet" type="text/css" href="{{ asset('assetsWelcomeNew/css/font-awesome.css') }}">
@@ -39,7 +39,7 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="#" class="logo mt-0">
-              <img src="images/nolimitslogo.png" style='width: 90px;' alt="Softy Pinko" />
+              <img src="images/nolimitslogo.png" style='width: 90px;' alt="thc" />
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -77,9 +77,8 @@
       <div class="container">
         <div class="row">
           <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-            <h1>We provide the best <strong>strategy</strong><br>to grow up your <strong>business</strong></h1>
-            <p>B Inifnity is the best option for your company to start receiving crypto. </br>Full Api Access / Full
-              invoice access / Instant payment / Smallest fees</p>
+            <h1>We provide the best <strong>strategy</strong><br>to grow up your <strong>WEALTH</strong></h1>
+            <p>The HEaling Comapny is the best option for your company to start receiving passive income. </br>Instant Payments, Transparency, Sustainability</p>
             <a href="#features" class="main-button-slider">Discover More</a>
           </div>
         </div>
@@ -103,7 +102,7 @@
                   <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
                 </div>
                 <h5 class="features-title">The Power in Your Hands</h5>
-                <p>Having an account on BInfinity costs nothing. The account is digital and has no maintenance fee.
+                <p>Having an account on THC costs nothing.
                   Available to individuals or legal entities.</p>
               </div>
             </div>
@@ -129,9 +128,8 @@
                 <div class="icon">
                   <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
                 </div>
-                <h5 class="features-title">Security</h5>
-                <p>We have simple and secure solutions for your account. We understand how important cybersecurity is to
-                  enjoy our services with peace of mind.</p>
+                <h5 class="features-title">Transparency</h5>
+                <p>We provide weekly meetings with all our investors to show our results live BESIDES the reports on your own backoffice.</p>
               </div>
             </div>
             <!-- ***** Features Small Item End ***** -->
@@ -158,7 +156,7 @@
           <div class="left-text">
             <p>The best marketing is our own clients testimonials. And providing a service that does not impact on
               competition, made us also provide a way that you can earn by referring to others. If you are a client or a
-              seller, B infinity can share a percentage from every fee with you. Amazing!</p>
+              seller, THC can share a percentage from every fee with you. Amazing!</p>
           </div>
         </div>
       </div>
@@ -177,13 +175,10 @@
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
           <div class="left-heading">
-            <h2 class="section-title">We can help you to grow your business</h2>
+            <h2 class="section-title">We help you and the world to be a better place</h2>
           </div>
           <div class="left-text">
-            <p>B Infinity is the kind of company that provides inumerous solutions to your needs. We have what it takes
-              to make your business grow to the next level. Our main product is our crypto gateway, that provides a new
-              way of payment to your client, by the web or the app. Any kind of company can use it, and if you require
-              anything else, inquire to us. Business is our focus. </p>
+            <p>By investing in our sustainable agriculture company, you’re not just supporting eco-friendly farming and responsible land use—you’re also entering the crypto world. This innovative approach to finance adds transparency and accessibility, making your investment even more sustainable and impactful. Together, we can grow wealth, empower communities, and nurture the planet while leveraging the power of cryptocurrency for a better future. </p>
           </div>
         </div>
         <div class="col-lg-1"></div>
@@ -204,7 +199,7 @@
         <div class="row">
           <div class="offset-lg-3 col-lg-6">
             <div class="info">
-              <h1>B Infinity Cryptopay</h1>
+              <h1>The Healing Company</h1>
               <p>How it works?</p>
             </div>
           </div>
@@ -223,35 +218,35 @@
             <a href="#" class="mini-box">
               <i><img src="assetsWelcomeNew/images/work-process-item-01.png" alt=""></i>
               <strong>2</strong>
-              <span>Create a gateway crypto wallet</span>
+              <span>Start Referring! Or</span>
             </a>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-6 col-6">
             <a href="#" class="mini-box">
               <i><img src="assetsWelcomeNew/images/work-process-item-01.png" alt=""></i>
               <strong>3</strong>
-              <span>Update your outgoing crypto wallet</span>
+              <span>Invest</span>
             </a>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-6 col-6">
             <a href="#" class="mini-box">
               <i><img src="assetsWelcomeNew/images/work-process-item-01.png" alt=""></i>
               <strong>4</strong>
-              <span>Implement the API</span>
+              <span>Receive weekly Reports</span>
             </a>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-6 col-6">
             <a href="#" class="mini-box">
               <i><img src="assetsWelcomeNew/images/work-process-item-01.png" alt=""></i>
               <strong>5</strong>
-              <span>Create an Invoice</span>
+              <span>Withdraw your results</span>
             </a>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-6 col-6">
             <a href="#" class="mini-box">
               <i><img src="assetsWelcomeNew/images/work-process-item-01.png" alt=""></i>
               <strong>6</strong>
-              <span>Receive crypto instantly on payment</span>
+              <span>Enjoy!</span>
             </a>
           </div>
         </div>
@@ -305,9 +300,7 @@
           <div class="team-item">
             <div class="team-content">
               <i><img src="assetsWelcomeNew/images/testimonial-icon.png" alt=""></i>
-              <p>I used on to a few invoices I made to a few clients. But, referral program is what I like the most. I
-                planned and executed a few funel ideas with this and got a lot of people to join, and little by little
-                I'm building a network of people who are using crypto as a form of payment. </p>
+              <p>Investing with this company has been a game-changer! Knowing my money supports sustainable farming and eco-friendly practices, all while harnessing crypto, feels empowering. I’m thrilled to be part of a future-focused mission that’s both profitable and impactful! </p>
               <div class="user-image">
                 <img src="http://placehold.it/60x60" alt="">
               </div>
@@ -325,8 +318,7 @@
           <div class="team-item">
             <div class="team-content">
               <i><img src="assetsWelcomeNew/images/testimonial-icon.png" alt=""></i>
-              <p>I'm using in my taxi company, can not complain. Some of our partners didn't know how to use, but all
-                who did, are happy that they could provide this to our fleet.</p>
+              <p>I wanted to make a difference with my investments, and this company made it possible. Their blend of sustainable agriculture and crypto innovation means I’m supporting real change in the world while growing my wealth. It’s inspiring!</p>
               <div class="user-image">
                 <img src="http://placehold.it/60x60" alt="">
               </div>
@@ -355,8 +347,7 @@
         </div>
         <div class="offset-lg-3 col-lg-6">
           <div class="center-text">
-            <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus
-              volutpat.</p>
+            <p>You can start with $0! And gain trust in our platform!</p>
           </div>
         </div>
       </div>
@@ -460,12 +451,12 @@
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="count-item decoration-bottom">
               <strong>126</strong>
-              <span>Projects</span>
+              <span>New platations</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="count-item decoration-top">
-              <strong>63</strong>
+              <strong>121</strong>
               <span>Happy Clients</span>
             </div>
           </div>
@@ -574,7 +565,7 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <p class="copyright">Copyright &copy; 2024 BInfinity</p>
+          <p class="copyright">Copyright &copy; 2024 THC - The Healing Company</p>
         </div>
       </div>
     </div>
