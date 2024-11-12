@@ -12244,3 +12244,6 @@ fieldset:disabled .btn {
 .bg-default {
     background-color: var(--dark);
 }
+.left-0 {
+    left: 0;
+}

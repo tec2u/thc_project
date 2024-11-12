@@ -218,6 +218,7 @@
         color: #ffff;
         font-size: 80px;
     }
+
     .bg-carousel-img {
         height: 500px !important;
         background-repeat: no-repeat;
@@ -337,7 +338,7 @@
         </div>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <div class="container-fluid mt-4">
-            <section class="container-fluid  bg-cyan-01 p-4 radius-15 text-white">
+            <section class="container-fluid bg-default p-4 radius-15 text-white">
                 <div class="w-100 text-center">
                     <h2>Taking cultivation to the next level</h2>
                 </div>
@@ -363,9 +364,6 @@
         <div class="container-fluid mt-4">
             <section class="container-fluid bg-white p-4 radius-15 text-white">
                 <div class="d-flex">
-                    <div class="w-100">
-                        <img src="{{ asset('images/plants-1.webp') }}" alt="" class="w-100">
-                    </div>
                     <div class="w-100 p-3 text-center position-relative">
                         <div>
                             <h2>HOW</h2>
@@ -374,9 +372,12 @@
                         <div>
                             Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
                         </div>
-                        <div class="position-absolute w-100 bottom-0">
+                        <div class="position-absolute w-100 bottom-0 left-0">
                             <a class="btn btn-primary w-100 p-2">BUY NOW</a>
                         </div>
+                    </div>
+                    <div class="w-100">
+                        <img src="{{ asset('images/plants-1.webp') }}" alt="" class="w-100 h-100 rounded-circle">
                     </div>
                 </div>
             </section>
