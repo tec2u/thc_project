@@ -238,6 +238,9 @@ Auth::routes();
 /**
  * Backoffice Route
  */
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/', 'welcome')->name('.welcome');
+});
 
 Route::prefix('home')->middleware('auth')->name('home')->group(function () {
     Route::controller(HomeController::class)->group(function () {

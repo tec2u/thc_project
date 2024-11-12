@@ -257,9 +257,9 @@ class HomeController extends Controller
 
     public function welcome()
     {
-        $packages = Package::where('type', 'packages')->where('activated', 1)->orderBy('price')->get();
+       $packages = Package::where('type', 'packages')->where('activated', 1)->orderBy('price')->get();
 
-        return view('auth.login', compact('packages'));
+       return view('welcome.welcome', compact('packages'));
     }
 
     public function fees()
