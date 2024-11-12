@@ -20,7 +20,7 @@ return [
     'amount_bonus' => 'Amount',
     'enter_amount' => 'Enter Amount',
     'note' => 'Note',
-    'minimum_withdraw_amount' => "Minimum withdraw amount is 50 USD",
+    'minimum_withdraw_amount' => "Minimum withdraw amount is 100 USD",
     'submit' => 'Submit',
     'close' => 'Close',
     'withdraw_history' => 'Withdraw History',

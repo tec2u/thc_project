@@ -97,6 +97,7 @@ class ChatController extends Controller
          Alert::success(__('backoffice_alert.chat_success'));
          return redirect()->route('supports.supporttickets');
       } catch (Exception $e) {
+        // dd($e);
          Alert::error(__('backoffice_alert.chat_error'));
          return redirect()->back();
       }
