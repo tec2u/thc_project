@@ -93,7 +93,7 @@ class UserController extends Controller
                 $wallet->update($datawallet);
             }
 
-            $club = new ClubSwanController;
+            /* $club = new ClubSwanController;
             $clubResponse = NULL;
             if ($user->contact_id == NULL) {
                 $clubResponse = $club->singUp($data);
@@ -102,7 +102,7 @@ class UserController extends Controller
                 } else {
                     throw new Exception(json_encode($clubResponse));
                 }
-            }
+            } */
             unset($data['password']);
 
             $user->update($data);
@@ -110,10 +110,9 @@ class UserController extends Controller
 
             $this->createLog('User updated successfully', 200, 'success', auth()->user()->id);
 
-            if ($clubResponse == NULL) {
-                Alert::success(__('backoffice_alert.user_update'));
-            }
+           
             return redirect()->route('users.index');
+
         } catch (Exception $e) {
             $error = json_decode($e->getMessage(), true);
             if (isset($error['status']) && $error['status'] == 'fail') {

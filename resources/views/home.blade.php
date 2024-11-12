@@ -200,6 +200,7 @@
         opacity: 0.3;
         z-index: -1;
         background-repeat: no-repeat;
+        filter: grayscale(1);
     }
 
     body {

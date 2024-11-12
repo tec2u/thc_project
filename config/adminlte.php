@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'NextGen Investment',
+    'title' => 'THC - The Healing Company',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>NextGen Investment</b>',
+    'logo' => '<b>THC - The Healing Company</b>',
     'logo_img' => 'vendor/adminlte/dist/img/nigcoin.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -110,7 +110,7 @@ return [
         'enabled' => true,
         'img' => [
             'path' => 'vendor/adminlte/dist/img/nigcoin.png',
-            'alt' => 'AdminLTE Preloader Image',
+            'alt' => 'THC - The Healing Company',
             'effect' => 'animation__shake',
             'width' => 60,
             'height' => 60,
