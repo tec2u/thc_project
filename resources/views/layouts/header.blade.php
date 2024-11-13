@@ -41,7 +41,7 @@
 @php
 use App\Models\Banco;
 
-$availableComission = Banco::where('user_id', auth()->user()->id )->where('price', '>', 0)->sum('price');
+$availableComission = Banco::where('user_id', auth()->user()->id )->sum('price');
 
 @endphp
 
