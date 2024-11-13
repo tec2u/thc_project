@@ -107,7 +107,7 @@
     <div class="half-screen"></div>
     <!-- ======= Header ======= -->
     @include('sweetalert::alert')
-    <header id="header" class="header fixed-top d-flex align-items-center">
+    <header id="header" class="header fixed-top d-flex align-items-center" style='background-color:#3da77a'>
         <div class="d-flex align-items-center justify-content-between">
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
@@ -200,10 +200,13 @@
             </a>
             <div class="d-flex flex-column align-items-center">
                 <div>
-                    welcome: {{ auth()->user()->name }} {{ auth()->user()->last_name }}
-                </div>
-                <div>
+                    <center>
+                    <i>welcome</i></br> 
+                    {{ auth()->user()->name }} </br>
+                
                     available: $9999,99
+                     </center>
+                     </br></br>
                 </div>
             </div>
             <li class="nav-item">
