@@ -356,7 +356,7 @@
                     <div class="card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>WITHDRAWAL</h2>
-                            <div>$100,00</div>
+                            <div>$ {{ number_format($availableComission, 2, '.', ',') }}</div>
                         </div>
                         <div>
                             <h2></h2>
@@ -365,7 +365,7 @@
                     <div class="card-total-values w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>COMMISSION</h2>
-                            <div>$ {{ number_format($availableComission, 2, '.', ',') }}</div>
+                            <div>$ 200,00</div>
                         </div>
                         <div>
                             <h2></h2>

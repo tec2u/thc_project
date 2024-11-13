@@ -71,50 +71,35 @@
                         <hr>
                         {!! $package->long_description !!}
                         <div class="row pt-2">
-                            {{-- <div class="col-6">
-                                <p class="text-muted text-sm"><b>Price: </b> $ {{$package->price}} </p>
-                            <p class="text-muted text-sm"><b>Minting Month: </b> {{$package->minting_month}} Months</p>
-                            <p class="text-muted text-sm"><b>Dally Retuns: </b> {{$package->daily_returns}}%</p>
-                            <p class="text-muted text-sm"><b>Bonus: </b> {{$package->bonus}}</p>
-                        </div>
-                        <div class="col-6">
-
-                            <p class="text-muted text-sm"><b>Month Coins: </b> {{$package->per_month_coins}} /Month</p>
-                            <p class="text-muted text-sm"><b>Capping Coins: </b> {{$package->daily_return}} /Day</p>
-                            <p class="text-muted text-sm"><b>Yearly Returns: </b> {{$package->yaerly_returns}}%</p>
-                            <p class="text-muted text-sm"><b>Total Returns: </b> {{$package->total_returns}}</p>
-
-
-                        </div> --}}
-                        <div class="col-12">
-                            <p class="text-muted">@if($package->activated)<span class="badge badge-success right"> @lang('admin.package.statusAc') </span> @else<span class="badge badge-danger right"> @lang('admin.package.statusDe') </span> @endif </p>
+                            <div class="col-12">
+                                <p class="text-muted">@if($package->activated)<span class="badge badge-success right"> @lang('admin.package.statusAc') </span> @else<span class="badge badge-danger right"> @lang('admin.package.statusDe') </span> @endif </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-footer">
-                    <div class="row justify-content-between">
-                        <div class="text-right">
-                            <form action="{{route('admin.packages.delete', ['id' => $package->id])}}" method="post">
-                                <a href="{{route('admin.packages.edit', ['id' => $package->id])}}" class="btn bg-teal" title="@lang('admin.package.edit')">
-                                    <i class="fas fa-edit"></i>
-                                </a>
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger" title="@lang('admin.package.delete')"><i class="fas fa-trash-alt"></i></button>
-                            </form>
+                    <div class="card-footer">
+                        <div class="row justify-content-between">
+                            <div class="text-right">
+                                <form action="{{route('admin.packages.delete', ['id' => $package->id])}}" method="post">
+                                    <a href="{{route('admin.packages.edit', ['id' => $package->id])}}" class="btn bg-teal" title="@lang('admin.package.edit')">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger" title="@lang('admin.package.delete')"><i class="fas fa-trash-alt"></i></button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            @empty
+            <p>@lang('admin.package.empty')</p>
+            @endforelse
         </div>
-        @empty
-        <p>@lang('admin.package.empty')</p>
-        @endforelse
     </div>
-</div>
-<div class="row d-flex justify-content-center ">
-    {{$packages->links()}}
-</div>
+    <div class="row d-flex justify-content-center ">
+        {{$packages->links()}}
+    </div>
 </div>
 @stop
 

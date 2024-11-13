@@ -245,6 +245,7 @@ class HomeController extends Controller
         $totalNetwork = $diretos + $indiretos;
         $availableComission = Banco::where('user_id', auth()->user()->id )->where('price', '>', 0)->sum('price');
 
+        
         return view('home', compact('packages', 'orderpackages', 'name', 'user', 'data', 'label', 'datasaida', 'totalbanco', 'bonusdaily', 'pontos', 'saque', 'carrer', 'inactiverights', 'url_image_popup', 'images', 'table', 'total_amount', 'total_balance', 'total_withdraw_requests', 'tota_pay_per_day', 'bonus_day_total', 'value_perc', 'diretos', 'indiretos', 'totalNetwork', 'availableComission'));
     }
 

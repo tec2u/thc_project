@@ -103,19 +103,7 @@ class PackageController extends Controller
     {
         $user = User::find(Auth::id());
         $adesao = !$user->getAdessao($user->id);
-        //verifica se ja tem adesão para liberar os outros produtos
-        //$adesao = true;
         $packages = Package::orderBy('id', 'DESC')->where('activated', 1)->paginate(9);
-        // if ($user->contact_id == NULL) {
-        //     $complete_registration = "Please complete your registration to purchase:<br>";
-        //     $array_att = array('last_name' => 'Last Name', 'address1' => 'Address 1', 'address2' => 'Address 2', 'postcode' => 'Postcode', 'state' => 'State', 'wallet' => 'Wallet');
-        //     foreach ($user->getAttributes() as $key => $value) {
-        //        if ($value == NULL && array_search($key, array('last_name', 'address1', 'address2', 'postcode', 'state', 'wallet'))) {
-        //           $complete_registration .= "&nbsp;&nbsp;&bull;" . $array_att[$key] . "<br>";
-        //        }
-        //     }
-        //     flash($complete_registration)->error();
-        //  }
 
         return view('package.produtos', compact('packages', 'adesao', 'user'));
     }
