@@ -37,71 +37,13 @@
 
 
 </head>
-<!-- <style>
-    .half-screen {
-        width: 100%;
-        height: 28%;
-        background-image: linear-gradient(to right, #171917, #6a6767, #171917) !important;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
 
-    @media (min-width: 1400px) {
-        .half-screen {
-            width: 100%;
-            height: 18%;
-            background-image: linear-gradient(to right, #171917, #6a6767, #171917) !important;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
+@php
+use App\Models\Banco;
 
-    @media (min-width: 1366px) {
-        .half-screen {
-            width: 100%;
-            height: 24%;
-            background-image: linear-gradient(to right, #171917, #6a6767, #171917) !important;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
+$availableComission = Banco::where('user_id', auth()->user()->id )->where('price', '>', 0)->sum('price');
 
-    @media (min-width: 1879px) {
-        .half-screen {
-            width: 100%;
-            height: 20%;
-            background-image: linear-gradient(to right, #171917, #6a6767, #171917) !important;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
-
-    @media (max-width: 1200px) {
-        .half-screen {
-            width: 100%;
-            height: 24%;
-            background-image: linear-gradient(to right, #171917, #6a6767, #171917) !important;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
-
-    @media (max-width: 780px) {
-        .half-screen {
-            width: 100%;
-            height: 26%;
-            background-image: linear-gradient(to right, #171917, #6a6767, #171917) !important;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
-</style> -->
+@endphp
 
 <body>
     <div class="half-screen"></div>
@@ -119,40 +61,13 @@
                 <li class=" pe-4"><a href="#" class="telenav">
                         <h6 class="text-dark-50 joinhead text-white">Join our </br>Telegram Channel</h6>
                     </a> </li>
-
-                <!-- <li class="nav-item dropdown pe-3">
-                    <div class="btn-group">
-                        <button class="btn dropdown-toggle btn-lang" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                            @lang('header.language')
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="/setlocale/en"><img src="../assetsWelcome/images/flaguk.png" style="width: 18px;margin-right:10px" alt="...">@lang('header.english')</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="/setlocale/de"><img src="../assetsWelcome/images/flagger.png" style="width: 18px;margin-right:10px" alt="...">@lang('header.german')</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li> -->
-                            <a href="" class="mx-1"><i class="fab fa-facebook-f fb-icon"></i></a>
-                            <a href="" class="mx-1"><i class="fab fa-twitter twitter-icon"></i></a>
-                            <a href="" class="mx-1"><i class="fab fa-instagram ig-icon"></i></a>
-                            <a href="" class="mx-1"><i class="fab fa-linkedin-in linkedin-icon"></i></a>
-                            <a href="" class="mx-1"><i class="fab fa-whatsapp wa-icon"></i></a>
-                            <a href="" class="mx-1"><i class="fab fa-tiktok tiktok-icon"></i></a>
+                <a href="" class="mx-1"><i class="fab fa-facebook-f fb-icon"></i></a>
+                <a href="" class="mx-1"><i class="fab fa-twitter twitter-icon"></i></a>
+                <a href="" class="mx-1"><i class="fab fa-instagram ig-icon"></i></a>
+                <a href="" class="mx-1"><i class="fab fa-linkedin-in linkedin-icon"></i></a>
+                <a href="" class="mx-1"><i class="fab fa-whatsapp wa-icon"></i></a>
+                <a href="" class="mx-1"><i class="fab fa-tiktok tiktok-icon"></i></a>
                 <li class="nav-item dropdown pe-3">
-
-                    <!-- <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown"> -->
-<!--
-                        @if (!empty(auth()->user()->image_path))
-                        <img src="{{ asset('storage/' . auth()->user()->image_path) }}" alt="Profile" class="rounded-circle">
-                        @else
-                        <img src="../../../assetsWelcome/images/favinig.png" alt="Profile" class="rounded-circle">
-                        @endif -->
-
-                        <!-- <span class="d-none d-md-block dropdown-toggle ps-2">{{ ucwords(auth()->user()->name) }}</span> -->
-                    <!-- </a> -->
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
@@ -184,29 +99,22 @@
             <img class="imagetest2" src="{{ asset('images/nigcoin.png') }}" alt="">
         </a>
         <ul class="sidebar-nav" id="sidebar-nav">
-           {{--
-            <li class="nav-item">
-                <a class="nav-link " href="{{ route('home.home') }}">
-                    <i class="bi bi-grid"></i>
-                    <span>
-                       <!-- My Performance -->
-                        @lang('header.li1')
-                    </span>
-                </a>
-            </li><!-- End Dashboard Nav -->
-            --}}
             <a href="{{ route('home.home') }}">
+                @if(auth()->user()->image_path)
+                <img class="imagetest2 rounded" src="{{ asset(auth()->user()->image_path) }}" alt="">
+                @else
                 <img class="imagetest2 rounded" src="{{ asset('images/modelo-man.jpg') }}" alt="">
+                @endif
             </a>
             <div class="d-flex flex-column align-items-center">
                 <div>
                     <center>
-                    <i>welcome</i></br> 
-                    {{ auth()->user()->name }} </br>
-                
-                    available: $9999,99
-                     </center>
-                     </br></br>
+                        <i>welcome</i></br>
+                        {{ auth()->user()->name }} </br>
+
+                        available: $ {{ number_format($availableComission, 2, '.', ',') }}
+                    </center>
+                    </br></br>
                 </div>
             </div>
             <li class="nav-item">
@@ -272,7 +180,7 @@
             <li>
                 <a href="{{ route('affiliate.links.redir') }}">
             <i class="bi bi-circle"></i><span>
-            @lang('header.li8')
+                @lang('header.li8')
             </span>
             </a>
             </li> --}}
@@ -322,9 +230,9 @@
                     </span>
                 </a>
             </li>
-            </ul>
-            </li>
-            <li class="nav-item">
+        </ul>
+        </li>
+        <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#report-nav" data-bs-toggle="collapse" href="#">
                 <i class="bi bi-bar-chart"></i><span>
                     @lang('header.report')S
@@ -344,42 +252,42 @@
 
 
                 <li>
-                        <a href="{{ route('reports.signupcommission') }}">
-                <i class="bi bi-circle"></i><span>@lang('header.signup_commission')</span>
-                </a>
-        </li>
-        <li>
-            <a href="{{ route('reports.levelIncome') }}">
-                <i class="bi bi-circle"></i><span>@lang('header.level_income')</span>
-            </a>
-        </li>
+                    <a href="{{ route('reports.signupcommission') }}">
+                        <i class="bi bi-circle"></i><span>@lang('header.signup_commission')</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('reports.levelIncome') }}">
+                        <i class="bi bi-circle"></i><span>@lang('header.level_income')</span>
+                    </a>
+                </li>
 
-        <li>
-            <a href="{{ route('reports.poolcommission') }}">
-                <i class="bi bi-circle"></i><span>@lang('header.pool_commission')</span>
-            </a>
-        </li>
-        <li>
-            <a href="{{ route('reports.stakingRewards') }}">
-                <i class="bi bi-circle"></i><span>@lang('header.stacking_rewards')</span>
-            </a>
-        </li>
-        <li>
-            <a href="{{ route('reports.monthlyCoins') }}">
-                <i class="bi bi-circle"></i><span>@lang('header.monthly_coins')</span>
-            </a>
-        </li>
-        <li>
-            <a href="{{ route('reports.rankReward') }}">
-                <i class="bi bi-circle"></i><span>@lang('header.rank_reward')</span>
-            </a>
-        </li>
-        <li>
-            <a href="{{ route('reports.transactions') }}">
-                <i class="bi bi-circle"></i><span>@lang('header.transaction')</span>
-            </a>
-        </li>
-        </ul>
+                <li>
+                    <a href="{{ route('reports.poolcommission') }}">
+                        <i class="bi bi-circle"></i><span>@lang('header.pool_commission')</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('reports.stakingRewards') }}">
+                        <i class="bi bi-circle"></i><span>@lang('header.stacking_rewards')</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('reports.monthlyCoins') }}">
+                        <i class="bi bi-circle"></i><span>@lang('header.monthly_coins')</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('reports.rankReward') }}">
+                        <i class="bi bi-circle"></i><span>@lang('header.rank_reward')</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('reports.transactions') }}">
+                        <i class="bi bi-circle"></i><span>@lang('header.transaction')</span>
+                    </a>
+                </li>
+            </ul>
         </li>
 
         <li class="nav-item">
@@ -412,16 +320,16 @@
                 <span> @lang('header.support')</span>
             </a>
         </li>
-            <li class="nav-item">
+        <li class="nav-item">
 
-                <a class="nav-link collapsed" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                    <i class="bi bi-box-arrow-left"></i>
-                    <span>@lang('header.logout')</span>
-                </a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                    @csrf
-                </form>
-            </li>
+            <a class="nav-link collapsed" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>@lang('header.logout')</span>
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        </li>
         </ul>
     </aside>
 

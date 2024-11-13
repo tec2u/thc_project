@@ -250,8 +250,8 @@
         <div class="row">
           <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
             <h1>We provide the best <strong>strategy</strong><br>to grow up your <strong>WEALTH</strong></h1>
-           
-           
+
+
           </div>
         </div>
       </div>
@@ -274,7 +274,7 @@
                   <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
                 </div>
                 <h5 class="features-title">Total Directs</h5>
-                <h4 class="features-title" style='font-size:25px'>50</h4>
+                <h4 class="features-title" style='font-size:25px'>{{ $diretos }}</h4>
                 <p>This is the total of people registered in your network that you reffered yourself</p>
               </div>
             </div>
@@ -288,7 +288,7 @@
                   <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
                 </div>
                 <h5 class="features-title">Total Indirects</h5>
-                <h4 class="features-title" style='font-size:25px'>300</h4>
+                <h4 class="features-title" style='font-size:25px'>{{ $indiretos }}</h4>
                 <p>This is the total of people registered in your network that is below your directs to infinity</p>
               </div>
             </div>
@@ -302,7 +302,7 @@
                   <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
                 </div>
                 <h5 class="features-title">Total on Your Network</h5>
-                <h4 class="features-title" style='font-size:25px'>350</h4>
+                <h4 class="features-title" style='font-size:25px'>{{ $totalNetwork }}</h4>
                 <p>This is the total of people registered in your network </p>
               </div>
             </div>
@@ -365,7 +365,7 @@
                     <div class="card-total-values w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>COMMISSION</h2>
-                            <div>$455,00</div>
+                            <div>$ {{ number_format($availableComission, 2, '.', ',') }}</div>
                         </div>
                         <div>
                             <h2></h2>
@@ -402,7 +402,7 @@
                 <div class="d-flex justify-content-between">
                     <div class="bg-white p-4 radius-15" style="width: 49%;">
                         <div class="mb-2">
-                            
+
                         </div>
                         <div class="embed-responsive embed-responsive-16by9" style="display: flex;
                         justify-content: center;
@@ -417,7 +417,7 @@
                         </br></br>
                             <ul class="info-list" style="color:#000">
                                 <li>Tetrahydrocannabinol (THC) is one of the primary compounds found in cannabis, known for its psychoactive properties. Beyond its recreational use, THC has several potential health benefits that are increasingly recognized in the medical community. Here are some of the key benefits:</li>
-                                
+
                             </ul>
                             <ul class="info-list section-info" style="color:#000">
                             <li>
@@ -462,7 +462,7 @@
             </section>
         </div>
 
-       
+
 
         <div class="container-fluid mt-4">
         <section class="section padding-bottom-100">

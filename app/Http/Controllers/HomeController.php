@@ -228,19 +228,6 @@ class HomeController extends Controller
             $i++;
         }
 
-
-
-        // if ($user->contact_id == NULL) {
-        //    $complete_registration = "Please complete your registration:<br>";
-        //    $array_att = array('last_name' => 'Last Name', 'address1' => 'Address 1', 'address2' => 'Address 2', 'postcode' => 'Postcode', 'state' => 'State', 'wallet' => 'Wallet');
-        //    foreach ($user->getAttributes() as $key => $value) {
-        //       if ($value == NULL && array_search($key, array('last_name', 'address1', 'address2', 'postcode', 'state', 'wallet'))) {
-        //          $complete_registration .= "&nbsp;&nbsp;&bull;" . $array_att[$key] . "<br>";
-        //       }
-        //    }
-        //    flash($complete_registration)->error();
-        // }
-
         $total_amount = OrderPackage::select(DB::raw('SUM(price) as total_amount'), 'payment_status')
             ->groupBy('payment_status')
             ->where('payment_status', 1)
@@ -252,7 +239,13 @@ class HomeController extends Controller
             ->where('user_id', $id_user)
             ->first();
 
-        return view('home', compact('packages', 'orderpackages', 'name', 'user', 'data', 'label', 'datasaida', 'totalbanco', 'bonusdaily', 'pontos', 'saque', 'carrer', 'inactiverights', 'url_image_popup', 'images', 'table', 'total_amount', 'total_balance', 'total_withdraw_requests', 'tota_pay_per_day', 'bonus_day_total', 'value_perc'));
+        $diretos = HistoricScore::where('user_id', auth()->user()->id)->where('level_from', 1)->distinct('user_id_from')->count();
+        $indiretos = HistoricScore::where('user_id', auth()->user()->id)->where('level_from', '>' , 1)->distinct('user_id_from')->count();
+
+        $totalNetwork = $diretos + $indiretos;
+        $availableComission = Banco::where('user_id', auth()->user()->id )->where('price', '>', 0)->sum('price');
+
+        return view('home', compact('packages', 'orderpackages', 'name', 'user', 'data', 'label', 'datasaida', 'totalbanco', 'bonusdaily', 'pontos', 'saque', 'carrer', 'inactiverights', 'url_image_popup', 'images', 'table', 'total_amount', 'total_balance', 'total_withdraw_requests', 'tota_pay_per_day', 'bonus_day_total', 'value_perc', 'diretos', 'indiretos', 'totalNetwork', 'availableComission'));
     }
 
     public function welcome()
