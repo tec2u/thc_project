@@ -22,13 +22,13 @@ class DailyProfitBonusCronController extends Controller
 
             Banco::create([
                 'user_id' => $bonus->user_id,
-                'order_id' => $bonus->user_id,
+                'order_id' => $bonus->id,
                 'description' => 99,
                 'price' => $bonus->price * 0.01,
                 'status' => 0,
                 'level_from' => 0
             ]);
-            
+
             $bonus->daily_profit_bonus = $now;
             $bonus->save();
         }
