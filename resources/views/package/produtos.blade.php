@@ -82,7 +82,7 @@
                             <div class="price-wrapper">
                                 <span class="currency">$</span>
                                 <span class="price">{{ $package->price }}</span>
-                                <span class="period">monthly</span>
+                                <span class="period">1 Time</span>
                             </div>
                             <ul class="list">
                                 <li class="active">Access to Franchise System</li>
