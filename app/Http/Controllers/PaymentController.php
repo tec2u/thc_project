@@ -134,6 +134,30 @@ class PaymentController extends Controller
             return redirect()->route('packages.detail', ['id' => $package->id]);
         }
     }
+
+    public function paymentSimulator($package, $value)
+    {
+        $package = Package::find($package);
+        if ($value >= $package->price) {
+            $price = $value;
+        } else {
+            flash(__('The amount invested must be greater than or equal to: ' . $package->price))->error();
+            return redirect()->back();
+        }
+
+        try {
+            $codepayment = "USDTERC";
+            $invoiceid = "USDTERC";
+            $wallet_OP = "0x3056418e71ccABB19Fe9DBB228248Ce010Fff6E8";
+            $this->createOrder($package, $codepayment, $invoiceid, $wallet_OP, '0', $price);
+            return redirect()->route('packages.packagelog');
+        } catch (Exception $e) {
+            $this->errorCatch($e->getMessage(), auth()->user()->id);
+            flash(__('backoffice_alert.unable_to_process_your_order'))->error();
+            return redirect()->route('packages.detail', ['id' => $package->id]);
+        }
+    }
+
     public function indexBTC($package, $value)
     {
         $package = Package::find($package);
@@ -152,6 +176,7 @@ class PaymentController extends Controller
                 "password" => "TYxYo39kmL",
                 "currency" => "USD"
             ];
+
             $curl = curl_init();
             curl_setopt_array($curl, array(
                 CURLOPT_URL => $paymentConfig['api_url'],

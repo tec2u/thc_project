@@ -15,6 +15,10 @@ class PurchaseController extends Controller
         return view('purchase.purchase');
     }
 
+    public function cart(){
+        return view('purchase.cart');
+    }
+
     public function linkToRegister(){
         return view('purchase.LinkRegister');
     }

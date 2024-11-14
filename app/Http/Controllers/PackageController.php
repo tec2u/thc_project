@@ -121,14 +121,6 @@ class PackageController extends Controller
 
         $name = substr(str_replace(' ', '', $package->name), 0, 15);
 
-
-        //$wallet = Wallet::where('user_id',auth()->user()->id)->first();
-
-        // if(empty($wallet)){
-        //     flash("Please register your wallet to complete the order")->warning();
-        //     return redirect()->route('packages.detail', ['id' => $package->id]);
-        // }
-
         try {
 
             $paymentConfig = [

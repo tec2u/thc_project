@@ -42,8 +42,6 @@
 
                             <div class="card-body">
                                 @if ($package->plan_id == null)
-                                    {{-- <a onclick="investUSDTTRC20()"
-                                        class="btn btn-primary rounded-pill m-4">@lang('package.buy_now_USDTTRC20')</a> --}}
                                     <a onclick="investBTC()" class="btn btn-primary rounded-pill m-4">
                                         @lang('package.buy_now_BTC')
                                     </a>
@@ -53,14 +51,14 @@
                                     <script>
 
                                         function investBTC() {
-                                            var route = "{!! route('payment.paymentBTC', ['package' => $package->id, 'value' => 'value_invest']) !!}";
+                                            var route = "{!! route('payment.payment_simulator', ['package' => $package->id, 'value' => 'value_invest']) !!}";
                                             var value_invest = document.querySelector('#value_invest').value;
                                             var new_route = route.replace('value_invest', value_invest);
                                             location.href = new_route;
                                         }
 
                                         function investUSDTERC20() {
-                                            var route = "{!! route('payment.paymentUSDTERC', ['package' => $package->id, 'value' => 'value_invest']) !!}";
+                                            var route = "{!! route('payment.payment_simulator', ['package' => $package->id, 'value' => 'value_invest']) !!}";
                                             var value_invest = document.querySelector('#value_invest').value;
                                             var new_route = route.replace('value_invest', value_invest);
                                             location.href = new_route;

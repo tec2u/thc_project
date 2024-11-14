@@ -270,6 +270,7 @@ Route::prefix('my-performance')->middleware('auth')->name('performance')->group(
 Route::prefix('purchase')->middleware('auth')->name('purchase')->group(function () {
     Route::controller(PurchaseController::class)->group(function () {
         Route::get('/purchase', 'purchase')->name('.purchase');
+        Route::get('/cart', 'cart')->name('.cart');
         Route::get('/linkToRegister', 'linkToRegister')->name('.linkToRegister');
         Route::get('/infinityClub', 'infinityClub')->name('.infinityClub');
         Route::get('/E-Wallet', 'eWallet')->name('.eWallet');
@@ -395,6 +396,7 @@ Route::prefix('payment')->middleware('auth')->name('payment')->group(function ()
         Route::get('/paymentUSDTERC/{package}/{value}', 'indexUSDTERC')->name('.paymentUSDTERC');
         Route::get('/paymentBTC/{package}/{value?}', 'indexBTC')->name('.paymentBTC');
         Route::get('/subscriptionClub/{package}', 'subscriptionClub')->name('.subscriptionClub');
+        Route::get('/payment-simulator/{package}/{value}', 'paymentSimulator')->name('.payment_simulator');
     });
 });
 

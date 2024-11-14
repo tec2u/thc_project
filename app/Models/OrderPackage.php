@@ -26,7 +26,8 @@ class OrderPackage extends Model
         'activated',
         'wallet',
         'hide',
-        'subscription_id'
+        'subscription_id',
+        'daily_profit_bonus'
     ];
 
     /**
