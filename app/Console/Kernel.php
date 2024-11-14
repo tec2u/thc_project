@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\PackageAdminController;
 use Illuminate\Console\Scheduling\Schedule;
 use App\Http\Controllers\Admin\PayWithdrawAdminController;
 use App\Http\Controllers\CompensationController;
+use App\Http\Controllers\DailyProfitBonusCronController;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
@@ -25,16 +26,11 @@ class Kernel extends ConsoleKernel
         $schedule->call(function () {
             PackageAdminController::orderUpdateKYC();
         })->everyFiveMinutes();
-        
-        // $schedule->call(function () {
-        //     CompensationController::dailyCron();
-        // })->dailyAt('00:00');
-        // $schedule->call(function () {
-        //     CompensationController::anualCron();
-        // })->yearlyOn(1, 1, '00:00');
-        // $schedule->call(function () {
-        //     CompensationController::aggregatorCron();
-        // })->quarterly();
+
+        $schedule->call(function () {
+            $controller = new DailyProfitBonusCronController;
+            $controller->runCron();
+        })->everyMinute();
 
         $schedule->call(function () {
             CompensationController::dailyCron();
