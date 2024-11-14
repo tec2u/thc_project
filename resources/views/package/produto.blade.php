@@ -7,7 +7,7 @@
                 <div class="container-fluid">
                     <div class="row justify-content-evenly">
                         <div class="card shadow " style="width: 28rem;">
-                            <img src="{{ asset('storage/' . $package->img) }}" class="card-img-top" alt="...">
+                           <img src="https://img.freepik.com/premium-photo/nature-inspired-wallpaper-with-bitcoin-nestled-trees-illustration-crypto-trading-backgrounda_1020495-318282.jpg" class="card-img-top" alt="..."> 
                             <div class="card-body">
                                 <h1 class="card-title" style='display: contents;
     font-size: 16px;'>@lang('purchase.wallet.li4')</h3>
