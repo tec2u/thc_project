@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\OrderPackage;
 use App\Models\User;
 use App\Traits\CustomLogTrait;
-
+use App\Models\Wallet;
 use App\Models\Documents;
 use Exception;
 use Illuminate\Support\Facades\DB;
