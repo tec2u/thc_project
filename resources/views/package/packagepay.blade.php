@@ -49,7 +49,7 @@
                         <input type="hidden" value="{{ $orderpackage->price }}" name="price">
                         <select class="form-select" aria-label="Default select example" name="method" required>
                           <option value="" selected>@lang('package.choose_method')</option>
-                          {{-- <option value="BTC">@lang('package.btc')</option> --}}
+                           <option value="BTC">BTC</option> 
                           <option value="TRC20">@lang('package.usdt') TRC20</option>
                         </select>
                         <button type="submit" class="btn btn-success" style="margin-top: 1rem">@lang('package.pay')</button>
@@ -65,7 +65,7 @@
                         <input type="hidden" value="{{ $orderpackage->price }}" name="price">
                         <select class="form-select" aria-label="Default select example" name="method" required>
                           <option value="" selected>@lang('package.choose_method')</option>
-                          {{-- <option value="BTC">@lang('package.btc')</option> --}}
+                          <option value="BTC">@lang('package.btc')</option> 
                           <option value="TRC20">@lang('package.usdt') TRC20</option>
                         </select>
                         <button type="submit" class="btn btn-success"
@@ -136,7 +136,7 @@
 
                         <select class="form-select" aria-label="Default select example" name="method" required>
                           <option value="" selected>@lang('package.choose_method')</option>
-                          {{-- <option value="BITCOIN">BTC</option> --}}
+                           <option value="BITCOIN">BTC</option> 
                           {{-- <option value="USDT_ERC20">USDT ERC20</option> --}}
                           <option value="TRX">TRX</option>
                           {{-- <option value="ETH">ETH</option> --}}
@@ -166,7 +166,7 @@
 
                         <select class="form-select" aria-label="Default select example" name="method" required>
                           <option value="" selected>@lang('package.choose_method')</option>
-                          {{-- <option value="BITCOIN">@lang('package.btc')</option> --}}
+                           <option value="BITCOIN">@lang('package.btc')</option> 
                           {{-- <option value="USDT_ERC20">@lang('package.usdt') ERC20</option> --}}
                           <option value="TRX">TRX</option>
                           {{-- <option value="ETH">ETH</option> --}}
