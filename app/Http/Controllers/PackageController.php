@@ -397,9 +397,9 @@ class PackageController extends Controller
             $trc20 = 1;
 
             $moedas = [
-                // "BITCOIN" => number_format($price_order / $btc, 5),
-                // "ETH" => number_format($price_order / $eth, 4),
-                // "USDT_ERC20" => number_format($price_order / $erc20, 2),
+                 "BITCOIN" => number_format($price_order / $btc, 5),
+                 "ETH" => number_format($price_order / $eth, 4),
+                 "USDT_ERC20" => number_format($price_order / $erc20, 2),
                 "TRX" => number_format($price_order / $trx, 2),
                 "USDT_TRC20" => number_format($price_order / $trc20, 2),
             ];
@@ -420,7 +420,7 @@ class PackageController extends Controller
 
         $paymentConfig = [
             // "api_url" => "http://127.0.0.1:8001/packages/wallets/notify"
-            "api_url" => "https://crypto.binfinitybank.com/packages/wallets/notify"
+            "api_url" => "https://binfinitycrypto.tecnologia2u.com.br/packages/wallets/notify"
         ];
 
         // dd($order);
@@ -428,7 +428,7 @@ class PackageController extends Controller
         $curl = curl_init();
 
         // $url = "http://127.0.0.1:8000/packages/packagepay/notify";
-        $url = "https://ai-nextlevel.com/packages/packagepay/notify";
+        $url = "https://thc.tecnologia2u.com.br/packages/packagepay/notify";
 
         curl_setopt_array(
             $curl,
@@ -445,7 +445,7 @@ class PackageController extends Controller
                 "id_order": "' . $order->id . '",
                 "price": "' . $order->price . '",
                 "price_crypto": "' . $order->price_crypto . '",
-                "login": "' . "ai@tec2u.com.br" . '",
+                "login": "' . "master@tec2u.com.br" . '",
                 "password": "' . "password" . '",
                 "coin": "' . $method . '",
                 "notify_url" : "' . $url . '"
