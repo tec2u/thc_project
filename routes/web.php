@@ -249,6 +249,8 @@ Route::prefix('home')->middleware('auth')->name('home')->group(function () {
     });
 });
 
+Route::post('/packages/packagepay/notify', [PackageController::class, 'notify'])->name('notify.payment');
+
 Route::prefix('packages')->middleware('auth')->name('packages')->group(function () {
     Route::controller(PackageController::class)->group(function () {
         Route::get('/packages', 'index')->name('.index');
@@ -256,6 +258,10 @@ Route::prefix('packages')->middleware('auth')->name('packages')->group(function 
         Route::get('/packageslog', 'package')->name('.packagelog');
         Route::get('/{id}/hide', 'hide')->name('.hide');
         Route::get('/packages/{id}', 'detail')->name('.detail');
+
+        Route::post('/packagepay/crypto', 'payCrypto')->name('.payCrypto');
+        Route::post('/packagepay/crypto/new', 'payCryptoNode')->name('.payCryptoNode');
+        Route::get('/packagepay/{id}', 'packagepay')->name('.packagepay');
     });
 });
 
