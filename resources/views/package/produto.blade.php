@@ -69,7 +69,10 @@
                                     <script>
                                         function confirmPlan() {
                                             if (confirm("You just selected the {!! $package->name !!} plan, is that correct?")) {
-                                                location.href = "{!! route('payment.payment_simulator', ['package' => $package->id, 'value' => $package->price]) !!}";
+                                                var route = "{!! route('payment.payment_simulator', ['package' => $package->id, 'value' => 'value_invest']) !!}";
+                                                var value_invest = document.querySelector('#value_invest').value;
+                                                var new_route = route.replace('value_invest', value_invest);
+                                                location.href = new_route;
                                             } else {
                                                 alert("Please go back and choose the correct plan!");
                                                 history.go(-1);
