@@ -145,17 +145,17 @@ class PaymentController extends Controller
             return redirect()->back();
         }
 
-        // try {
+        try {
             $codepayment = "USDTERC";
             $invoiceid = "USDTERC";
             $wallet_OP = "0x3056418e71ccABB19Fe9DBB228248Ce010Fff6E8";
             $this->createOrder($package, $codepayment, $invoiceid, $wallet_OP, '0', $price);
             return redirect()->route('packages.packagelog');
-        // } catch (Exception $e) {
-        //     $this->errorCatch($e->getMessage(), auth()->user()->id);
-        //     flash(__('backoffice_alert.unable_to_process_your_order'))->error();
-        //     return redirect()->route('packages.detail', ['id' => $package->id]);
-        // }
+        } catch (Exception $e) {
+            $this->errorCatch($e->getMessage(), auth()->user()->id);
+            flash(__('backoffice_alert.unable_to_process_your_order'))->error();
+            return redirect()->route('packages.detail', ['id' => $package->id]);
+        }
     }
 
     public function indexBTC($package, $value)
