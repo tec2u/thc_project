@@ -70,12 +70,12 @@
                                             </td>
                                             <td>
                                                 @if($orderpackage->payment_status != 1)
-                                                    <button class="btn rounded-pill bg-info px-4 py-1"><a href="{{route('packages.hide', ['id' => $orderpackage->id])}}">@lang('package.btn_hide')</a></button>
-                                                @else
-                                                <button class="btn rounded-pill bg-info px-4 py-1" disabled><a href="{{route('packages.hide', ['id' => $orderpackage->id])}}">@lang('package.btn_hide')</a></button>
-                                                @endif
+                                                   <button class="btn rounded-pill  px-bg-success4 py-1"><a href="{{route('packages.packagepay', ['id' => $orderpackage->id])}}">PAY</a></button>
+                                                   <button class="btn rounded-pill bg-info px-4 py-1"><a href="{{route('packages.hide', ['id' => $orderpackage->id])}}">@lang('package.btn_hide')</a></button>
+                                                   
+                                                   @endif
 
-                                                 <button class="btn rounded-pill  px-bg-success4 py-1"><a href="{{route('packages.packagepay', ['id' => $orderpackage->id])}}">PAY</a></button>
+                                                
                                             </td>
                                         </tr>
                                         @empty
