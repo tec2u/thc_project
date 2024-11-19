@@ -489,7 +489,6 @@ class PackageController extends Controller
                 || strtolower($requestFormated["status"]) == 'underpaid'
             ) {
                 // price_crypto_payed
-                $payment->payment = $requestFormated["status"];
                 if (isset($requestFormated["price_crypto_payed"])) {
                     $payment->price_crypto_paid = $requestFormated["price_crypto_payed"];
                 }
@@ -498,16 +497,11 @@ class PackageController extends Controller
             }
 
             if (strtolower($requestFormated["status"]) == 'cancelled' || strtolower($requestFormated["status"]) == 'expired') {
-                $payment->payment = $requestFormated["status"];
                 $payment->payment_status = 2;
                 $payment->status = 0;
             }
 
             $payment->save();
-
-            if ($payment->package_id == 20 && strtolower($requestFormated["status"]) == 'paid' || strtolower($requestFormated["status"]) == 'overpaid') {
-                // $this->sendPostPayOrder($payment->id);
-            }
 
             $log = new PaymentLog;
             $log->content = $requestFormated["status"];
