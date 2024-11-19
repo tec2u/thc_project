@@ -519,6 +519,8 @@ class PackageController extends Controller
             $log->status = "success";
             $log->json = json_encode($request->all());
             $log->save();
+
+            return response()->json($log);
         }
 
         return response("OK", 200);
