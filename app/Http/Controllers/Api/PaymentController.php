@@ -25,7 +25,7 @@ class PaymentController extends Controller
 
         if(!empty($dados)){
             $codepayment = $dados->merchant_id;
-            $status = $dados->status_code;
+            $status = $dados->status;
 
             $id = "";
 
@@ -39,22 +39,22 @@ class PaymentController extends Controller
                         "payment_status" => $status
                     ];
                     $id = $order->id;
-                    $order->update($data); 
+                    $order->update($data);
 
                     if($status == 1){
                         $this->bonus_compra(0,$order->user_id,$order->price,$order->id);
                         $this->createPaymentLog('Payment processed successfully', 200, 'success',  $id, $content);
                     }
                 }
-                
-                
+
+
             } catch (Exception $e) {
 
                 $this->errorPaymentCatch($e->getMessage(), $id);
 
-            }  
+            }
         }
-        
-        
+
+
     }
 }

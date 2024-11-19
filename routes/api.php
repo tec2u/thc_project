@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::controller(PaymentController::class)->group(function(){
-    Route::post('/notity','notity')->name('notity');//autentica login de usuarios
-});
+// Route::controller(PaymentController::class)->group(function(){
+//     Route::post('/notity','notity')->name('notity');//autentica login de usuarios
+// });
 
 Route::post('/packages/packagepay/notify', [PackageController::class, 'notify'])->name('notify.payment');
 
