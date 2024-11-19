@@ -428,8 +428,8 @@ class PackageController extends Controller
 
         $curl = curl_init();
 
-        // $url = "http://127.0.0.1:8000/packages/packagepay/notify";
-        $url = "https://thc.tecnologia2u.com.br/packages/packagepay/notify";
+        // $url = "http://127.0.0.1:8000/api/packages/packagepay/notify";
+        $url = "https://thc.tecnologia2u.com.br/api/packages/packagepay/notify";
 
         curl_setopt_array(
             $curl,
@@ -479,48 +479,47 @@ class PackageController extends Controller
                 ->Where('id', $requestFormated["id_order"])
                 ->first();
 
-            // if (!isset($payment) || $payment->id != $requestFormated["id_order"]) {
-            //     return false;
-            // }
+            if (!isset($payment) || $payment->id != $requestFormated["id_order"]) {
+                return false;
+            }
 
-            // if (
-            //     strtolower($requestFormated["status"]) == 'paid'
-            //     || strtolower($requestFormated["status"]) == 'overpaid'
-            //     || strtolower($requestFormated["status"]) == 'underpaid'
-            // ) {
-            //     // price_crypto_payed
-            //     $payment->payment = $requestFormated["status"];
-            //     if (isset($requestFormated["price_crypto_payed"])) {
-            //         $payment->price_crypto_paid = $requestFormated["price_crypto_payed"];
-            //     }
-            //     $payment->payment_status = 1;
-            //     $payment->status = 1;
-            // }
+            if (
+                strtolower($requestFormated["status"]) == 'paid'
+                || strtolower($requestFormated["status"]) == 'overpaid'
+                || strtolower($requestFormated["status"]) == 'underpaid'
+            ) {
+                // price_crypto_payed
+                $payment->payment = $requestFormated["status"];
+                if (isset($requestFormated["price_crypto_payed"])) {
+                    $payment->price_crypto_paid = $requestFormated["price_crypto_payed"];
+                }
+                $payment->payment_status = 1;
+                $payment->status = 1;
+            }
 
-            // if (strtolower($requestFormated["status"]) == 'cancelled' || strtolower($requestFormated["status"]) == 'expired') {
-            //     $payment->payment = $requestFormated["status"];
-            //     $payment->payment_status = 2;
-            //     $payment->status = 0;
-            // }
+            if (strtolower($requestFormated["status"]) == 'cancelled' || strtolower($requestFormated["status"]) == 'expired') {
+                $payment->payment = $requestFormated["status"];
+                $payment->payment_status = 2;
+                $payment->status = 0;
+            }
 
-            // $payment->save();
+            $payment->save();
 
-            // if ($payment->package_id == 20 && strtolower($requestFormated["status"]) == 'paid' || strtolower($requestFormated["status"]) == 'overpaid') {
-            //     // $this->sendPostPayOrder($payment->id);
-            // }
+            if ($payment->package_id == 20 && strtolower($requestFormated["status"]) == 'paid' || strtolower($requestFormated["status"]) == 'overpaid') {
+                // $this->sendPostPayOrder($payment->id);
+            }
 
-            // $log = new PaymentLog;
-            // $log->content = $requestFormated["status"];
-            // $log->order_package_id = $payment->id;
-            // $log->operation = "payment package";
-            // $log->controller = "packageController";
-            // $log->http_code = "200";
-            // $log->route = "/packages/packagepay/notify";
-            // $log->status = "success";
-            // $log->json = json_encode($request->all());
-            // $log->save();
+            $log = new PaymentLog;
+            $log->content = $requestFormated["status"];
+            $log->order_package_id = $payment->id;
+            $log->operation = "payment package";
+            $log->controller = "packageController";
+            $log->http_code = "200";
+            $log->route = "/api/packages/packagepay/notify";
+            $log->status = "success";
+            $log->json = json_encode($request->all());
+            $log->save();
 
-            return response()->json($payment);
         }
 
         return response("OK", 200);
