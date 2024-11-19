@@ -473,7 +473,7 @@ class PackageController extends Controller
     {
         $requestFormated = $request->all();
 
-        // if (isset($requestFormated["node"])) {
+        if (isset($requestFormated["node"])) {
             $payment = OrderPackage::where('transaction_wallet', $requestFormated["id"])
                 ->orWhere('transaction_wallet', $requestFormated["merchant_id"])
                 ->Where('id', $requestFormated["id_order"])
@@ -519,10 +519,9 @@ class PackageController extends Controller
             $log->status = "success";
             $log->json = json_encode($request->all());
             $log->save();
-        // }
+        }
 
-        return response()->json($log);
-        // return response("OK", 200);
+        return response("OK", 200);
     }
 
     public function sendPostPayOrder($id_order)
