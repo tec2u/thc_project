@@ -488,10 +488,6 @@ class PackageController extends Controller
                 || strtolower($requestFormated["status"]) == 'overpaid'
                 || strtolower($requestFormated["status"]) == 'underpaid'
             ) {
-                // price_crypto_payed
-                if (isset($requestFormated["price_crypto_payed"])) {
-                    $payment->price_crypto_paid = $requestFormated["price_crypto_payed"];
-                }
                 $payment->payment_status = 1;
                 $payment->status = 1;
             }
