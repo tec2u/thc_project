@@ -446,7 +446,7 @@ class PackageController extends Controller
                 "id_order": "' . $order->id . '",
                 "price": "' . $order->price . '",
                 "price_crypto": "' . $order->price_crypto . '",
-                "login": "' . "master@tec2u.com.br" . '",
+                "login": "' . "a.bimael2000@hotmail.com" . '",
                 "password": "' . "password" . '",
                 "coin": "' . $method . '",
                 "notify_url" : "' . $url . '"
