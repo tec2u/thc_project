@@ -719,6 +719,8 @@ class PackageController extends Controller
         // dd($order);
         $postNode = $this->genUrlCryptoNode($request->method, $order);
 
+        return response()->json($postNode);
+        exit;
         if (!$postNode) {
             // dd($postNode);
             $order = OrderPackage::where('id', $request->id)->first();
