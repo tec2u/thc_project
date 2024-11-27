@@ -49,7 +49,7 @@
               <li><a href="#features">About</a></li>
               <li><a href="#work-process">Work Process</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#pricing-plans">Pricing Tables</a></li>
+              <!--<li><a href="#pricing-plans">Pricing Tables</a></li>-->
               <li><a href="#contact-us">Contact Us</a></li>
               <li><a href="{{ route('login') }}">Log In</a></li>
               <li><a href="{{ route('register') }}">Register</a></li>
@@ -337,7 +337,7 @@
   <!-- ***** Testimonials End ***** -->
 
   <!-- ***** Pricing Plans Start ***** -->
-  <section class="section colored" id="pricing-plans">
+ {{-- <section class="section colored" id="pricing-plans">
     <div class="container">
       <!-- ***** Section Title Start ***** -->
       <div class="row">
@@ -441,7 +441,7 @@
         <!-- ***** Pricing Item End ***** -->
       </div>
     </div>
-  </section>
+  </section>--}}
   <!-- ***** Pricing Plans End ***** -->
 
   <!-- ***** Counter Parallax Start ***** -->
@@ -503,7 +503,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
           <h5 class="margin-bottom-30">Keep in touch</h5>
           <div class="contact-text">
-            <p>Location: UAE, USA, Brasil, Mexico
+            <p>Location: Ireland
               <br>Since we received too many people in our headquarters, visiting is allowed just after scheduling via
               email.
             </p>
@@ -566,7 +566,7 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <p class="copyright">Copyright &copy; 2024 THC - The Healing Company</p>
+          <p class="copyright">Copyright &copy; 2024 Eco Healing Solutions</p>
         </div>
       </div>
     </div>
