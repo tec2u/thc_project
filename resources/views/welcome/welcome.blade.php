@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="The Healing Company -THC">
+  <meta name="description" content="Eco Healing Solutions">
   <meta name="author" content="THC - The Healing Company">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="400x400" href="/assetsWelcome/images/nigcoin.png">
@@ -39,7 +39,8 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="#" class="logo mt-0">
-              <img src="images/nolimitslogo.png" style='width: 90px;' alt="thc" />
+              <img src="images/nolimitslogo.png" style='width: 53px;
+    margin-top: 3px;' alt="thc" />
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
