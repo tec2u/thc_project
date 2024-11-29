@@ -6,10 +6,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Eco Healing Solutions">
-  <meta name="author" content="THC - The Healing Company">
+  <meta name="author" content="Eco Healing Solutions">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="400x400" href="/assetsWelcome/images/nigcoin.png">
-  <title>THC - The Healing Company</title>
+  <link rel="icon" type="image/png" sizes="400x400" href="/images/nolimitslogo.png">
+  <title>Eco Healing Solutions</title>
   <link rel="stylesheet" type="text/css" href="{{ asset('assetsWelcomeNew/css/bootstrap.min.css') }}">
 
   <link rel="stylesheet" type="text/css" href="{{ asset('assetsWelcomeNew/css/font-awesome.css') }}">
