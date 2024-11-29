@@ -103,7 +103,7 @@
                   <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
                 </div>
                 <h5 class="features-title">The Power in Your Hands</h5>
-                <p>Having an account on THC costs nothing.
+                <p>Having an account on Eco Healing Solutions costs nothing.
                   Available to individuals or legal entities.</p>
               </div>
             </div>
@@ -152,12 +152,10 @@
         <div class="col-lg-1"></div>
         <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
           <div class="left-heading">
-            <h2 class="section-title">Referral Program</h2>
+            <h2 class="section-title">Behind the Company</h2>
           </div>
           <div class="left-text">
-            <p>The best marketing is our own clients testimonials. And providing a service that does not impact on
-              competition, made us also provide a way that you can earn by referring to others. If you are a client or a
-              seller, THC can share a percentage from every fee with you. Amazing!</p>
+            <p>The Healing Company was created with a profound purpose: to heal our planet and restore ecological balance. At its heart lies the extraordinary potential of algae—a natural champion in carbon capture and oxygen production. Recognizing that algae farms can absorb up to 68 times more CO₂ than the equivalent area of forest, The Healing Company set out to redefine sustainability. By converting underutilized land into thriving algae farms, the company actively addresses climate change while generating clean oxygen and valuable carbon offsets.</p>
           </div>
         </div>
       </div>
