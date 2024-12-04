@@ -449,19 +449,19 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="count-item decoration-bottom">
-              +<strong>100000</strong>
+              <strong>+100000</strong>
               <span>Bought annually</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="count-item decoration-top">
-              +<strong>100000</strong>
+              <strong>+100000</strong>
               <span>Sold Annually</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="count-item decoration-bottom">
-              +<strong>50</strong>
+              <strong>+50</strong>
               <span>Satisfied Regular Customer</span>
             </div>
           </div>
