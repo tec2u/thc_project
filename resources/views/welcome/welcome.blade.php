@@ -449,20 +449,20 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="count-item decoration-bottom">
-              <strong>126</strong>
-              <span>New platations</span>
+              +<strong>100000</strong>
+              <span>Bought annually</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="count-item decoration-top">
-              <strong>121</strong>
-              <span>Happy Clients</span>
+              +<strong>100000</strong>
+              <span>Sold Annually</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="count-item decoration-bottom">
-              <strong>4</strong>
-              <span>Awards Wins</span>
+              +<strong>50</strong>
+              <span>Satisfied Regular Customer</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
