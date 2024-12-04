@@ -52,7 +52,7 @@
               <!--<li><a href="#pricing-plans">Pricing Tables</a></li>-->
               <li><a href="#contact-us">Contact Us</a></li>
               <li><a href="{{ route('login') }}">Log In</a></li>
-              <li><a href="{{ route('register') }}">Register</a></li>
+             {{--<li><a href="{{ route('register') }}">Register</a></li>--}}
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
