@@ -287,7 +287,7 @@
               </div>
               <div class="team-info">
                 <h3 class="user-name">Catherine S.</h3>
-                <span>Managing Director</span>
+                <span>Investor</span>
               </div>
             </div>
           </div>
@@ -323,7 +323,7 @@
               </div>
               <div class="team-info">
                 <h3 class="user-name">Jareeb M.</h3>
-                <span>Taxi Fleet Owner</span>
+                <span>Investor</span>
               </div>
             </div>
           </div>
@@ -450,19 +450,19 @@
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="count-item decoration-bottom">
               <strong>+100000</strong>
-              <span>Bought annually</span>
+              <span>Carbon Credit Bought annually</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="count-item decoration-top">
               <strong>+100000</strong>
-              <span>Sold Annually</span>
+              <span>Carbon Credit Sold Annually</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="count-item decoration-bottom">
-              <strong>+50</strong>
-              <span>Satisfied Regular Customer</span>
+              <strong>+5000</strong>
+              <span>Satisfied Investors</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
