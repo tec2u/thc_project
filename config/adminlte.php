@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'THC - The Healing Company',
+    'title' => 'Eco Healing Solutions',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>THC - The Healing Company</b>',
+    'logo' => '<b>Eco Healing Solutions</b>',
     'logo_img' => 'vendor/adminlte/dist/img/nigcoin.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,

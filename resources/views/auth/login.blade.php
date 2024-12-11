@@ -67,13 +67,13 @@
                     </div>
                 </div>
                 <div class="text-center p-t-115">
-                    <span class="txt1">
+                {{--  <span class="txt1">
                         Don’t have an account?
                     </span>
 
-                    <a class="txt2" href="{{ route('register') }}">
+                   <a class="txt2" href="{{ route('register') }}">
                         Sign Up
-                    </a>
+                    </a>--}}
                 </div>
                 <div class="text-center p-t-115 mt-40">
                     <a class="txt2" href="https://phpstack-938220-3402762.cloudwaysapps.com/disclaimer-2/">

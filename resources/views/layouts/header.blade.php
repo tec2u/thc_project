@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>THC - The Healing Company</title>
+    <title>Eco Healing Solutions</title>
     <link rel="icon" type="image/png" href="../../../assetsWelcome/images/favinig.png" />
 
     <!-- Fonts -->
@@ -49,7 +49,7 @@ $availableComission = Banco::where('user_id', auth()->user()->id )->sum('price')
     <div class="half-screen"></div>
     <!-- ======= Header ======= -->
     @include('sweetalert::alert')
-    <header id="header" class="header fixed-top d-flex align-items-center" style='background-color:#3da77a'>
+    <header id="header" class="header fixed-top d-flex align-items-center" style='background-color:#a8be60'>
         <div class="d-flex align-items-center justify-content-between">
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
@@ -61,12 +61,12 @@ $availableComission = Banco::where('user_id', auth()->user()->id )->sum('price')
                 <li class=" pe-4"><a href="#" class="telenav">
                         <h6 class="text-dark-50 joinhead text-white">Join our </br>Telegram Channel</h6>
                     </a> </li>
-                <a href="" class="mx-1"><i class="fab fa-facebook-f fb-icon"></i></a>
+               {{-- <a href="" class="mx-1"><i class="fab fa-facebook-f fb-icon"></i></a>
                 <a href="" class="mx-1"><i class="fab fa-twitter twitter-icon"></i></a>
                 <a href="" class="mx-1"><i class="fab fa-instagram ig-icon"></i></a>
                 <a href="" class="mx-1"><i class="fab fa-linkedin-in linkedin-icon"></i></a>
                 <a href="" class="mx-1"><i class="fab fa-whatsapp wa-icon"></i></a>
-                <a href="" class="mx-1"><i class="fab fa-tiktok tiktok-icon"></i></a>
+                <a href="" class="mx-1"><i class="fab fa-tiktok tiktok-icon"></i></a>--}}
                 <li class="nav-item dropdown pe-3">
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">

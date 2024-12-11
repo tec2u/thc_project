@@ -239,17 +239,18 @@
 <!-- ***** Welcome Area Start ***** -->
 <div class="welcome-area" id="welcome" style='height:600px; background-image: none;'>
     <div class="elementor-background-video-container" style="width:100%; ">
-      <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted=""
+    <img src='images/sheik-seed.png'> 
+    {{--<video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted=""
         playsinline="" loop=""
         src="/videos/video-thc.mp4" style="width:100%; "
-        ></video>
+        ></video>--}}
     </div>
     <!-- ***** Header Text Start ***** -->
     <div class="header-text">
       <div class="container">
         <div class="row">
           <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-            <h1>We provide the best <strong>strategy</strong><br>to grow up your <strong>WEALTH</strong></h1>
+            {{--<h1>We provide the best <strong>strategy</strong><br>to grow up your <strong>WEALTH</strong></h1>--}}
 
 
           </div>
@@ -391,11 +392,11 @@
                     </div>
                 </div>
             </div>
-            <section class="container-fluid bg-default p-4 radius-15 text-white" style='background-color: #109c6a; margin:10px'>
+            <section class="container-fluid bg-default p-4 radius-15 text-white" style='background-color: #a8be60; margin:10px'>
         <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-            YOUR REFERRAL LINK: https://www.thehealingcompany.com/ref/master
+            YOUR REFERRAL LINK: https://www.ecohealingsolutions.com/indication/{{$user->id}}/register
             </div></div></div>
         </section>
             <div class="container-fluid mt-4">
@@ -412,23 +413,25 @@
                     </div>
                     <div class="bg-white p-4 radius-15" style="width: 49%;">
                         <div class="section-info2">
-                        <h2 class="m-0">KEY BENEFITS</h2>
+                        <h2 class="m-0">MISSION / VISION</h2>
                         <span>of one of our products</span>
                         </br></br>
                             <ul class="info-list" style="color:#000">
-                                <li>Tetrahydrocannabinol (THC) is one of the primary compounds found in cannabis, known for its psychoactive properties. Beyond its recreational use, THC has several potential health benefits that are increasingly recognized in the medical community. Here are some of the key benefits:</li>
+                                <li><b>Mission</b></br></br>
+To lead the global charge in restoring Earth’s atmosphere by deploying innovative, algae-based solutions that remove carbon dioxide, produce oxygen, and promote sustainability.</br>
+</br>
+<b>Vision</b></br></br>
+A world where communities and industries coexist in harmony with nature, supported by scalable, impactful solutions that heal the planet and inspire a culture of sustainability.</li>
 
                             </ul>
                             <ul class="info-list section-info" style="color:#000">
                             <li>
-                                    Pain Relief: THC is effective in alleviating chronic pain, including neuropathic pain. It activates pathways in the central nervous system that block pain signals from being sent to the brain1.
-                                    Nausea and Vomiting Reduction: THC has been used to reduce nausea and vomiting, particularly in patients undergoing chemotherapy. FDA-approved medications like Marinol contain synthetic THC for this purpose2.
-                                </li>
-                                <li>Appetite Stimulation: THC can help stimulate appetite, which is beneficial for patients suffering from conditions like HIV/AIDS or cancer, where appetite loss is a common issue3.
-                                    Muscle Spasms and Spasticity: THC has shown effectiveness in reducing muscle spasms and spasticity, particularly in conditions like multiple sclerosis4.</li>
-                                <li>Sleep Aid: THC can improve sleep quality and help with insomnia by reducing the time it takes to fall asleep and increasing the duration of sleep.</li>
-                                <li>Mental Health Benefits: Some studies suggest that THC can help alleviate symptoms of PTSD, anxiety, and depression when used appropriately.</li>
-                                <li>While THC offers these benefits, it is important to use it responsibly and under medical supervision to avoid potential side effects and dependency issues.</li>
+                            <b>Values</b></br></br>
+Planet-First Approach: Every action and decision prioritizes the health and future of our planet.</br>
+Integrity: Providing measurable, verified, and reliable solutions for carbon offsetting.</br>
+Innovation: Harnessing the power of cutting-edge technology to amplify algae’s potential.</br>
+Community Engagement: Empowering people to join the mission for global healing.</br>
+Sustainability: Commitment to long-term environmental and economic viability.</li>
                             </ul>
                         </div>
                         <button class="login-btn2 col-md-12 text-center" style="border-color: #fff;" id="ler-mais">@lang('leadpage.new.btnli')</button>
@@ -438,7 +441,7 @@
         </div>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <div class="container-fluid mt-4">
-            <section class="container-fluid bg-default p-4 radius-15 text-white" style='background-color: #109c6a;'>
+            <section class="container-fluid bg-default p-4 radius-15 text-white" style='background-color: #a8be60;'>
                 <div class="w-100 text-center">
                     <h2>Taking cultivation to the next level</h2>
                 </div>
@@ -450,8 +453,8 @@
                     </div>
                     <div class="w-100 d-flex flex-column align-items-center px-3">
                         <i class="fa-solid fa-chart-simple icon-section-styled-1"></i>
-                        <h5>Seed to Sale</h5>
-                        <div class="text-center text-section-styled-1">Digital inventory control systems track cultivation, processing, and sales.</div>
+                        <h5>Sustainability and Carbon Benefits</h5>
+                        <div class="text-center text-section-styled-1">Algae farms cut CO₂, boost oxygen, and earn carbon credits. We help nature and our society with a better and sustainable wealth.</div>
                     </div>
                     <div class="w-100 d-flex flex-column align-items-center px-3">
                         <i class="fa-solid fa-seedling icon-section-styled-1"></i>
@@ -495,7 +498,7 @@
             <div class="container foothome">
                 <div class="row">
                     <div class="col-6 d-flex flex-column align-items-center">
-                        <img src="{{ asset('images/nolimitslogo.png') }}" width="100%" style="max-width: 300px; filter: brightness(33.5);" class="img-destac">
+                        <img src="{{ asset('images/nolimitslogo.png') }}" width="100%" style="max-width: 80px; filter: brightness(33.5);" class="img-destac">
                         <p class="text-center text-white"></p>
 
                     </div>
