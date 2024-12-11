@@ -240,6 +240,7 @@ Auth::routes();
  */
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'welcome')->name('.welcome');
+    Route::get('/about', 'about')->name('about');
 });
 
 Route::prefix('home')->middleware('auth')->name('home')->group(function () {

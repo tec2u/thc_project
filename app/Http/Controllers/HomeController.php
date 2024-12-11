@@ -255,6 +255,13 @@ class HomeController extends Controller
 
        return view('welcome.welcome', compact('packages'));
     }
+    
+    public function about()
+    {
+       $packages = Package::where('type', 'packages')->where('activated', 1)->orderBy('price')->get();
+
+       return view('welcome.about', compact('packages'));
+    }
 
     public function fees()
     {
