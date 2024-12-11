@@ -288,7 +288,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-5">
+        <!-- <div class="container mt-5">
             <div class="row d-flex flex-column">
                 <div class="col-4 align-self-center mobile-bottom-fix-big"
                     data-scroll-reveal="enter right move 30px over 0.6s after 1s">
@@ -301,7 +301,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- ***** Contact Us Start ***** -->
