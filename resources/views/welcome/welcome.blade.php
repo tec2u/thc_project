@@ -45,7 +45,7 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li><a href="#welcome" class="active">Home</a></li>
+              <li><a href="{{ route('welcome') }}" class="active">Home</a></li>
               <li><a href="{{ route('about') }}">About</a></li>
               <li><a href="#work-process">Work Process</a></li>
               <li><a href="#testimonials">Testimonials</a></li>

@@ -239,7 +239,7 @@ Auth::routes();
  * Backoffice Route
  */
 Route::controller(HomeController::class)->group(function () {
-    Route::get('/', 'welcome')->name('.welcome');
+    Route::get('/', 'welcome')->name('welcome');
     Route::get('/about', 'about')->name('about');
 });
 

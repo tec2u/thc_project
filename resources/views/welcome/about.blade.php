@@ -60,7 +60,7 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li><a href="#welcome">Home</a></li>
+              <li><a href="{{ route('welcome') }}">Home</a></li>
               <li><a href="{{ route('about') }}" class="active">About</a></li>
               <li><a href="#work-process">Work Process</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
