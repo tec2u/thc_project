@@ -285,7 +285,7 @@
                 </div>
                 <div class="col-12 align-self-center mobile-bottom-fix text-center">
                     <div class="left-heading">
-                        <h2 class="section-title italic">Rajiv Malhotra</h2>
+                        <h2 class="section-title italic">Rajiv Malhotra's</h2>
                     </div>
                 </div>
             </div>
