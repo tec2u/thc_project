@@ -209,9 +209,15 @@
     <section class="section padding-bottom-100">
     <div class="container">
         <div class="row">
-            <div class="col-12 align-self-center mobile-bottom-fix text-center">
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+                data-scroll-reveal="enter right move 30px over 0.6s after 1s">
+                <img src="assetsWelcomeNew/images/perfil.jpeg" class="rounded img-fluid d-block mx-auto"
+                    alt="App">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
                 <div class="left-heading">
-                    <h2 class="section-title">Rajiv Malhotra: A Visionary Leader in Sustainability and Innovation</h2>
+                    <h2 class="section-title">Business Model</h2>
                 </div>
                 <div class="left-text">
                     <p>Rajiv Malhotra is a seasoned entrepreneur with a diverse portfolio of leadership roles across industries, from HR consulting and genetic testing to real estate and sustainability. As the CEO of Eco Healing Solutions, Rajiv channels his extensive expertise into advancing the carbon credit trading market.</p>
@@ -228,7 +234,6 @@
         </div>
     </div>
 </section>
-
 
     <section class="section padding-bottom-100 container-invert-color">
         <div class="container">
