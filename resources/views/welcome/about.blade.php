@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The Healing Company -THC">
-    <meta name="author" content="THC - The Healing Company">
+    <meta name="description" content="eco healing solutions -THC">
+    <meta name="author" content="THC - eco healing solutions">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="400x400" href="/assetsWelcome/images/nigcoin.png">
-    <title>THC - The Healing Company</title>
+    <title>THC - eco healing solutions</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('assetsWelcomeNew/css/bootstrap.min.css') }}">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assetsWelcomeNew/css/font-awesome.css') }}">
@@ -94,7 +94,7 @@
                 <div class="row">
                     <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
                         <h1>About us</h1>
-                        <p>The Healing Comapny is the best option for your company to start receiving passive income. </br>Instant Payments, Transparency, Sustainability</p>
+                        <p>eco healing solutions is the best option for your company to start receiving passive income. </br>Instant Payments, Transparency, Sustainability</p>
                         <a href="#features" class="main-button-slider">Discover More</a>
                     </div>
                 </div>
@@ -110,14 +110,14 @@
             <div class="row">
                 <div class="col-12 align-self-center mobile-top-fix  text-center">
                     <div class="left-heading">
-                        <h2 class="section-title">The Healing Company</h2>
+                        <h2 class="section-title">eco healing solutions</h2>
                     </div>
                     <div class="left-text">
                         <p>Trading for a Greener Tomorrow
 
                             Story Behind the Company
 
-                            The Healing Company was founded with a clear mission: to restore ecological balance and create a sustainable future. Rather than owning algae farms, the company partners with credible sellers of verified carbon credits. By sourcing high-quality credits from environmentally impactful projects globally, The Healing Company bridges the gap between these projects and buyers in compliance markets, such as the UN ETS (European Union Emissions Trading System), and other environmentally conscious entities.
+                            eco healing solutions was founded with a clear mission: to restore ecological balance and create a sustainable future. Rather than owning algae farms, the company partners with credible sellers of verified carbon credits. By sourcing high-quality credits from environmentally impactful projects globally, eco healing solutions bridges the gap between these projects and buyers in compliance markets, such as the UN ETS (European Union Emissions Trading System), and other environmentally conscious entities.
 
                             Through this model, the company provides businesses and governments with verified carbon credits, enabling them to meet their sustainability targets while fostering impactful change. This pivot reflects the company's commitment to making a tangible difference in the fight against climate change, leveraging strategic partnerships and Rajiv Malhotra's expertise to drive innovation in the carbon trading market.
                         </p>
@@ -199,8 +199,8 @@
                         <h2 class="section-title">Business Model</h2>
                     </div>
                     <div class="left-text">
-                        <p>The Healing Company purchases verified carbon credits from trusted global sources, including nature-based solutions and industrial carbon capture projects. These credits are sold to compliance buyers such as corporations and governments in markets like the UN ETS, where demand for high-quality credits is rising.</p>
-                        <p>The company benefits from high margins due to careful sourcing strategies and the rising market value of carbon credits, with annual returns reaching up to 200%. This model allows The Healing Company to remain agile and impactful in a dynamic market.</p>
+                        <p>eco healing solutions purchases verified carbon credits from trusted global sources, including nature-based solutions and industrial carbon capture projects. These credits are sold to compliance buyers such as corporations and governments in markets like the UN ETS, where demand for high-quality credits is rising.</p>
+                        <p>The company benefits from high margins due to careful sourcing strategies and the rising market value of carbon credits, with annual returns reaching up to 200%. This model allows eco healing solutions to remain agile and impactful in a dynamic market.</p>
                     </div>
                 </div>
             </div>
@@ -216,9 +216,9 @@
                     </div>
                     <div class="left-text">
                         <p>
-                            At the helm of The Healing Company is Rajiv Malhotra, a visionary entrepreneur with nearly two decades of expertise in carbon credits. Having entered the field in 2006, Malhotra is a recognized pioneer in sustainability and carbon trading. Under his leadership, The Healing Company has forged partnerships with global suppliers and positioned itself as a trusted provider in the carbon credit marketplace.
+                            At the helm of eco healing solutions is Rajiv Malhotra, a visionary entrepreneur with nearly two decades of expertise in carbon credits. Having entered the field in 2006, Malhotra is a recognized pioneer in sustainability and carbon trading. Under his leadership, eco healing solutions has forged partnerships with global suppliers and positioned itself as a trusted provider in the carbon credit marketplace.
 
-                            Rajiv’s entrepreneurial track record includes successful ventures in renewable energy and environmental finance, making him a sought-after leader in green business solutions. His innovative approach and commitment to excellence continue to drive The Healing Company toward unprecedented growth and impact.</p>
+                            Rajiv’s entrepreneurial track record includes successful ventures in renewable energy and environmental finance, making him a sought-after leader in green business solutions. His innovative approach and commitment to excellence continue to drive eco healing solutions toward unprecedented growth and impact.</p>
                     </div>
                 </div>
             </div>
@@ -379,7 +379,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="copyright">Copyright &copy; 2024 THC - The Healing Company</p>
+                    <p class="copyright">Copyright &copy; 2024 THC - eco healing solutions</p>
                 </div>
             </div>
         </div>
