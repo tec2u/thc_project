@@ -212,13 +212,14 @@
             <div class="row">
                 <div class="col-12 align-self-center mobile-bottom-fix text-center">
                     <div class="left-heading">
-                        <h2 class="section-title">Rajiv Malhotra: Leading the Charge</h2>
+                        <h2 class="section-title">Rajiv Malhotra: A Visionary Leader in Sustainability and Innovation</h2>
                     </div>
                     <div class="left-text">
                         <p>
-                            At the helm of eco healing solutions is Rajiv Malhotra, a visionary entrepreneur with nearly two decades of expertise in carbon credits. Having entered the field in 2006, Malhotra is a recognized pioneer in sustainability and carbon trading. Under his leadership, eco healing solutions has forged partnerships with global suppliers and positioned itself as a trusted provider in the carbon credit marketplace.
-
-                            Rajiv’s entrepreneurial track record includes successful ventures in renewable energy and environmental finance, making him a sought-after leader in green business solutions. His innovative approach and commitment to excellence continue to drive eco healing solutions toward unprecedented growth and impact.</p>
+                        Rajiv Malhotra is a seasoned entrepreneur with a diverse portfolio of leadership roles across industries,
+                         from HR consulting and genetic testing to real estate and sustainability.</p>
+                         <p> As the CEO of Eco Healing Solutions, Rajiv channels his extensive expertise into advancing the carbon credit trading market.
+                         With nearly two decades of experience in carbon credits, Rajiv was an early adopter in the field, recognizing the transformative potential of trading verified offsets to combat climate change. His career highlights include:</p>
                     </div>
                 </div>
             </div>
@@ -236,41 +237,19 @@
                         <ul class="list-style">
 
                             <li class="list-item mt-2">
-                                1. Environmental Benefits
-
-                                Reduction in Emissions: Companies can offset their carbon emissions by purchasing credits from projects that reduce greenhouse gases, such as reforestation or renewable energy.
-
-                                Encouragement of Green Projects: It incentivizes the development of eco-friendly projects that capture or reduce carbon emissions.
+                                1. •	Business Development Manager at Fluid HR Consulting Services, delivering innovative HR solutions.
                             </li>
 
                             <li class="list-item mt-2">
-                                2. Economic Advantages
-
-                                Revenue for Green Projects: Sellers of carbon credits (e.g., renewable energy providers, forestry projects) generate income, making these initiatives financially viable.
-
-                                Market Opportunities: It creates a new market for carbon trading, offering profit potential for businesses that can reduce emissions or create offsets.
-                            </li>
+                                2. •	CEO of DNA Testing Centres of Canada, where he spearheads advancements in genetic testing for preventative healthcare.</li>
                             <li class="list-item mt-2">
-                                3. Corporate Responsibility and Branding
-
-                                Sustainability Goals: Companies can achieve carbon neutrality and demonstrate commitment to environmental goals.
-
-                                Improved Brand Image: Businesses that actively reduce their carbon footprint are seen as socially responsible, enhancing their reputation and appeal to eco-conscious consumers and investors.
-                            </li>
+                                3.•	Partner at Mexicasa Real Estate Group, leveraging over a decade of experience in Canadian construction and real estate to offer turnkey investments in Mexico. </li>
                             <li class="list-item mt-2">
-                                4. Regulatory Compliance
-
-                                Meeting Legal Obligations: In regions with carbon cap-and-trade systems, buying carbon credits helps companies comply with legal emission limits.
-
-                                Avoiding Penalties: It allows businesses to avoid fines for exceeding emission caps by offsetting through credits.
-                            </li>
+                                4. •	Co-founder of the Sifarish Network, a premier platform supporting professional growth among the South Asian business community in Canada.</li>
                             <li class="list-item mt-2">
-                                5. Risk Management
+                            Rajiv’s academic foundation in Economics from the University of Alberta, combined with fluency in English, Punjabi, and Hindi, enhances his ability to navigate global markets. His analytical mindset, cultural adaptability, and passion for sustainable solutions position him as a visionary leader driving Eco Healing Solutions’s mission to foster environmental impact and financial growth.
 
-                                Hedging Against Future Costs: Companies can buy credits at current prices to offset potential increases in future regulatory costs.
-
-                                Flexibility in Operations: Businesses can continue operations while working on long-term emission reductions.
-                            </li>
+</li>
                         </ul>
                         <p class="mt-4"><strong>Would you like more insights on how carbon credit trading intersects with agriculture or gem industries?</strong></p>
                     </div>
