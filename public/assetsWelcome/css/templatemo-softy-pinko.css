@@ -644,10 +644,11 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(../images/banner-bg.png);
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  background: linear-gradient(45deg, #28dc6c, #47f689);
 }
 
 .welcome-area .header-text {
