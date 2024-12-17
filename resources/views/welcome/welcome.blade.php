@@ -502,8 +502,6 @@
           <h5 class="margin-bottom-30">Keep in touch</h5>
           <div class="contact-text">
             <p>Location: Ireland
-              <br>Since we received too many people in our headquarters, visiting is allowed just after scheduling via
-              email.
             </p>
             <p>Are you ready to take your business to the next level?</p>
           </div>
