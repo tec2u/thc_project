@@ -206,24 +206,35 @@
             </div>
         </div>
     </section>
-
     <section class="section padding-bottom-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 align-self-center mobile-bottom-fix text-center">
-                    <div class="left-heading">
-                        <h2 class="section-title">Rajiv Malhotra: Leading the Charge</h2>
-                    </div>
-                    <div class="left-text">
-                        <p>
-                            At the helm of eco healing solutions is Rajiv Malhotra, a visionary entrepreneur with nearly two decades of expertise in carbon credits. Having entered the field in 2006, Malhotra is a recognized pioneer in sustainability and carbon trading. Under his leadership, eco healing solutions has forged partnerships with global suppliers and positioned itself as a trusted provider in the carbon credit marketplace.
-
-                            Rajiv’s entrepreneurial track record includes successful ventures in renewable energy and environmental finance, making him a sought-after leader in green business solutions. His innovative approach and commitment to excellence continue to drive eco healing solutions toward unprecedented growth and impact.</p>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">Rajiv Malhotra: A Visionary Leader in Sustainability and Innovation</h2>
+                </div>
+                <div class="left-text">
+                    <p>Rajiv Malhotra is a seasoned entrepreneur with a diverse portfolio of leadership roles across industries, from HR consulting and genetic testing to real estate and sustainability. As the CEO of Eco Healing Solutions, Rajiv channels his extensive expertise into advancing the carbon credit trading market.</p>
+                    <p>With nearly two decades of experience in carbon credits, Rajiv was an early adopter in the field, recognizing the transformative potential of trading verified offsets to combat climate change. His career highlights include:</p>
+                    <ul>
+                        <li>Business Development Manager at Fluid HR Consulting Services, delivering innovative HR solutions.</li>
+                        <li>CEO of DNA Testing Centres of Canada, where he spearheads advancements in genetic testing for preventative healthcare.</li>
+                        <li>Partner at Mexicasa Real Estate Group, leveraging over a decade of experience in Canadian construction and real estate to offer turnkey investments in Mexico.</li>
+                        <li>Co-founder of the Sifarish Network, a premier platform supporting professional growth among the South Asian business community in Canada.</li>
+                    </ul>
+                    <p>Rajiv’s academic foundation in Economics from the University of Alberta, combined with fluency in English, Punjabi, and Hindi, enhances his ability to navigate global markets. His analytical mindset, cultural adaptability, and passion for sustainable solutions position him as a visionary leader driving Eco Healing Solutions’s mission to foster environmental impact and financial growth.</p>
                 </div>
             </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+                data-scroll-reveal="enter right move 30px over 0.6s after 1s">
+                <img src="assetsWelcomeNew/images/perfil.jpeg" class="rounded img-fluid d-block mx-auto"
+                    alt="App">
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+>
 
     <section class="section padding-bottom-100 container-invert-color">
         <div class="container">
@@ -277,7 +288,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-5">
+        <!-- <div class="container mt-5">
             <div class="row d-flex flex-column">
                 <div class="col-4 align-self-center mobile-bottom-fix-big"
                     data-scroll-reveal="enter right move 30px over 0.6s after 1s">
@@ -290,7 +301,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- ***** Contact Us Start ***** -->
