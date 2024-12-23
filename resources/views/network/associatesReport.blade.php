@@ -50,13 +50,13 @@
                                             @forelse($networks as $network)
                                             <tr scope="row" data-bs-toggle="collapse" data-bs-target="#id{{ $network->id }}" value="{{ $network->id }}">
                                                 <td><button id="botao{{ $network->id }}" onclick="getdiretos({{ $network->id }})" class="btn btn-primary">+</button></td>
-                                                <td>{{ $network->user->login }}</td>
-                                                <td>{{ $network->user->name }}</td>
-                                                <td>{{ $network->user->last_name }}</td>
+                                                <td>{{ isset($network->user) ? $network->user->login ? '' }}</td>
+                                                <td>{{ isset($network->user) ? $network->user->name ? '' }}</td>
+                                                <td>{{ isset($network->user) ? $network->user->last_name ? '' }}</td>
                                                 <td>{{ $network->getReferalName($network->upline_id) }}</td>
-                                                <td>{{ $network->user->telephone }}</td>
-                                                <td>{{ $network->user->country }}</td>
-                                                <td>{{ $network->user->email }}</td>
+                                                <td>{{ isset($network->user) ? $network->user->telephone ? '' }}</td>
+                                                <td>{{ isset($network->user) ? $network->user->country ? '' }}</td>
+                                                <td>{{ isset($network->user) ? $network->user->email ? '' }}</td>
                                                 <td id="nivel{{ $network->id }}">1</td>
                                             </tr>
                                             <tr>
