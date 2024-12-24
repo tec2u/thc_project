@@ -88,9 +88,9 @@
                         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
                             <div class="col-md-3">
                                 <a href="{{ route('packages.index') }}">
-                                    <div class="card equal-heights">
+                                    <div class="card">
                                         <label for="card2">
-                                            <img src="../../assetsWelcome/images/ewallet.jpeg" alt="Imagem do card" class="img-fluid equal-height">
+                                            <img src="../../assetsWelcome/images/ewallet.jpeg" alt="Imagem do card" class="img-fluid">
                                             <p class="mt-5 text-center txt-pur">@lang('home.purchase.li3') CRYPTO</p>
                                         </label>
                                     </div>
@@ -100,7 +100,7 @@
                                 <a href="{{ route('packages.packagelog') }}">
                                     <div class="card">
                                         <label for="card2">
-                                            <img src="../../assetsWelcome/images/carros.jpg" alt="Imagem do card" class="img-fluid equal-height widthx">
+                                            <img src="../../assetsWelcome/images/carros.jpg" alt="Imagem do card" class="img-fluid widthx">
                                             <p class="mt-5 text-center txt-pur">@lang('home.purchase.li4')</p>
                                         </label>
                                     </div>

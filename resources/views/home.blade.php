@@ -239,7 +239,7 @@
 <!-- ***** Welcome Area Start ***** -->
 <div class="welcome-area" id="welcome" style='height:600px; background-image: none;'>
     <div class="elementor-background-video-container" style="width:100%; ">
-    <img src='images/sheik-seed.png'> 
+    <img src='images/sheik-seed.png'>
     {{--<video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted=""
         playsinline="" loop=""
         src="/videos/video-thc.mp4" style="width:100%; "
@@ -268,7 +268,7 @@
         <div class="col-lg-12">
           <div class="row">
             <!-- ***** Features Small Item Start ***** -->
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12"
               data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
               <div class="features-small-item">
                 <div class="icon">
@@ -282,7 +282,7 @@
             <!-- ***** Features Small Item End ***** -->
 
             <!-- ***** Features Small Item Start ***** -->
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12"
               data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
               <div class="features-small-item">
                 <div class="icon">
@@ -296,7 +296,7 @@
             <!-- ***** Features Small Item End ***** -->
 
             <!-- ***** Features Small Item Start ***** -->
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12"
               data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
               <div class="features-small-item">
                 <div class="icon">
@@ -320,23 +320,9 @@
     <section id="home" class="content">
         <div class="fade">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-            <div class="container-fluid">
-                <!--<section class="container-fluid bg-white p-0 radius-15" id="herosection">
-                    <div class="carousel">
-                        <div class="carousel-item">
-                            <div class="bg-carousel-img" style="background-image: url({{ asset('images/sheik-seed.png') }});">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="bg-carousel-img" style="background-image: url({{ asset('images/nolimitslogo.png') }});">
-                            </div>
-                        </div>
-                    </div>
-                </section>-->
-            </div>
-            <div class="container-fluid">
-                <div class="mt-4 d-flex flex-wrap">
-                    <div class="card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+            <div>
+                <div class="ml-3 mt-4 d-flex flex-wrap row justify-content-between">
+                    <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>INVESTED</h2>
                             <div>$1000,00</div>
@@ -345,7 +331,7 @@
                             <h2></h2>
                         </div>
                     </div>
-                    <div class="card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>PROFIT</h2>
                             <div>$210,00</div>
@@ -354,7 +340,7 @@
                             <h2></h2>
                         </div>
                     </div>
-                    <div class="card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>WITHDRAWAL</h2>
                             <div>$ {{ number_format(abs($withDrawn), 2, '.', ',') }}</div>
@@ -363,7 +349,7 @@
                             <h2></h2>
                         </div>
                     </div>
-                    <div class="card-total-values w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>COMMISSION</h2>
                             <div>$ 200,00</div>
@@ -372,7 +358,7 @@
                             <h2></h2>
                         </div>
                     </div>
-                    <div class="card-total-values w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>CAREER</h2>
                             <div>BRONZE</div>
@@ -381,7 +367,7 @@
                             <h2></h2>
                         </div>
                     </div>
-                    <div class="card-total-values w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>CAREER</h2>
                             <div>PIN</div>
@@ -400,8 +386,8 @@
             </div></div></div>
         </section>
             <div class="container-fluid mt-4">
-                <div class="d-flex justify-content-between">
-                    <div class="bg-white p-4 radius-15" style="width: 49%;">
+                <div class="d-flex justify-content-between row">
+                    <div class="bg-white p-4 radius-15 col-12 col-md-6 col-lg-6 col-xl-6">
                         <div class="mb-2">
 
                         </div>
@@ -411,7 +397,7 @@
                             <video class="video1 embed-responsive-item" controls src="{{ asset('videos/video-thc.mp4') }}" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></video>
                         </div>
                     </div>
-                    <div class="bg-white p-4 radius-15" style="width: 49%;">
+                    <div class="bg-white p-4 radius-15 col-12 col-md-6 col-lg-6 col-xl-6">
                         <div class="section-info2">
                         <h2 class="m-0">MISSION / VISION</h2>
                         <span>of one of our products</span>

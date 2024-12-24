@@ -185,15 +185,6 @@ $availableComission = Banco::where('user_id', auth()->user()->id )->sum('price')
             </a>
             </li> --}}
 
-            <li>
-                <a href=" {{ route('affiliate.program') }} ">
-                    <i class="bi bi-circle"></i><span>
-                        {{-- @lang('header.associates') --}}
-                        @lang('header.li9')
-                    </span>
-                </a>
-            </li>
-
 
             <li>
                 <a href="{{ route('networks.mytree', ['parameter' => auth()->user()->id]) }}">
