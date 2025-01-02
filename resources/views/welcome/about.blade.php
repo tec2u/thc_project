@@ -16,18 +16,7 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
-    <style>
-        video {
-            display: block;
-            height: 150%;
-            left: 0;
-            object-fit: cover;
-            position: fixed;
-            top: -25%;
-            width: 100%;
-            z-index: -1;
-        }
-    </style>
+
 </head>
 
 <body class="is-preload">
@@ -36,28 +25,17 @@
         <h1><img src="images/logo2.png" style="height: 100%" /></h1>
         <nav>
             <ul>
-                <li><a href="#intro">Intro</a></li>
+                <li><a href="{{ route('welcome') }}">Intro</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="{{ route('about') }}">About</a></li>
                 <li><a href="{{ route('login') }}">Log In</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Intro -->
-    <video src="videos/video-banner.mp4" autoplay loop id="vid" muted></video>
     <script>
         document.getElementById("vid").play();
     </script>
-    <section id="intro" class="main style1 dark fullscreen">
-        <div class="content" style="background-color: rgba(0, 0, 0, 0.5)">
-            <header>
-                <h2>
-                    Eco Healing Solutions: Trading for a Greener Tomorrow
-                </h2>
-            </header>
-        </div>
-    </section>
+
 
     <section id="contact" class="main style3 secondary pb-5">
         <div class="content">
@@ -71,7 +49,7 @@
     </section>
 
     <!-- One -->
-    <section id="one" class="main style2 right dark fullscreen">
+    <section class="main style2">
         <div class="content box style2">
             <header>
                 <h2>Mission</h2>
@@ -79,11 +57,10 @@
             <p>"To lead the global carbon credit market by connecting credible projects with responsible buyers, ensuring financial returns and environmental impact."
             </p>
         </div>
-        <a href="#two" class="button style2 down anchored">Next</a>
     </section>
 
     <!-- Two -->
-    <section id="two" class="main style2 left dark fullscreen">
+    <section id="two2" class="main style2 ">
         <div class="content box style2">
             <header>
                 <h2>Vision</h2>
@@ -91,7 +68,6 @@
             <p>"To become the world’s most trusted carbon credit trader, accelerating the transition to a carbon-neutral future through innovation, transparency, and collaboration."
             </p>
         </div>
-        <a href="#four" class="button style2 down anchored">Next</a>
     </section>
     <section id="contact" class="main style3 secondary pb-5">
         <div class="content">
