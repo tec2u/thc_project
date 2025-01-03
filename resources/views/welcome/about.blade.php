@@ -16,7 +16,18 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
-
+    <style>
+        video {
+            display: block;
+            height: 150%;
+            left: 0;
+            object-fit: cover;
+            position: fixed;
+            top: -25%;
+            width: 100%;
+            z-index: -1;
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -26,51 +37,55 @@
         <nav>
             <ul>
                 <li><a href="{{ route('welcome') }}">Intro</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="{{ route('welcome') }}#contact">Contact</a></li>
                 <li><a href="{{ route('about') }}">About</a></li>
                 <li><a href="{{ route('login') }}">Log In</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Intro -->
+    <video src="videos/video-banner.mp4" autoplay loop id="vid" muted></video>
     <script>
         document.getElementById("vid").play();
     </script>
-
-
-    <section id="contact" class="main style3 secondary pb-5">
-        <div class="content">
+    <section id="intro" class="main style1 dark fullscreen">
+        <div class="content" style="background-color: rgba(0, 0, 0, 0.5)">
             <header>
+                <h2>
+                    We provide the best sustainable strategy to grow up your WEALTH
+                </h2>
+            </header>
+            <p>
+                We are is the best option for your company to start receiving passive
+                income. Instant Payments, Transparency, Sustainability
+            </p>
+            <footer>
+                <a href="#one" class="button style2 down">More</a>
+            </footer>
+        </div>
+    </section>
+
+
+    <!-- One -->
+    <section class="main style3 secondary pb-5">
+        <div class="content">
+        <header>
                 <h2>Story Behind the Company</h2>
             </header>
             <p>Eco Healing Solutions was founded with a clear mission: to restore ecological balance and create a sustainable future. Rather than owning algae farms, the company partners with credible sellers of verified carbon credits. By sourcing high-quality credits from environmentally impactful projects globally, Eco Healing Solutions bridges the gap between these projects and buyers in compliance markets, such as the UN ETS (European Union Emissions Trading System), and other environmentally conscious entities.
                 Through this model, the company provides businesses and governments with verified carbon credits, enabling them to meet their sustainability targets while fostering impactful change. This pivot reflects the company's commitment to making a tangible difference in the fight against climate change, leveraging strategic partnerships and Rajiv Malhotra's expertise to drive innovation in the carbon trading market.
             </p>
-        </div>
-    </section>
-
-    <!-- One -->
-    <section class="main style2">
-        <div class="content box style2">
             <header>
                 <h2>Mission</h2>
             </header>
             <p>"To lead the global carbon credit market by connecting credible projects with responsible buyers, ensuring financial returns and environmental impact."
             </p>
-        </div>
-    </section>
-
-    <!-- Two -->
-    <section id="two2" class="main style2 ">
-        <div class="content box style2">
             <header>
                 <h2>Vision</h2>
             </header>
             <p>"To become the world’s most trusted carbon credit trader, accelerating the transition to a carbon-neutral future through innovation, transparency, and collaboration."
             </p>
-        </div>
-    </section>
-    <section id="contact" class="main style3 secondary pb-5">
-        <div class="content">
             <header>
                 <h2>Values</h2>
             </header>
@@ -96,23 +111,12 @@
                     </p>
                 </li>
             </ul>
-        </div>
-    </section>
-
-    <section id="four" class="main style2 right dark fullscreen">
-        <div class="content box style2">
             <header>
                 <h2>Business Model</h2>
             </header>
             <p>Eco Healing Solutions purchases verified carbon credits from trusted global sources, including nature-based solutions and industrial carbon capture projects. These credits are sold to compliance buyers such as corporations and governments in markets like the UN ETS, where demand for high-quality credits is rising.
             </p>
             <p>The company benefits from high margins due to careful sourcing strategies and the rising market value of carbon credits, with annual returns reaching up to 200%. This model allows Eco Healing Solutions to remain agile and impactful in a dynamic market.</p>
-        </div>
-        <a href="#five" class="button style2 down anchored">Next</a>
-    </section>
-
-    <section id="five" class="main style3 secondary pb-5">
-        <div class="content">
             <header>
                 <h2>Rajiv Malhotra: A Visionary Leader in Sustainability and Innovation
                 </h2>
@@ -123,28 +127,24 @@
             </p>
             <div style="width: 50%;margin-bottom: 20px"><img src="{{ asset('images/ceo-photo.jpg') }}" alt="" style="height: 400px;"></div>
             </div>
-            <ul>
-                <li>
-                    <p>Business Development Manager at Fluid HR Consulting Services, delivering innovative HR solutions.
+            
+                    <p>Business Development Manager at Fluid HR Consulting Services, delivering innovative HR solutions.</br>
+                    CEO of DNA Testing Centres of Canada, where he spearheads advancements in genetic testing for preventative healthcare.</br>
+                    Partner at Mexicasa Real Estate Group, leveraging over a decade of experience in Canadian construction and real estate to offer turnkey investments in Mexico.</br>
+                    Co-founder of the Sifarish Network, a premier platform supporting professional growth among the South Asian business community in Canada.</br></br>
+                    Rajiv’s academic foundation in Economics from the University of Alberta, combined with fluency in English, Punjabi, and Hindi, enhances his ability to navigate global markets. His analytical mindset, cultural adaptability, and passion for sustainable solutions position him as a visionary leader driving Eco Healing Solutions’s mission to foster environmental impact and financial growth.
                     </p>
-                </li>
-                <li>
-                    <p>CEO of DNA Testing Centres of Canada, where he spearheads advancements in genetic testing for preventative healthcare.
-                    </p>
-                </li>
-                <li>
-                    <p>Partner at Mexicasa Real Estate Group, leveraging over a decade of experience in Canadian construction and real estate to offer turnkey investments in Mexico.
-                    </p>
-                </li>
-                <li>
-                    <p>Co-founder of the Sifarish Network, a premier platform supporting professional growth among the South Asian business community in Canada.
-                    </p>
-                </li>
-            </ul>
-            <p>Rajiv’s academic foundation in Economics from the University of Alberta, combined with fluency in English, Punjabi, and Hindi, enhances his ability to navigate global markets. His analytical mindset, cultural adaptability, and passion for sustainable solutions position him as a visionary leader driving Eco Healing Solutions’s mission to foster environmental impact and financial growth.
+              
+            <p>
             </p>
+       
         </div>
     </section>
+
+    <!-- Two -->
+   
+  
+
 
 
     <footer id="footer">

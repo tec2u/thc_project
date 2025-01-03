@@ -2454,8 +2454,8 @@ body.is-touch .main {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  transform: translateY(calc(100% - 54px));
-  -webkit-transform: translateY(calc(100% - 54px));
+  transform: translateY(calc(100% - 100px));
+  -webkit-transform: translateY(calc(100% - 100px));
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
 }
@@ -2484,13 +2484,21 @@ body.is-touch .main {
 
 /***** responsive css Start ******/
 
+@media (min-width: 1800px) {
+  h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   h2 {
     margin-bottom: 32px;
   }
   h3 {
     margin: 0 0 8px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
   }
 
@@ -2507,8 +2515,8 @@ body.is-touch .main {
     width: 400px;
   }
   .game-section .item-desc {
-    transform: translateY(calc(100% - 46px));
-    -webkit-transform: translateY(calc(100% - 46px));
+    transform: translateY(calc(100% - 110px));
+    -webkit-transform: translateY(calc(100% - 110px));
   }
 }
 
@@ -2518,11 +2526,11 @@ body.is-touch .main {
   }
   h3 {
     margin: 0 0 8px;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 32px;
   }
   .line-title {
-    width: 330px;
+    width: 100%;
   }
 
   /* -------- Landing page ------- */
@@ -2538,8 +2546,8 @@ body.is-touch .main {
     width: 360px;
   }
   .game-section .item-desc {
-    transform: translateY(calc(100% - 42px));
-    -webkit-transform: translateY(calc(100% - 42px));
+    transform: translateY(calc(100% - 110px));
+    -webkit-transform: translateY(calc(100% - 110px));
   }
 }
 
@@ -2552,11 +2560,11 @@ body.is-touch .main {
   }
   h3 {
     margin: 0 0 8px;
-    font-size: 19px;
+    font-size: 16px;
     line-height: 24px;
   }
   .line-title {
-    width: 250px;
+    width: 100%;
   }
 
   /* -------- Landing page ------- */
@@ -2575,7 +2583,7 @@ body.is-touch .main {
   }
   .game-section .item-desc {
     padding: 0 14px 5px;
-    transform: translateY(calc(100% - 42px));
-    -webkit-transform: translateY(calc(100% - 42px));
+    transform: translateY(calc(100% - 110px));
+    -webkit-transform: translateY(calc(100% - 110px));
   }
 }
