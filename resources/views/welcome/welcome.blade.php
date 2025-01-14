@@ -243,7 +243,7 @@
     </section>
     <!--  -->
 
-    <!-- Work -->
+    <!-- Work 
     <section id="work" class="main style3 primary">
         <div class="content">
             <header>
@@ -266,7 +266,7 @@
                 </p>
             </header>
 
-            <!-- Gallery  -->
+             Gallery  
             <div class="gallery">
                 <article class="from-left">
                     <a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
@@ -274,7 +274,7 @@
                 <article class="from-right">
                     <a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
                 </article>
-                <!-- <article class="from-left">
+                <article class="from-left">
             <a href="images/fulls/03.jpg" class="image fit"
               ><img src="images/thumbs/03.jpg" title="Air Lounge" alt=""
             /></a>
@@ -296,10 +296,10 @@
             <a href="images/fulls/06.jpg" class="image fit"
               ><img src="images/thumbs/06.jpg" title="Bent IX" alt=""
             /></a>
-          </article>-->
+          </article>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Contact -->
     <section id="contact" class="main style3 secondary">
