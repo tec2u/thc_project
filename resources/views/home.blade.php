@@ -236,83 +236,83 @@
 
 
 
-<!-- ***** Welcome Area Start ***** -->
-<div class="welcome-area" id="welcome" style='height:600px; background-image: none;'>
-    <div class="elementor-background-video-container" style="width:100%; ">
-    <img src='images/sheik-seed.png'>
-    {{--<video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted=""
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome" style='height:600px; background-image: none;'>
+        <div class="elementor-background-video-container" style="width:100%; ">
+            <img src='images/sheik-seed.png'>
+            {{--<video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted=""
         playsinline="" loop=""
         src="/videos/video-thc.mp4" style="width:100%; "
         ></video>--}}
-    </div>
-    <!-- ***** Header Text Start ***** -->
-    <div class="header-text">
-      <div class="container">
-        <div class="row">
-          <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-            {{--<h1>We provide the best <strong>strategy</strong><br>to grow up your <strong>WEALTH</strong></h1>--}}
-
-
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- ***** Header Text End ***** -->
-  </div>
-  <!-- ***** Welcome Area End ***** -->
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                        {{--<h1>We provide the best <strong>strategy</strong><br>to grow up your <strong>WEALTH</strong></h1>--}}
 
-  <!-- ***** Features Small Start ***** -->
-  <section class="section home-feature">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <!-- ***** Features Small Item Start ***** -->
-            <div class="col-lg-4 col-md-12 col-sm-12 col-12"
-              data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-              <div class="features-small-item">
-                <div class="icon">
-                  <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
-                </div>
-                <h5 class="features-title">Total Directs</h5>
-                <h4 class="features-title" style='font-size:25px'>{{ $diretos }}</h4>
-                <p>This is the total of people registered in your network that you reffered yourself</p>
-              </div>
-            </div>
-            <!-- ***** Features Small Item End ***** -->
 
-            <!-- ***** Features Small Item Start ***** -->
-            <div class="col-lg-4 col-md-12 col-sm-12 col-12"
-              data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-              <div class="features-small-item">
-                <div class="icon">
-                  <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
+                    </div>
                 </div>
-                <h5 class="features-title">Total Indirects</h5>
-                <h4 class="features-title" style='font-size:25px'>{{ $indiretos }}</h4>
-                <p>This is the total of people registered in your network that is below your directs to infinity</p>
-              </div>
             </div>
-            <!-- ***** Features Small Item End ***** -->
-
-            <!-- ***** Features Small Item Start ***** -->
-            <div class="col-lg-4 col-md-12 col-sm-12 col-12"
-              data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-              <div class="features-small-item">
-                <div class="icon">
-                  <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
-                </div>
-                <h5 class="features-title">Total on Your Network</h5>
-                <h4 class="features-title" style='font-size:25px'>{{ $totalNetwork }}</h4>
-                <p>This is the total of people registered in your network </p>
-              </div>
-            </div>
-            <!-- ***** Features Small Item End ***** -->
-          </div>
         </div>
-      </div>
+        <!-- ***** Header Text End ***** -->
     </div>
-  </section>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Features Small Start ***** -->
+    <section class="section home-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12"
+                            data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
+                                </div>
+                                <h5 class="features-title">Total Directs</h5>
+                                <h4 class="features-title" style='font-size:25px'>{{ $diretos }}</h4>
+                                <p>This is the total of people registered in your network that you reffered yourself</p>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12"
+                            data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
+                                </div>
+                                <h5 class="features-title">Total Indirects</h5>
+                                <h4 class="features-title" style='font-size:25px'>{{ $indiretos }}</h4>
+                                <p>This is the total of people registered in your network that is below your directs to infinity</p>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12"
+                            data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="assetsWelcomeNew/images/featured-item-01.png" alt=""></i>
+                                </div>
+                                <h5 class="features-title">Total on Your Network</h5>
+                                <h4 class="features-title" style='font-size:25px'>{{ $totalNetwork }}</h4>
+                                <p>This is the total of people registered in your network </p>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -325,7 +325,7 @@
                     <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>INVESTED</h2>
-                            <div>$1000,00</div>
+                                <div>$ {{ number_format(abs($invested), 2, '.', ',') }}</div>
                         </div>
                         <div>
                             <h2></h2>
@@ -334,7 +334,7 @@
                     <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>PROFIT</h2>
-                            <div>$210,00</div>
+                                <div>$ {{ number_format(abs($profit), 2, '.', ',') }}/div>
                         </div>
                         <div>
                             <h2></h2>
@@ -343,7 +343,7 @@
                     <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>WITHDRAWAL</h2>
-                            <div>$ {{ number_format(abs($withDrawn), 2, '.', ',') }}</div>
+                                <div>$ {{ number_format(abs($withDrawn), 2, '.', ',') }}</div>
                         </div>
                         <div>
                             <h2></h2>
@@ -352,7 +352,7 @@
                     <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>COMMISSION</h2>
-                            <div>$ 200,00</div>
+                                <div>$ 0,00</div>
                         </div>
                         <div>
                             <h2></h2>
@@ -361,7 +361,7 @@
                     <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>CAREER</h2>
-                            <div>BRONZE</div>
+                                <div>BRONZE</div>
                         </div>
                         <div>
                             <h2></h2>
@@ -370,7 +370,7 @@
                     <div class="col-12 col-sm-5 col-lg-5 col-xl-5 card-total-values mb-3 w-30 mr-auto bg-white p-4 radius-15 d-flex justify-content-between align-items-center">
                         <div>
                             <h4 style='font-weight: 600;'>CAREER</h2>
-                            <div>PIN</div>
+                                <div>PIN</div>
                         </div>
                         <div>
                             <h2>1</h2>
@@ -379,12 +379,18 @@
                 </div>
             </div>
             <section class="container-fluid bg-default p-4 radius-15 text-white" style='background-color: #a8be60; margin:10px'>
-        <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-            YOUR REFERRAL LINK: https://www.ecohealingsolutions.com/indication/{{$user->id}}/register
-            </div></div></div>
-        </section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 align-self-center mobile-bottom-fix">
+                            YOUR REFERRAL LINK: https://www.ecohealingsolutions.com/indication/{{$user->id}}/register
+                        </div>
+                        <div class="col-2">
+                            <button class=" btn btn-dark px-4" type="button"
+                                onclick="FunctionCopy('https://www.ecohealingsolutions.com/indication/{{$user->id}}/register')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div class="container-fluid mt-4">
                 <div class="d-flex justify-content-between row">
                     <div class="bg-white p-4 radius-15 col-12 col-md-6 col-lg-6 col-xl-6">
@@ -399,25 +405,27 @@
                     </div>
                     <div class="bg-white p-4 radius-15 col-12 col-md-6 col-lg-6 col-xl-6">
                         <div class="section-info2">
-                        <h2 class="m-0">MISSION / VISION</h2>
-                        <span>of one of our products</span>
-                        </br></br>
+                            <h2 class="m-0">MISSION / VISION</h2>
+                            <span>of one of our products</span>
+                            </br></br>
                             <ul class="info-list" style="color:#000">
                                 <li><b>Mission</b></br></br>
-To lead the global charge in restoring Earth’s atmosphere by deploying innovative, algae-based solutions that remove carbon dioxide, produce oxygen, and promote sustainability.</br>
-</br>
-<b>Vision</b></br></br>
-A world where communities and industries coexist in harmony with nature, supported by scalable, impactful solutions that heal the planet and inspire a culture of sustainability.</li>
+                                    To lead the global charge in restoring Earth’s atmosphere by deploying innovative, algae-based solutions that remove carbon dioxide, produce oxygen, and promote sustainability.</br>
+                                    </br>
+                                    <b>Vision</b></br></br>
+                                    A world where communities and industries coexist in harmony with nature, supported by scalable, impactful solutions that heal the planet and inspire a culture of sustainability.
+                                </li>
 
                             </ul>
                             <ul class="info-list section-info" style="color:#000">
-                            <li>
-                            <b>Values</b></br></br>
-Planet-First Approach: Every action and decision prioritizes the health and future of our planet.</br>
-Integrity: Providing measurable, verified, and reliable solutions for carbon offsetting.</br>
-Innovation: Harnessing the power of cutting-edge technology to amplify algae’s potential.</br>
-Community Engagement: Empowering people to join the mission for global healing.</br>
-Sustainability: Commitment to long-term environmental and economic viability.</li>
+                                <li>
+                                    <b>Values</b></br></br>
+                                    Planet-First Approach: Every action and decision prioritizes the health and future of our planet.</br>
+                                    Integrity: Providing measurable, verified, and reliable solutions for carbon offsetting.</br>
+                                    Innovation: Harnessing the power of cutting-edge technology to amplify algae’s potential.</br>
+                                    Community Engagement: Empowering people to join the mission for global healing.</br>
+                                    Sustainability: Commitment to long-term environmental and economic viability.
+                                </li>
                             </ul>
                         </div>
                         <button class="login-btn2 col-md-12 text-center" style="border-color: #fff;" id="ler-mais">@lang('leadpage.new.btnli')</button>
@@ -454,26 +462,26 @@ Sustainability: Commitment to long-term environmental and economic viability.</l
 
 
         <div class="container-fluid mt-4">
-        <section class="section padding-bottom-100">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-          <div class="left-heading">
-            <h2 class="section-title">We help you and the world to be a better place</h2>
-          </div>
-          <div class="left-text">
-            <p>By investing in our sustainable agriculture company, you’re not just supporting eco-friendly farming and responsible land use—you’re also entering the crypto world. This innovative approach to finance adds transparency and accessibility, making your investment even more sustainable and impactful. Together, we can grow wealth, empower communities, and nurture the planet while leveraging the power of cryptocurrency for a better future. </p>
-          </div>
-        </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
-          data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-          <img src="assetsWelcomeNew/images/right-image.png" class="rounded img-fluid d-block mx-auto"
-            alt="App">
-        </div>
-      </div>
-    </div>
-  </section>
+            <section class="section padding-bottom-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                            <div class="left-heading">
+                                <h2 class="section-title">We help you and the world to be a better place</h2>
+                            </div>
+                            <div class="left-text">
+                                <p>By investing in our sustainable agriculture company, you’re not just supporting eco-friendly farming and responsible land use—you’re also entering the crypto world. This innovative approach to finance adds transparency and accessibility, making your investment even more sustainable and impactful. Together, we can grow wealth, empower communities, and nurture the planet while leveraging the power of cryptocurrency for a better future. </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+                            data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                            <img src="assetsWelcomeNew/images/right-image.png" class="rounded img-fluid d-block mx-auto"
+                                alt="App">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         </div>
         </div>
@@ -523,6 +531,9 @@ Sustainability: Commitment to long-term environmental and economic viability.</l
     }
 </style>
 <script>
+    function FunctionCopy(copyText) {
+        navigator.clipboard.writeText(copyText);
+    }
     $(document).ready(function() {
         $('.carousel').slick({
             autoplay: false, // Ativa a rotação automática

@@ -26,7 +26,6 @@
         <nav>
             <ul>
                 <li><a href="{{ route('welcome') }}">Intro</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="{{ route('about') }}">About</a></li>
                 <li><a href="{{ route('login') }}">Log In</a></li>
             </ul>
@@ -99,8 +98,8 @@
         </div>
     </section>
 
-    <section id="four" class="main style2 right dark fullscreen">
-        <div class="content box style2">
+    <section id="four" class="main style2">
+        <div class="content box">
             <header>
                 <h2>Business Model</h2>
             </header>
@@ -108,7 +107,6 @@
             </p>
             <p>The company benefits from high margins due to careful sourcing strategies and the rising market value of carbon credits, with annual returns reaching up to 200%. This model allows Eco Healing Solutions to remain agile and impactful in a dynamic market.</p>
         </div>
-        <a href="#five" class="button style2 down anchored">Next</a>
     </section>
 
     <section id="five" class="main style3 secondary pb-5">

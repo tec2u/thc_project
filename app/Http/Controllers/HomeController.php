@@ -243,19 +243,21 @@ class HomeController extends Controller
         $indiretos = HistoricScore::where('user_id', auth()->user()->id)->where('level_from', '>' , 1)->distinct('user_id_from')->count();
 
         $totalNetwork = $diretos + $indiretos;
-        $withDrawn = Banco::where('user_id', auth()->user()->id )->where('price', '<', 0)->sum('price');
+        $withDrawn = Banco::where('user_id', auth()->user()->id )->where('price', '>', 0)->sum('price');
+        $profit = Banco::where('user_id', auth()->user()->id )->where('price', '>', 0)->where('description', 99)->sum('price');
+
+        $invested = OrderPackage::where('user_id', auth()->user()->id)->sum('price');
 
 
-        return view('home', compact('packages', 'orderpackages', 'name', 'user', 'data', 'label', 'datasaida', 'totalbanco', 'bonusdaily', 'pontos', 'saque', 'carrer', 'inactiverights', 'url_image_popup', 'images', 'table', 'total_amount', 'total_balance', 'total_withdraw_requests', 'tota_pay_per_day', 'bonus_day_total', 'value_perc', 'diretos', 'indiretos', 'totalNetwork', 'withDrawn'));
+        return view('home', compact('invested', 'packages', 'orderpackages', 'name', 'user', 'data', 'label', 'datasaida', 'totalbanco', 'bonusdaily', 'pontos', 'saque', 'carrer', 'inactiverights', 'url_image_popup', 'images', 'table', 'total_amount', 'total_balance', 'total_withdraw_requests', 'tota_pay_per_day', 'bonus_day_total', 'value_perc', 'diretos', 'indiretos', 'totalNetwork', 'withDrawn'));
     }
 
     public function welcome()
     {
        $packages = Package::where('type', 'packages')->where('activated', 1)->orderBy('price')->get();
-
        return view('welcome.welcome', compact('packages'));
     }
-    
+
     public function about()
     {
        $packages = Package::where('type', 'packages')->where('activated', 1)->orderBy('price')->get();

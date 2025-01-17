@@ -1,5 +1,10 @@
 @extends('layouts.app')
 @section('content')
+
+
+<video autoplay muted loop class="bg_video">
+    <source src="/videos/video-thc.mp4" type="video/mp4">
+</video>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
 <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
