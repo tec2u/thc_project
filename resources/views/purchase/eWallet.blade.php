@@ -9,7 +9,7 @@
                     <div class="col-12">
                         <h1>E-Wallet</h1>
                         <div class="col-12">
-                            <p class="text-white responsive-p">@lang('purchase.wallet.li1')</p>
+                            <p class="text-black responsive-p">@lang('purchase.wallet.li1')</p>
                         </div>
                         <div class="card shadow my-3">
                             <div class="card-header bbcolorp">

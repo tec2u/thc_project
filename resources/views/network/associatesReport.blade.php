@@ -19,7 +19,7 @@
                             MY TEAM REPORT
                         </h1>
                         <div class="col-12">
-                            <p class="text-white responsive-p">Here you see an overview about your team with contact and sponsor details.</p>
+                            <p class="text-black responsive-p">Here you see an overview about your team with contact and sponsor details.</p>
                         </div>
 
 

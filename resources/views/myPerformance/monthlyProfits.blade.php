@@ -17,7 +17,7 @@
                             {{-- @lang('reports.pool_commission.title') --}}
                         </h1>
                         <div class="col-12">
-                            <p class="text-white responsive-p">You see here your monthly performance reports of your own investment and can also see details when you click on more details.</p>
+                            <p class="text-black responsive-p">You see here your monthly performance reports of your own investment and can also see details when you click on more details.</p>
                         </div>
                         <h3 style='color:#fff'></h3>
                         <div class="col-md-12">

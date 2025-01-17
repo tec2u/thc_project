@@ -9,7 +9,7 @@
                     <div class="col-12">
                         <h1>@lang('reports.pool_commission.title')</h1>
                         <div class="col-12">
-                            <p class="text-white responsive-p">@lang('reports.pool_commission.li1')</p>
+                            <p class="text-black responsive-p">@lang('reports.pool_commission.li1')</p>
                         </div>
                         <h3 style='color:#fff'></h3>
                         <div class="card shadow my-3">

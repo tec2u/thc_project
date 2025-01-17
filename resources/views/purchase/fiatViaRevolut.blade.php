@@ -8,7 +8,7 @@
                     <div class="col-12">
                         <h1>FIAT VIA REVOLUT</h1>
                         <div class="col-12">
-                            <p class="text-white responsive-p">@lang('purchase.fiat.li1')</p>
+                            <p class="text-black responsive-p">@lang('purchase.fiat.li1')</p>
                         </div>
                         <div class="card shadow my-3">
                             <div class="card-header bbcolorp">

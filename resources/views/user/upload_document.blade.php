@@ -9,7 +9,7 @@
                     <div class="col-12">
                         <h1>@lang('user.li1')</h1>
                         <div class="col-12">
-                            <p class="text-white responsive-p">@lang('user.li2')</p>
+                            <p class="text-black responsive-p">@lang('user.li2')</p>
                         </div>
                         <div class="card shadow my-3">
                             <form class="row gx-3 gy-2 align-items-center p-5" action="{{ route('document.upload') }}" method="POST" enctype="multipart/form-data">

@@ -8,7 +8,7 @@
                 <div class="row">
                     <h1 class="mb-3">@lang('network.my_referrals')</h1>
                     <div class="col-12">
-                        <p class="text-white responsive-p">Here you see the status and invested amount of your referrals.</p>
+                        <p class="text-black responsive-p">Here you see the status and invested amount of your referrals.</p>
                     </div>
                     <h3 style='color:#fff'></h3>
                     @forelse($networks as $network)
