@@ -14,6 +14,7 @@ use App\Models\HistoricScore;
 use App\Models\Order;
 use App\Models\OrderPackage;
 use App\Models\Package;
+use App\Models\Rede;
 use App\Models\User;
 use App\Traits\CustomLogTrait;
 use App\Traits\OrderBonusTrait;
@@ -170,138 +171,42 @@ class PackageAdminController extends Controller
 
 
             $Orderpackage = OrderPackage::find($id);
+            $package = Package::find($Orderpackage->package_id);
 
             $Orderpackage->update($data);
 
+            $bonusTotal = $Orderpackage->price * 0.15;
+
             if ($Orderpackage->status == 1 && $Orderpackage->payment_status == 1) {
-                ####POPULA A ARRAY COM O BONUS UNILEVEL PARA ENVIAR PRA FUNÇÃO
+                $config_unilevel = ConfigBonusunilevel::get();
 
-                $sumOrderPackage = OrderPackage::where('user_id', $Orderpackage->user_id)->sum('price');
-                if ($sumOrderPackage >= 500 && $sumOrderPackage <= 9999) {
-                    $perc = 2;
-                } else if ($sumOrderPackage >= 10000 && $sumOrderPackage <= 100000) {
-                    $perc = 5;
-                } else if ($sumOrderPackage >= 100001 && $sumOrderPackage <= 500000) {
-                    $perc = 7;
-                } else if ($sumOrderPackage >= 500001 && $sumOrderPackage <= 1000000) {
-                    $perc = 9;
-                } else if ($sumOrderPackage >= 1000001) {
-                    $perc = 11;
-                }
-
-                DailyPercentage::create([
-                    'value_perc' => $perc,
-                    'status' => 1,
-                    'user_id' => $Orderpackage->user_id,
-                    'date_save' => date("Y-m-d"),
-                    'created_at' => date("Y-m-d H:i:s")
-                ]);
-
-                $array_unilevel = array();
-                $array_unilevel_peoples = array();
-                $pega_config_unilevel = ConfigBonusunilevel::get();
-
-                foreach ($pega_config_unilevel as $pega_config_unilevel) {
-
-                    if ($pega_config_unilevel->status == 1) {
-                        $array_unilevel_peoples[$pega_config_unilevel->level] = $pega_config_unilevel->minimum_users;
-                        $array_unilevel[$pega_config_unilevel->level] = $pega_config_unilevel->value_percent;
-                    } else {
-                        $array_unilevel_peoples[$pega_config_unilevel->level] = "";
-                        $array_unilevel[$pega_config_unilevel->level] = "";
-                    }
-                }
-
-                ####CHECA SE ACHA O USUARIO COM O PEDIDO NA TABELA BANCO
                 $userrec = User::find($Orderpackage->user_id);
+                foreach ($config_unilevel as $config) {
+                    $valor = ($config->value_percent / 100) * $bonusTotal;
+                    $check_ja_existe = Banco::where('user_id', $userrec->recommendation_user_id)->where('order_id', $Orderpackage->id)->count();
 
-                if ($Orderpackage->package->type != 'activator') {
-                    $userrec->update(['activated' => 1]);
-                }
-
-                if ($userrec->id !== null) {
-                    CompensationController::uplevelCompesation($userrec->id);
-                } else {
-                    CompensationController::uplevelCompesation(1);
-                }
-
-                $check_ja_existe = 0;
-                if ($userrec->recommendation_user_id >= 0 && !empty($userrec->recommendation_user_id)) {
-                    $recommendation = User::find($userrec->recommendation_user_id);
-
-                    if ($recommendation->getDirectsWithOrders($recommendation->id) % 10 == 0) {
-                        if ($recommendation->getDirectsWithOrders($recommendation->id) == 10) {
-                            $data = [
-                                "score"             => 4,
-                                "status"            => 1,
-                                "description"       => "9",
-                                "user_id"           => $recommendation->id,
-                                "orders_package_id" => $Orderpackage->id,
-                                "user_id_from"      => $userrec->id,
-                                "level_from"        => "0",
-                            ];
-
-                            // $score = HistoricScore::create($data);
-                        } else {
-                            $data = [
-                                "score"             => 2,
-                                "status"            => 1,
-                                "description"       => "9",
-                                "user_id"           => $recommendation->id,
-                                "orders_package_id" => $Orderpackage->id,
-                                "user_id_from"      => $userrec->id,
-                                "level_from"        => "0",
-                            ];
-
-                            // $score = HistoricScore::create($data);
+                    if ($check_ja_existe <= 0) {
+                        if ($config->status == 1) {
+                            if ($userrec->recommendation_user_id) {
+                                $rede = Rede::where('user_id', $userrec->recommendation_user_id)->first();
+                                if ($rede->qty >= $config->minimum_users) {
+                                    $data = [
+                                        "price" => $valor,
+                                        "status" => 1,
+                                        "description" => 1,
+                                        "user_id" => $userrec->recommendation_user_id,
+                                        "order_id" => $Orderpackage->id,
+                                        "level_from" => $config->level,
+                                    ];
+                                    Banco::create($data);
+                                }
+                            } else {
+                                break;
+                            }
                         }
                     }
-
-                    $check_ja_existe = Banco::where('user_id', $userrec->recommendation_user_id)->where('order_id', $Orderpackage->id)->count();
+                    $userrec = User::find($userrec->recommendation_user_id);
                 }
-
-
-
-                $verifica_banco_steaking = Banco::where('user_id', $Orderpackage->user_id)->where('order_id', $Orderpackage->id)->get();
-
-                if (count($verifica_banco_steaking) == 0) {
-
-                    // $commission = $Orderpackage->package->commission;
-
-                    // $data = [
-                    //     "price"       => $commission,
-                    //     "description" => "7",
-                    //     "status"      => 1,
-                    //     "user_id"     => $userrec->id,
-                    //     "order_id"    => $Orderpackage->id,
-                    //     "level_from"  => 0,
-                    // ];
-
-                    // $banco = Banco::create($data);
-                    $valorespecial = isset($userrec->special_comission) && $userrec->special_comission_active ? $userrec->special_comission : 0;
-                    $valorespecialcommition =  $Orderpackage->package->commission * ($valorespecial / 100);
-
-                    if ($valorespecialcommition > 0) {
-                        $data = [
-                            "price"       => $valorespecialcommition,
-                            "description" => "8",
-                            "status"      => 1,
-                            "user_id"     => $userrec->id,
-                            "order_id"    => $Orderpackage->id,
-                            "level_from"  => 0,
-                        ];
-
-                        $banco = Banco::create($data);
-                    }
-                }
-                $config_bonus = ConfigBonus::where('id', '=', '1')->orWhere('id', '=', '2')->where('activated', 1)->get();
-
-                if ($check_ja_existe == 0) {
-                    if (count($config_bonus) > 0) {
-                        $this->bonusDiretoIndireto_e_Volume($Orderpackage->user_id, $Orderpackage->package->commission, $Orderpackage->id, $array_unilevel, $array_unilevel_peoples);
-                    }
-                }
-                $this->createPaymentLog('Payment processed successfully', 200, 'success',  $id, "Payment made by Admin");
             }
 
             $this->createLog('OrderPackage updated successfully', 200, 'success', auth()->user()->id);
